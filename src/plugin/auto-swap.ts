@@ -5,10 +5,17 @@ import { isBrandIcon, FONT_PRO, FONT_BRANDS } from "./component-gen";
 type IconMapEntry = { fa: string; confidence: string };
 type UnicodeMap = Record<string, string>;
 
-var fa6Names: string[] = Object.keys(fa6Unicode as UnicodeMap);
+var fa6NameList: string[] = Object.keys(fa6Unicode as UnicodeMap);
+var fa6NameSet: Set<string> = new Set(fa6NameList);
+var fuzzyCache: Record<string, { fa: string; confidence: string } | null> = {};
 
-function splitWords(name: string): string[] {
-  return name.split("-").filter(function (w) { return w.length > 0; });
+var fa6WordIndex: Record<string, string[]> = {};
+for (var _i = 0; _i < fa6NameList.length; _i++) {
+  var _words = fa6NameList[_i].split("-");
+  for (var _w = 0; _w < _words.length; _w++) {
+    if (!fa6WordIndex[_words[_w]]) fa6WordIndex[_words[_w]] = [];
+    fa6WordIndex[_words[_w]].push(fa6NameList[_i]);
+  }
 }
 
 function wordOverlapScore(a: string[], b: string[]): number {
@@ -25,6 +32,7 @@ function wordOverlapScore(a: string[], b: string[]): number {
 function editDistance(a: string, b: string): number {
   var m = a.length;
   var n = b.length;
+  if (Math.abs(m - n) > Math.max(m, n) * 0.4) return Math.max(m, n);
   var prev = new Array(n + 1);
   var curr = new Array(n + 1);
   for (var j = 0; j <= n; j++) prev[j] = j;
@@ -40,42 +48,51 @@ function editDistance(a: string, b: string): number {
 }
 
 function findBestMatch(lucideName: string): { fa: string; confidence: string } | null {
-  var lucideWords = splitWords(lucideName);
-  var bestName = "";
-  var bestScore = -1;
+  if (fuzzyCache[lucideName] !== undefined) return fuzzyCache[lucideName];
 
-  for (var i = 0; i < fa6Names.length; i++) {
-    var faName = fa6Names[i];
-    if (faName === lucideName) return { fa: faName, confidence: "high" };
+  if (fa6NameSet.has(lucideName)) {
+    fuzzyCache[lucideName] = { fa: lucideName, confidence: "high" };
+    return fuzzyCache[lucideName];
+  }
 
-    var faWords = splitWords(faName);
-    var overlap = wordOverlapScore(lucideWords, faWords);
-    if (overlap > bestScore) {
-      bestScore = overlap;
-      bestName = faName;
+  var lucideWords = lucideName.split("-").filter(function (w) { return w.length > 0; });
+
+  var candidates: Record<string, boolean> = {};
+  for (var w = 0; w < lucideWords.length; w++) {
+    var matches = fa6WordIndex[lucideWords[w]];
+    if (matches) {
+      for (var ci = 0; ci < matches.length; ci++) candidates[matches[ci]] = true;
     }
   }
 
+  var candidateList = Object.keys(candidates);
+  var bestName = "";
+  var bestScore = -1;
+  for (var i = 0; i < candidateList.length; i++) {
+    var faWords = candidateList[i].split("-");
+    var overlap = wordOverlapScore(lucideWords, faWords);
+    if (overlap > bestScore) { bestScore = overlap; bestName = candidateList[i]; }
+  }
+
   if (bestScore >= 0.5) {
-    return { fa: bestName, confidence: "low" };
+    fuzzyCache[lucideName] = { fa: bestName, confidence: "low" };
+    return fuzzyCache[lucideName];
   }
 
   var closestDist = Infinity;
   var closestName = "";
-  for (var i2 = 0; i2 < fa6Names.length; i2++) {
-    var dist = editDistance(lucideName, fa6Names[i2]);
-    if (dist < closestDist) {
-      closestDist = dist;
-      closestName = fa6Names[i2];
-    }
+  for (var i2 = 0; i2 < fa6NameList.length; i2++) {
+    var dist = editDistance(lucideName, fa6NameList[i2]);
+    if (dist < closestDist) { closestDist = dist; closestName = fa6NameList[i2]; }
   }
 
   var maxLen = Math.max(lucideName.length, closestName.length);
   if (maxLen > 0 && closestDist / maxLen <= 0.4) {
-    return { fa: closestName, confidence: "low" };
+    fuzzyCache[lucideName] = { fa: closestName, confidence: "low" };
+  } else {
+    fuzzyCache[lucideName] = null;
   }
-
-  return null;
+  return fuzzyCache[lucideName];
 }
 
 type ProgressCallback = (progress: {
@@ -104,15 +121,19 @@ function yieldToFigma(): Promise<void> {
   });
 }
 
-function findLucideMainComponents(): ComponentNode[] {
+async function findLucideMainComponents(onProgress?: ProgressCallback): Promise<ComponentNode[]> {
   var results: ComponentNode[] = [];
   for (var i = 0; i < figma.root.children.length; i++) {
+    if (onProgress) {
+      onProgress({ current: i, total: figma.root.children.length, phase: "Scanning page " + (i + 1) + "/" + figma.root.children.length + "..." });
+    }
     var components = figma.root.children[i].findAllWithCriteria({ types: ["COMPONENT"] });
     for (var j = 0; j < components.length; j++) {
       if (components[j].name.indexOf("Lucide Icons / ") === 0) {
         results.push(components[j] as ComponentNode);
       }
     }
+    await yieldToFigma();
   }
   return results;
 }
@@ -225,48 +246,52 @@ export async function autoSwapAll(onProgress: ProgressCallback): Promise<SwapRes
   onProgress({ current: 0, total: 0, phase: "Loading fonts..." });
   await Promise.all([figma.loadFontAsync(FONT_PRO), figma.loadFontAsync(FONT_BRANDS)]);
 
-  onProgress({ current: 0, total: 0, phase: "Finding Lucide components..." });
-  var lucideComponents = findLucideMainComponents();
+  var lucideComponents = await findLucideMainComponents(onProgress);
   var total = lucideComponents.length;
 
   onProgress({ current: 0, total: total, phase: "Found " + total + " Lucide main components" });
 
   for (var i = 0; i < lucideComponents.length; i++) {
-    var component = lucideComponents[i];
-    var lucideName = component.name.replace("Lucide Icons / ", "");
-    var mapping: IconMapEntry | null = map[lucideName] || null;
+    try {
+      var component = lucideComponents[i];
+      var lucideName = component.name.replace("Lucide Icons / ", "");
+      var mapping: IconMapEntry | null = map[lucideName] || null;
 
-    if (!mapping) {
-      mapping = findBestMatch(lucideName);
-    }
-
-    if (!mapping) {
-      result.skipped++;
-      result.skippedItems.push({ name: lucideName, reason: "no match found" });
-      if ((i + 1) % 10 === 0) {
-        onProgress({
-          current: i + 1, total: total,
-          phase: (i + 1) + "/" + total,
-          replaced: result.replaced, flagged: result.flagged, skipped: result.skipped,
-        });
-        await yieldToFigma();
+      if (!mapping) {
+        mapping = findBestMatch(lucideName);
       }
-      continue;
-    }
 
-    var unicode = unicodes[mapping.fa];
-    if (!unicode) {
+      if (!mapping) {
+        result.skipped++;
+        result.skippedItems.push({ name: lucideName, reason: "no match found" });
+        if ((i + 1) % 10 === 0) {
+          onProgress({
+            current: i + 1, total: total,
+            phase: (i + 1) + "/" + total,
+            replaced: result.replaced, flagged: result.flagged, skipped: result.skipped,
+          });
+          await yieldToFigma();
+        }
+        continue;
+      }
+
+      var unicode = unicodes[mapping.fa];
+      if (!unicode) {
+        result.skipped++;
+        result.skippedItems.push({ name: lucideName, reason: "no unicode for " + mapping.fa });
+        continue;
+      }
+
+      replaceComponentInternals(component, mapping.fa, unicode);
+      result.replaced++;
+
+      if (mapping.confidence === "low") {
+        result.flagged++;
+        result.flaggedNodeIds.push(component.id);
+      }
+    } catch (e) {
       result.skipped++;
-      result.skippedItems.push({ name: lucideName, reason: "no unicode for " + mapping.fa });
-      continue;
-    }
-
-    replaceComponentInternals(component, mapping.fa, unicode);
-    result.replaced++;
-
-    if (mapping.confidence === "low") {
-      result.flagged++;
-      result.flaggedNodeIds.push(component.id);
+      result.skippedItems.push({ name: "node-" + i, reason: "error: " + String(e) });
     }
 
     if ((i + 1) % 5 === 0 || i === lucideComponents.length - 1) {
@@ -274,7 +299,6 @@ export async function autoSwapAll(onProgress: ProgressCallback): Promise<SwapRes
         current: i + 1, total: total,
         phase: (i + 1) + "/" + total,
         replaced: result.replaced, flagged: result.flagged, skipped: result.skipped,
-        lastSwap: { from: lucideName, to: mapping.fa, confidence: mapping.confidence },
       });
       await yieldToFigma();
     }

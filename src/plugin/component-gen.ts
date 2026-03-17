@@ -177,7 +177,7 @@ async function generateFromNames(
         result.errorDetails.push(faName + " (" + styleName + "): " + String(e));
       }
 
-      if (processed % 25 === 0) {
+      if (processed % 10 === 0) {
         onProgress({ current: processed, total: total, phase: processed + "/" + total + " (" + styleName + ")" });
         await yieldToFigma();
       }

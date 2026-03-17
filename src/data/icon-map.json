@@ -1,0 +1,6046 @@
+{
+  "a-arrow-down": {
+    "fa": "arrow-down-a-z",
+    "confidence": "high"
+  },
+  "a-arrow-up": {
+    "fa": "arrow-up-a-z",
+    "confidence": "high"
+  },
+  "a-large-small": {
+    "fa": "font",
+    "confidence": "medium"
+  },
+  "accessibility": {
+    "fa": "universal-access",
+    "confidence": "high"
+  },
+  "activity": {
+    "fa": "wave-pulse",
+    "confidence": "high"
+  },
+  "air-vent": {
+    "fa": "fan",
+    "confidence": "medium"
+  },
+  "airplay": {
+    "fa": "airplay",
+    "confidence": "high"
+  },
+  "alarm-clock-check": {
+    "fa": "alarm-clock",
+    "confidence": "medium"
+  },
+  "alarm-clock-minus": {
+    "fa": "alarm-clock",
+    "confidence": "medium"
+  },
+  "alarm-clock-off": {
+    "fa": "alarm-clock",
+    "confidence": "medium"
+  },
+  "alarm-clock-plus": {
+    "fa": "alarm-clock",
+    "confidence": "medium"
+  },
+  "alarm-clock": {
+    "fa": "alarm-clock",
+    "confidence": "high"
+  },
+  "alarm-smoke": {
+    "fa": "smoke",
+    "confidence": "medium"
+  },
+  "album": {
+    "fa": "record-vinyl",
+    "confidence": "medium"
+  },
+  "align-center-horizontal": {
+    "fa": "objects-align-center-horizontal",
+    "confidence": "high"
+  },
+  "align-center-vertical": {
+    "fa": "objects-align-center-vertical",
+    "confidence": "high"
+  },
+  "align-center": {
+    "fa": "align-center",
+    "confidence": "high"
+  },
+  "align-end-horizontal": {
+    "fa": "objects-align-right",
+    "confidence": "medium"
+  },
+  "align-end-vertical": {
+    "fa": "objects-align-bottom",
+    "confidence": "medium"
+  },
+  "align-horizontal-distribute-center": {
+    "fa": "distribute-spacing-horizontal",
+    "confidence": "medium"
+  },
+  "align-horizontal-distribute-end": {
+    "fa": "distribute-spacing-horizontal",
+    "confidence": "medium"
+  },
+  "align-horizontal-distribute-start": {
+    "fa": "distribute-spacing-horizontal",
+    "confidence": "medium"
+  },
+  "align-horizontal-justify-center": {
+    "fa": "objects-align-center-horizontal",
+    "confidence": "medium"
+  },
+  "align-horizontal-justify-end": {
+    "fa": "objects-align-right",
+    "confidence": "medium"
+  },
+  "align-horizontal-justify-start": {
+    "fa": "objects-align-left",
+    "confidence": "medium"
+  },
+  "align-horizontal-space-around": {
+    "fa": "distribute-spacing-horizontal",
+    "confidence": "medium"
+  },
+  "align-horizontal-space-between": {
+    "fa": "distribute-spacing-horizontal",
+    "confidence": "medium"
+  },
+  "align-justify": {
+    "fa": "align-justify",
+    "confidence": "high"
+  },
+  "align-left": {
+    "fa": "align-left",
+    "confidence": "high"
+  },
+  "align-right": {
+    "fa": "align-right",
+    "confidence": "high"
+  },
+  "align-start-horizontal": {
+    "fa": "objects-align-left",
+    "confidence": "medium"
+  },
+  "align-start-vertical": {
+    "fa": "objects-align-top",
+    "confidence": "medium"
+  },
+  "align-vertical-distribute-center": {
+    "fa": "distribute-spacing-vertical",
+    "confidence": "medium"
+  },
+  "align-vertical-distribute-end": {
+    "fa": "distribute-spacing-vertical",
+    "confidence": "medium"
+  },
+  "align-vertical-distribute-start": {
+    "fa": "distribute-spacing-vertical",
+    "confidence": "medium"
+  },
+  "align-vertical-justify-center": {
+    "fa": "objects-align-center-vertical",
+    "confidence": "medium"
+  },
+  "align-vertical-justify-end": {
+    "fa": "objects-align-bottom",
+    "confidence": "medium"
+  },
+  "align-vertical-justify-start": {
+    "fa": "objects-align-top",
+    "confidence": "medium"
+  },
+  "align-vertical-space-around": {
+    "fa": "distribute-spacing-vertical",
+    "confidence": "medium"
+  },
+  "align-vertical-space-between": {
+    "fa": "distribute-spacing-vertical",
+    "confidence": "medium"
+  },
+  "ambulance": {
+    "fa": "truck-medical",
+    "confidence": "high"
+  },
+  "ampersand": {
+    "fa": "ampersand",
+    "confidence": "high"
+  },
+  "ampersands": {
+    "fa": "ampersand",
+    "confidence": "medium"
+  },
+  "anchor": {
+    "fa": "anchor",
+    "confidence": "high"
+  },
+  "angry": {
+    "fa": "face-angry",
+    "confidence": "high"
+  },
+  "annoyed": {
+    "fa": "face-rolling-eyes",
+    "confidence": "medium"
+  },
+  "antenna": {
+    "fa": "tower-broadcast",
+    "confidence": "medium"
+  },
+  "anvil": {
+    "fa": "hammer",
+    "confidence": "low"
+  },
+  "aperture": {
+    "fa": "aperture",
+    "confidence": "high"
+  },
+  "app-window-mac": {
+    "fa": "window",
+    "confidence": "medium"
+  },
+  "app-window": {
+    "fa": "window-maximize",
+    "confidence": "medium"
+  },
+  "apple": {
+    "fa": "apple-whole",
+    "confidence": "high"
+  },
+  "archive-restore": {
+    "fa": "box-archive",
+    "confidence": "medium"
+  },
+  "archive-x": {
+    "fa": "box-archive",
+    "confidence": "medium"
+  },
+  "archive": {
+    "fa": "box-archive",
+    "confidence": "high"
+  },
+  "armchair": {
+    "fa": "couch",
+    "confidence": "medium"
+  },
+  "arrow-big-down-dash": {
+    "fa": "arrow-down",
+    "confidence": "medium"
+  },
+  "arrow-big-down": {
+    "fa": "arrow-down",
+    "confidence": "medium"
+  },
+  "arrow-big-left-dash": {
+    "fa": "arrow-left",
+    "confidence": "medium"
+  },
+  "arrow-big-left": {
+    "fa": "arrow-left",
+    "confidence": "medium"
+  },
+  "arrow-big-right-dash": {
+    "fa": "arrow-right",
+    "confidence": "medium"
+  },
+  "arrow-big-right": {
+    "fa": "arrow-right",
+    "confidence": "medium"
+  },
+  "arrow-big-up-dash": {
+    "fa": "arrow-up",
+    "confidence": "medium"
+  },
+  "arrow-big-up": {
+    "fa": "arrow-up",
+    "confidence": "medium"
+  },
+  "arrow-down-0-1": {
+    "fa": "arrow-down-1-9",
+    "confidence": "high"
+  },
+  "arrow-down-1-0": {
+    "fa": "arrow-down-9-1",
+    "confidence": "high"
+  },
+  "arrow-down-a-z": {
+    "fa": "arrow-down-a-z",
+    "confidence": "high"
+  },
+  "arrow-down-from-line": {
+    "fa": "arrow-down-from-line",
+    "confidence": "high"
+  },
+  "arrow-down-left": {
+    "fa": "arrow-down-left",
+    "confidence": "high"
+  },
+  "arrow-down-narrow-wide": {
+    "fa": "arrow-down-short-wide",
+    "confidence": "high"
+  },
+  "arrow-down-right": {
+    "fa": "arrow-down-right",
+    "confidence": "high"
+  },
+  "arrow-down-to-dot": {
+    "fa": "arrow-down-to-dotted-line",
+    "confidence": "medium"
+  },
+  "arrow-down-to-line": {
+    "fa": "arrow-down-to-line",
+    "confidence": "high"
+  },
+  "arrow-down-up": {
+    "fa": "arrow-down-arrow-up",
+    "confidence": "high"
+  },
+  "arrow-down-wide-narrow": {
+    "fa": "arrow-down-wide-short",
+    "confidence": "high"
+  },
+  "arrow-down-z-a": {
+    "fa": "arrow-down-z-a",
+    "confidence": "high"
+  },
+  "arrow-down": {
+    "fa": "arrow-down",
+    "confidence": "high"
+  },
+  "arrow-left-from-line": {
+    "fa": "arrow-left-from-line",
+    "confidence": "high"
+  },
+  "arrow-left-right": {
+    "fa": "arrow-right-arrow-left",
+    "confidence": "high"
+  },
+  "arrow-left-to-line": {
+    "fa": "arrow-left-to-line",
+    "confidence": "high"
+  },
+  "arrow-left": {
+    "fa": "arrow-left",
+    "confidence": "high"
+  },
+  "arrow-right-from-line": {
+    "fa": "arrow-right-from-line",
+    "confidence": "high"
+  },
+  "arrow-right-left": {
+    "fa": "arrow-right-arrow-left",
+    "confidence": "high"
+  },
+  "arrow-right-to-line": {
+    "fa": "arrow-right-to-line",
+    "confidence": "high"
+  },
+  "arrow-right": {
+    "fa": "arrow-right",
+    "confidence": "high"
+  },
+  "arrow-up-0-1": {
+    "fa": "arrow-up-1-9",
+    "confidence": "high"
+  },
+  "arrow-up-1-0": {
+    "fa": "arrow-up-9-1",
+    "confidence": "high"
+  },
+  "arrow-up-a-z": {
+    "fa": "arrow-up-a-z",
+    "confidence": "high"
+  },
+  "arrow-up-down": {
+    "fa": "arrow-up-arrow-down",
+    "confidence": "high"
+  },
+  "arrow-up-from-dot": {
+    "fa": "arrow-up-from-dotted-line",
+    "confidence": "medium"
+  },
+  "arrow-up-from-line": {
+    "fa": "arrow-up-from-line",
+    "confidence": "high"
+  },
+  "arrow-up-left": {
+    "fa": "arrow-up-left",
+    "confidence": "high"
+  },
+  "arrow-up-narrow-wide": {
+    "fa": "arrow-up-short-wide",
+    "confidence": "high"
+  },
+  "arrow-up-right": {
+    "fa": "arrow-up-right",
+    "confidence": "high"
+  },
+  "arrow-up-to-line": {
+    "fa": "arrow-up-to-line",
+    "confidence": "high"
+  },
+  "arrow-up-wide-narrow": {
+    "fa": "arrow-up-wide-short",
+    "confidence": "high"
+  },
+  "arrow-up-z-a": {
+    "fa": "arrow-up-z-a",
+    "confidence": "high"
+  },
+  "arrow-up": {
+    "fa": "arrow-up",
+    "confidence": "high"
+  },
+  "arrows-up-from-line": {
+    "fa": "arrows-up-to-line",
+    "confidence": "medium"
+  },
+  "asterisk": {
+    "fa": "asterisk",
+    "confidence": "high"
+  },
+  "at-sign": {
+    "fa": "at",
+    "confidence": "high"
+  },
+  "atom": {
+    "fa": "atom",
+    "confidence": "high"
+  },
+  "audio-lines": {
+    "fa": "wave-pulse",
+    "confidence": "medium"
+  },
+  "audio-waveform": {
+    "fa": "waveform",
+    "confidence": "medium"
+  },
+  "award": {
+    "fa": "award",
+    "confidence": "high"
+  },
+  "axe": {
+    "fa": "axe",
+    "confidence": "high"
+  },
+  "axis-3d": {
+    "fa": "chart-scatter-3d",
+    "confidence": "low"
+  },
+  "baby": {
+    "fa": "baby",
+    "confidence": "high"
+  },
+  "backpack": {
+    "fa": "backpack",
+    "confidence": "high"
+  },
+  "badge-alert": {
+    "fa": "certificate",
+    "confidence": "medium"
+  },
+  "badge-cent": {
+    "fa": "certificate",
+    "confidence": "medium"
+  },
+  "badge-check": {
+    "fa": "badge-check",
+    "confidence": "high"
+  },
+  "badge-dollar-sign": {
+    "fa": "badge-dollar",
+    "confidence": "high"
+  },
+  "badge-euro": {
+    "fa": "certificate",
+    "confidence": "medium"
+  },
+  "badge-help": {
+    "fa": "certificate",
+    "confidence": "medium"
+  },
+  "badge-indian-rupee": {
+    "fa": "certificate",
+    "confidence": "medium"
+  },
+  "badge-info": {
+    "fa": "certificate",
+    "confidence": "medium"
+  },
+  "badge-japanese-yen": {
+    "fa": "certificate",
+    "confidence": "medium"
+  },
+  "badge-minus": {
+    "fa": "certificate",
+    "confidence": "medium"
+  },
+  "badge-percent": {
+    "fa": "badge-percent",
+    "confidence": "high"
+  },
+  "badge-plus": {
+    "fa": "certificate",
+    "confidence": "medium"
+  },
+  "badge-pound-sterling": {
+    "fa": "certificate",
+    "confidence": "medium"
+  },
+  "badge-russian-ruble": {
+    "fa": "certificate",
+    "confidence": "medium"
+  },
+  "badge-swiss-franc": {
+    "fa": "certificate",
+    "confidence": "medium"
+  },
+  "badge-x": {
+    "fa": "certificate",
+    "confidence": "medium"
+  },
+  "badge": {
+    "fa": "certificate",
+    "confidence": "medium"
+  },
+  "baggage-claim": {
+    "fa": "suitcase-rolling",
+    "confidence": "medium"
+  },
+  "ban": {
+    "fa": "ban",
+    "confidence": "high"
+  },
+  "banana": {
+    "fa": "banana",
+    "confidence": "high"
+  },
+  "banknote": {
+    "fa": "money-bill",
+    "confidence": "high"
+  },
+  "barcode": {
+    "fa": "barcode",
+    "confidence": "high"
+  },
+  "baseline": {
+    "fa": "text-height",
+    "confidence": "medium"
+  },
+  "bath": {
+    "fa": "bath",
+    "confidence": "high"
+  },
+  "battery-charging": {
+    "fa": "battery-bolt",
+    "confidence": "medium"
+  },
+  "battery-full": {
+    "fa": "battery-full",
+    "confidence": "high"
+  },
+  "battery-low": {
+    "fa": "battery-quarter",
+    "confidence": "high"
+  },
+  "battery-medium": {
+    "fa": "battery-half",
+    "confidence": "high"
+  },
+  "battery-warning": {
+    "fa": "battery-exclamation",
+    "confidence": "medium"
+  },
+  "battery": {
+    "fa": "battery-empty",
+    "confidence": "high"
+  },
+  "beaker": {
+    "fa": "flask",
+    "confidence": "medium"
+  },
+  "bean-off": {
+    "fa": "seedling",
+    "confidence": "low"
+  },
+  "bean": {
+    "fa": "seedling",
+    "confidence": "low"
+  },
+  "bed-double": {
+    "fa": "bed",
+    "confidence": "medium"
+  },
+  "bed-single": {
+    "fa": "bed",
+    "confidence": "medium"
+  },
+  "bed": {
+    "fa": "bed",
+    "confidence": "high"
+  },
+  "beef": {
+    "fa": "drumstick-bite",
+    "confidence": "low"
+  },
+  "beer-off": {
+    "fa": "beer-mug-empty",
+    "confidence": "medium"
+  },
+  "beer": {
+    "fa": "beer-mug",
+    "confidence": "high"
+  },
+  "bell-dot": {
+    "fa": "bell",
+    "confidence": "medium"
+  },
+  "bell-electric": {
+    "fa": "bell",
+    "confidence": "medium"
+  },
+  "bell-minus": {
+    "fa": "bell-minus",
+    "confidence": "high"
+  },
+  "bell-off": {
+    "fa": "bell-slash",
+    "confidence": "high"
+  },
+  "bell-plus": {
+    "fa": "bell-plus",
+    "confidence": "high"
+  },
+  "bell-ring": {
+    "fa": "bell-ring",
+    "confidence": "high"
+  },
+  "bell": {
+    "fa": "bell",
+    "confidence": "high"
+  },
+  "between-horizontal-end": {
+    "fa": "right-left",
+    "confidence": "low"
+  },
+  "between-horizontal-start": {
+    "fa": "left-right",
+    "confidence": "low"
+  },
+  "between-vertical-end": {
+    "fa": "up-down",
+    "confidence": "low"
+  },
+  "between-vertical-start": {
+    "fa": "up-down",
+    "confidence": "low"
+  },
+  "biceps-flexed": {
+    "fa": "hand-fist",
+    "confidence": "medium"
+  },
+  "bike": {
+    "fa": "bicycle",
+    "confidence": "high"
+  },
+  "binary": {
+    "fa": "binary",
+    "confidence": "high"
+  },
+  "biohazard": {
+    "fa": "biohazard",
+    "confidence": "high"
+  },
+  "bird": {
+    "fa": "dove",
+    "confidence": "medium"
+  },
+  "bitcoin": {
+    "fa": "bitcoin-sign",
+    "confidence": "high"
+  },
+  "blend": {
+    "fa": "droplet",
+    "confidence": "low"
+  },
+  "blinds": {
+    "fa": "blinds",
+    "confidence": "high"
+  },
+  "blocks": {
+    "fa": "cubes",
+    "confidence": "medium"
+  },
+  "bluetooth-connected": {
+    "fa": "bluetooth",
+    "confidence": "medium"
+  },
+  "bluetooth-off": {
+    "fa": "bluetooth",
+    "confidence": "medium"
+  },
+  "bluetooth-searching": {
+    "fa": "bluetooth",
+    "confidence": "medium"
+  },
+  "bluetooth": {
+    "fa": "bluetooth",
+    "confidence": "high"
+  },
+  "bold": {
+    "fa": "bold",
+    "confidence": "high"
+  },
+  "bolt": {
+    "fa": "bolt",
+    "confidence": "high"
+  },
+  "bomb": {
+    "fa": "bomb",
+    "confidence": "high"
+  },
+  "bone": {
+    "fa": "bone",
+    "confidence": "high"
+  },
+  "book-a": {
+    "fa": "book",
+    "confidence": "medium"
+  },
+  "book-audio": {
+    "fa": "book-open",
+    "confidence": "medium"
+  },
+  "book-check": {
+    "fa": "book",
+    "confidence": "medium"
+  },
+  "book-copy": {
+    "fa": "book-copy",
+    "confidence": "high"
+  },
+  "book-dashed": {
+    "fa": "book",
+    "confidence": "medium"
+  },
+  "book-down": {
+    "fa": "book-arrow-down",
+    "confidence": "high"
+  },
+  "book-headphones": {
+    "fa": "book",
+    "confidence": "medium"
+  },
+  "book-heart": {
+    "fa": "book-heart",
+    "confidence": "high"
+  },
+  "book-image": {
+    "fa": "book",
+    "confidence": "medium"
+  },
+  "book-key": {
+    "fa": "book",
+    "confidence": "medium"
+  },
+  "book-lock": {
+    "fa": "book-lock",
+    "confidence": "high"
+  },
+  "book-marked": {
+    "fa": "book-bookmark",
+    "confidence": "high"
+  },
+  "book-minus": {
+    "fa": "book",
+    "confidence": "medium"
+  },
+  "book-open-check": {
+    "fa": "book-open",
+    "confidence": "medium"
+  },
+  "book-open-text": {
+    "fa": "book-open-reader",
+    "confidence": "high"
+  },
+  "book-open": {
+    "fa": "book-open",
+    "confidence": "high"
+  },
+  "book-plus": {
+    "fa": "book-medical",
+    "confidence": "medium"
+  },
+  "book-text": {
+    "fa": "book",
+    "confidence": "medium"
+  },
+  "book-type": {
+    "fa": "book-font",
+    "confidence": "high"
+  },
+  "book-up-2": {
+    "fa": "book-arrow-up",
+    "confidence": "high"
+  },
+  "book-up": {
+    "fa": "book-arrow-up",
+    "confidence": "high"
+  },
+  "book-user": {
+    "fa": "book-user",
+    "confidence": "high"
+  },
+  "book-x": {
+    "fa": "book",
+    "confidence": "medium"
+  },
+  "book": {
+    "fa": "book",
+    "confidence": "high"
+  },
+  "bookmark-check": {
+    "fa": "bookmark",
+    "confidence": "medium"
+  },
+  "bookmark-minus": {
+    "fa": "bookmark",
+    "confidence": "medium"
+  },
+  "bookmark-plus": {
+    "fa": "bookmark",
+    "confidence": "medium"
+  },
+  "bookmark-x": {
+    "fa": "bookmark",
+    "confidence": "medium"
+  },
+  "bookmark": {
+    "fa": "bookmark",
+    "confidence": "high"
+  },
+  "boom-box": {
+    "fa": "boombox",
+    "confidence": "high"
+  },
+  "bot-message-square": {
+    "fa": "robot",
+    "confidence": "medium"
+  },
+  "bot-off": {
+    "fa": "robot",
+    "confidence": "medium"
+  },
+  "bot": {
+    "fa": "robot",
+    "confidence": "high"
+  },
+  "box-select": {
+    "fa": "object-group",
+    "confidence": "medium"
+  },
+  "box": {
+    "fa": "box",
+    "confidence": "high"
+  },
+  "boxes": {
+    "fa": "boxes-stacked",
+    "confidence": "high"
+  },
+  "braces": {
+    "fa": "brackets-curly",
+    "confidence": "high"
+  },
+  "brackets": {
+    "fa": "brackets-square",
+    "confidence": "high"
+  },
+  "brain-circuit": {
+    "fa": "brain-circuit",
+    "confidence": "high"
+  },
+  "brain-cog": {
+    "fa": "brain",
+    "confidence": "medium"
+  },
+  "brain": {
+    "fa": "brain",
+    "confidence": "high"
+  },
+  "brick-wall": {
+    "fa": "block-brick",
+    "confidence": "high"
+  },
+  "briefcase-business": {
+    "fa": "briefcase",
+    "confidence": "medium"
+  },
+  "briefcase-medical": {
+    "fa": "briefcase-medical",
+    "confidence": "high"
+  },
+  "briefcase": {
+    "fa": "briefcase",
+    "confidence": "high"
+  },
+  "bring-to-front": {
+    "fa": "layer-group",
+    "confidence": "medium"
+  },
+  "brush": {
+    "fa": "brush",
+    "confidence": "high"
+  },
+  "bug-off": {
+    "fa": "bug-slash",
+    "confidence": "high"
+  },
+  "bug-play": {
+    "fa": "bug",
+    "confidence": "medium"
+  },
+  "bug": {
+    "fa": "bug",
+    "confidence": "high"
+  },
+  "building-2": {
+    "fa": "building",
+    "confidence": "medium"
+  },
+  "building": {
+    "fa": "building",
+    "confidence": "high"
+  },
+  "bus-front": {
+    "fa": "bus",
+    "confidence": "medium"
+  },
+  "bus": {
+    "fa": "bus",
+    "confidence": "high"
+  },
+  "cable-car": {
+    "fa": "cable-car",
+    "confidence": "high"
+  },
+  "cable": {
+    "fa": "plug",
+    "confidence": "low"
+  },
+  "cake-slice": {
+    "fa": "cake-slice",
+    "confidence": "high"
+  },
+  "cake": {
+    "fa": "cake-candles",
+    "confidence": "high"
+  },
+  "calculator": {
+    "fa": "calculator",
+    "confidence": "high"
+  },
+  "calendar-arrow-down": {
+    "fa": "calendar-arrow-down",
+    "confidence": "high"
+  },
+  "calendar-arrow-up": {
+    "fa": "calendar-arrow-up",
+    "confidence": "high"
+  },
+  "calendar-check-2": {
+    "fa": "calendar-check",
+    "confidence": "medium"
+  },
+  "calendar-check": {
+    "fa": "calendar-check",
+    "confidence": "high"
+  },
+  "calendar-clock": {
+    "fa": "calendar-clock",
+    "confidence": "high"
+  },
+  "calendar-cog": {
+    "fa": "calendar",
+    "confidence": "medium"
+  },
+  "calendar-days": {
+    "fa": "calendar-days",
+    "confidence": "high"
+  },
+  "calendar-fold": {
+    "fa": "calendar",
+    "confidence": "medium"
+  },
+  "calendar-heart": {
+    "fa": "calendar-heart",
+    "confidence": "high"
+  },
+  "calendar-minus-2": {
+    "fa": "calendar-minus",
+    "confidence": "medium"
+  },
+  "calendar-minus": {
+    "fa": "calendar-minus",
+    "confidence": "high"
+  },
+  "calendar-off": {
+    "fa": "calendar-xmark",
+    "confidence": "high"
+  },
+  "calendar-plus-2": {
+    "fa": "calendar-plus",
+    "confidence": "medium"
+  },
+  "calendar-plus": {
+    "fa": "calendar-plus",
+    "confidence": "high"
+  },
+  "calendar-range": {
+    "fa": "calendar-week",
+    "confidence": "medium"
+  },
+  "calendar-search": {
+    "fa": "calendar",
+    "confidence": "medium"
+  },
+  "calendar-x-2": {
+    "fa": "calendar-xmark",
+    "confidence": "medium"
+  },
+  "calendar-x": {
+    "fa": "calendar-xmark",
+    "confidence": "high"
+  },
+  "calendar": {
+    "fa": "calendar",
+    "confidence": "high"
+  },
+  "camera-off": {
+    "fa": "camera-slash",
+    "confidence": "high"
+  },
+  "camera": {
+    "fa": "camera",
+    "confidence": "high"
+  },
+  "candy-cane": {
+    "fa": "candy-cane",
+    "confidence": "high"
+  },
+  "candy-off": {
+    "fa": "candy",
+    "confidence": "medium"
+  },
+  "candy": {
+    "fa": "candy",
+    "confidence": "high"
+  },
+  "cannabis": {
+    "fa": "cannabis",
+    "confidence": "high"
+  },
+  "captions-off": {
+    "fa": "closed-captioning",
+    "confidence": "medium"
+  },
+  "captions": {
+    "fa": "closed-captioning",
+    "confidence": "high"
+  },
+  "car-front": {
+    "fa": "car",
+    "confidence": "medium"
+  },
+  "car-taxi-front": {
+    "fa": "taxi",
+    "confidence": "high"
+  },
+  "car": {
+    "fa": "car",
+    "confidence": "high"
+  },
+  "caravan": {
+    "fa": "caravan",
+    "confidence": "high"
+  },
+  "carrot": {
+    "fa": "carrot",
+    "confidence": "high"
+  },
+  "case-lower": {
+    "fa": "font-case",
+    "confidence": "medium"
+  },
+  "case-sensitive": {
+    "fa": "font-case",
+    "confidence": "medium"
+  },
+  "case-upper": {
+    "fa": "font-case",
+    "confidence": "medium"
+  },
+  "cassette-tape": {
+    "fa": "cassette-tape",
+    "confidence": "high"
+  },
+  "cast": {
+    "fa": "screencast",
+    "confidence": "medium"
+  },
+  "castle": {
+    "fa": "fort",
+    "confidence": "medium"
+  },
+  "cat": {
+    "fa": "cat",
+    "confidence": "high"
+  },
+  "cctv": {
+    "fa": "camera-cctv",
+    "confidence": "high"
+  },
+  "chart-area": {
+    "fa": "chart-area",
+    "confidence": "high"
+  },
+  "chart-bar-big": {
+    "fa": "chart-bar",
+    "confidence": "medium"
+  },
+  "chart-bar-decreasing": {
+    "fa": "chart-bar",
+    "confidence": "medium"
+  },
+  "chart-bar-increasing": {
+    "fa": "chart-bar",
+    "confidence": "medium"
+  },
+  "chart-bar-stacked": {
+    "fa": "chart-bar",
+    "confidence": "medium"
+  },
+  "chart-bar": {
+    "fa": "chart-bar",
+    "confidence": "high"
+  },
+  "chart-candlestick": {
+    "fa": "chart-candlestick",
+    "confidence": "high"
+  },
+  "chart-column-big": {
+    "fa": "chart-column",
+    "confidence": "medium"
+  },
+  "chart-column-decreasing": {
+    "fa": "chart-column",
+    "confidence": "medium"
+  },
+  "chart-column-increasing": {
+    "fa": "chart-column",
+    "confidence": "medium"
+  },
+  "chart-column-stacked": {
+    "fa": "chart-column",
+    "confidence": "medium"
+  },
+  "chart-column": {
+    "fa": "chart-column",
+    "confidence": "high"
+  },
+  "chart-line": {
+    "fa": "chart-line",
+    "confidence": "high"
+  },
+  "chart-network": {
+    "fa": "diagram-project",
+    "confidence": "medium"
+  },
+  "chart-no-axes-column-decreasing": {
+    "fa": "chart-simple",
+    "confidence": "medium"
+  },
+  "chart-no-axes-column-increasing": {
+    "fa": "chart-simple",
+    "confidence": "medium"
+  },
+  "chart-no-axes-column": {
+    "fa": "chart-simple",
+    "confidence": "medium"
+  },
+  "chart-no-axes-combined": {
+    "fa": "chart-mixed",
+    "confidence": "medium"
+  },
+  "chart-no-axes-gantt": {
+    "fa": "chart-gantt",
+    "confidence": "medium"
+  },
+  "chart-pie": {
+    "fa": "chart-pie",
+    "confidence": "high"
+  },
+  "chart-scatter": {
+    "fa": "chart-scatter",
+    "confidence": "high"
+  },
+  "chart-spline": {
+    "fa": "chart-line",
+    "confidence": "medium"
+  },
+  "check-check": {
+    "fa": "check-double",
+    "confidence": "high"
+  },
+  "check": {
+    "fa": "check",
+    "confidence": "high"
+  },
+  "chef-hat": {
+    "fa": "hat-chef",
+    "confidence": "high"
+  },
+  "cherry": {
+    "fa": "cherries",
+    "confidence": "high"
+  },
+  "chevron-down": {
+    "fa": "chevron-down",
+    "confidence": "high"
+  },
+  "chevron-first": {
+    "fa": "backward-step",
+    "confidence": "medium"
+  },
+  "chevron-last": {
+    "fa": "forward-step",
+    "confidence": "medium"
+  },
+  "chevron-left": {
+    "fa": "chevron-left",
+    "confidence": "high"
+  },
+  "chevron-right": {
+    "fa": "chevron-right",
+    "confidence": "high"
+  },
+  "chevron-up": {
+    "fa": "chevron-up",
+    "confidence": "high"
+  },
+  "chevrons-down-up": {
+    "fa": "compress",
+    "confidence": "medium"
+  },
+  "chevrons-down": {
+    "fa": "chevrons-down",
+    "confidence": "high"
+  },
+  "chevrons-left-right": {
+    "fa": "arrows-left-right",
+    "confidence": "medium"
+  },
+  "chevrons-left": {
+    "fa": "chevrons-left",
+    "confidence": "high"
+  },
+  "chevrons-right-left": {
+    "fa": "arrows-left-right",
+    "confidence": "medium"
+  },
+  "chevrons-right": {
+    "fa": "chevrons-right",
+    "confidence": "high"
+  },
+  "chevrons-up-down": {
+    "fa": "expand",
+    "confidence": "medium"
+  },
+  "chevrons-up": {
+    "fa": "chevrons-up",
+    "confidence": "high"
+  },
+  "chrome": {
+    "fa": "chrome",
+    "confidence": "high"
+  },
+  "church": {
+    "fa": "church",
+    "confidence": "high"
+  },
+  "cigarette-off": {
+    "fa": "ban-smoking",
+    "confidence": "high"
+  },
+  "cigarette": {
+    "fa": "smoking",
+    "confidence": "high"
+  },
+  "circle-alert": {
+    "fa": "circle-exclamation",
+    "confidence": "high"
+  },
+  "circle-arrow-down": {
+    "fa": "circle-arrow-down",
+    "confidence": "high"
+  },
+  "circle-arrow-left": {
+    "fa": "circle-arrow-left",
+    "confidence": "high"
+  },
+  "circle-arrow-out-down-left": {
+    "fa": "arrow-up-right-from-square",
+    "confidence": "medium"
+  },
+  "circle-arrow-out-down-right": {
+    "fa": "arrow-up-right-from-square",
+    "confidence": "medium"
+  },
+  "circle-arrow-out-up-left": {
+    "fa": "arrow-up-right-from-square",
+    "confidence": "medium"
+  },
+  "circle-arrow-out-up-right": {
+    "fa": "arrow-up-right-from-square",
+    "confidence": "medium"
+  },
+  "circle-arrow-right": {
+    "fa": "circle-arrow-right",
+    "confidence": "high"
+  },
+  "circle-arrow-up": {
+    "fa": "circle-arrow-up",
+    "confidence": "high"
+  },
+  "circle-check-big": {
+    "fa": "circle-check",
+    "confidence": "medium"
+  },
+  "circle-check": {
+    "fa": "circle-check",
+    "confidence": "high"
+  },
+  "circle-chevron-down": {
+    "fa": "circle-chevron-down",
+    "confidence": "high"
+  },
+  "circle-chevron-left": {
+    "fa": "circle-chevron-left",
+    "confidence": "high"
+  },
+  "circle-chevron-right": {
+    "fa": "circle-chevron-right",
+    "confidence": "high"
+  },
+  "circle-chevron-up": {
+    "fa": "circle-chevron-up",
+    "confidence": "high"
+  },
+  "circle-dashed": {
+    "fa": "circle-dashed",
+    "confidence": "high"
+  },
+  "circle-divide": {
+    "fa": "circle-divide",
+    "confidence": "high"
+  },
+  "circle-dollar-sign": {
+    "fa": "circle-dollar-to-slot",
+    "confidence": "medium"
+  },
+  "circle-dot-dashed": {
+    "fa": "circle-dot",
+    "confidence": "medium"
+  },
+  "circle-dot": {
+    "fa": "circle-dot",
+    "confidence": "high"
+  },
+  "circle-ellipsis": {
+    "fa": "circle-ellipsis",
+    "confidence": "high"
+  },
+  "circle-equal": {
+    "fa": "circle-equal",
+    "confidence": "high"
+  },
+  "circle-fading-plus": {
+    "fa": "circle-plus",
+    "confidence": "medium"
+  },
+  "circle-gauge": {
+    "fa": "gauge",
+    "confidence": "medium"
+  },
+  "circle-help": {
+    "fa": "circle-question",
+    "confidence": "high"
+  },
+  "circle-minus": {
+    "fa": "circle-minus",
+    "confidence": "high"
+  },
+  "circle-off": {
+    "fa": "circle-xmark",
+    "confidence": "medium"
+  },
+  "circle-parking-off": {
+    "fa": "circle-parking",
+    "confidence": "medium"
+  },
+  "circle-parking": {
+    "fa": "circle-parking",
+    "confidence": "high"
+  },
+  "circle-pause": {
+    "fa": "circle-pause",
+    "confidence": "high"
+  },
+  "circle-percent": {
+    "fa": "circle-percent",
+    "confidence": "high"
+  },
+  "circle-play": {
+    "fa": "circle-play",
+    "confidence": "high"
+  },
+  "circle-plus": {
+    "fa": "circle-plus",
+    "confidence": "high"
+  },
+  "circle-power": {
+    "fa": "power-off",
+    "confidence": "medium"
+  },
+  "circle-slash-2": {
+    "fa": "ban",
+    "confidence": "medium"
+  },
+  "circle-slash": {
+    "fa": "ban",
+    "confidence": "medium"
+  },
+  "circle-stop": {
+    "fa": "circle-stop",
+    "confidence": "high"
+  },
+  "circle-user-round": {
+    "fa": "circle-user",
+    "confidence": "medium"
+  },
+  "circle-user": {
+    "fa": "circle-user",
+    "confidence": "high"
+  },
+  "circle-x": {
+    "fa": "circle-xmark",
+    "confidence": "high"
+  },
+  "circle": {
+    "fa": "circle",
+    "confidence": "high"
+  },
+  "circuit-board": {
+    "fa": "microchip",
+    "confidence": "low"
+  },
+  "citrus": {
+    "fa": "lemon",
+    "confidence": "medium"
+  },
+  "clapperboard": {
+    "fa": "clapperboard",
+    "confidence": "high"
+  },
+  "clipboard-check": {
+    "fa": "clipboard-check",
+    "confidence": "high"
+  },
+  "clipboard-copy": {
+    "fa": "clipboard",
+    "confidence": "medium"
+  },
+  "clipboard-list": {
+    "fa": "clipboard-list",
+    "confidence": "high"
+  },
+  "clipboard-minus": {
+    "fa": "clipboard",
+    "confidence": "medium"
+  },
+  "clipboard-paste": {
+    "fa": "paste",
+    "confidence": "high"
+  },
+  "clipboard-pen-line": {
+    "fa": "clipboard-pen",
+    "confidence": "high"
+  },
+  "clipboard-pen": {
+    "fa": "clipboard-pen",
+    "confidence": "high"
+  },
+  "clipboard-plus": {
+    "fa": "clipboard",
+    "confidence": "medium"
+  },
+  "clipboard-type": {
+    "fa": "clipboard",
+    "confidence": "medium"
+  },
+  "clipboard-x": {
+    "fa": "clipboard",
+    "confidence": "medium"
+  },
+  "clipboard": {
+    "fa": "clipboard",
+    "confidence": "high"
+  },
+  "clock-10": {
+    "fa": "clock",
+    "confidence": "medium"
+  },
+  "clock-11": {
+    "fa": "clock",
+    "confidence": "medium"
+  },
+  "clock-12": {
+    "fa": "clock",
+    "confidence": "medium"
+  },
+  "clock-1": {
+    "fa": "clock",
+    "confidence": "medium"
+  },
+  "clock-2": {
+    "fa": "clock",
+    "confidence": "medium"
+  },
+  "clock-3": {
+    "fa": "clock",
+    "confidence": "medium"
+  },
+  "clock-4": {
+    "fa": "clock",
+    "confidence": "medium"
+  },
+  "clock-5": {
+    "fa": "clock",
+    "confidence": "medium"
+  },
+  "clock-6": {
+    "fa": "clock",
+    "confidence": "medium"
+  },
+  "clock-7": {
+    "fa": "clock",
+    "confidence": "medium"
+  },
+  "clock-8": {
+    "fa": "clock",
+    "confidence": "medium"
+  },
+  "clock-9": {
+    "fa": "clock",
+    "confidence": "medium"
+  },
+  "clock-arrow-down": {
+    "fa": "clock-arrow-down",
+    "confidence": "high"
+  },
+  "clock-arrow-up": {
+    "fa": "clock-arrow-up",
+    "confidence": "high"
+  },
+  "clock": {
+    "fa": "clock",
+    "confidence": "high"
+  },
+  "cloud-cog": {
+    "fa": "cloud-gear",
+    "confidence": "medium"
+  },
+  "cloud-download": {
+    "fa": "cloud-arrow-down",
+    "confidence": "high"
+  },
+  "cloud-drizzle": {
+    "fa": "cloud-drizzle",
+    "confidence": "high"
+  },
+  "cloud-fog": {
+    "fa": "cloud-fog",
+    "confidence": "high"
+  },
+  "cloud-hail": {
+    "fa": "cloud-hail",
+    "confidence": "high"
+  },
+  "cloud-lightning": {
+    "fa": "cloud-bolt",
+    "confidence": "high"
+  },
+  "cloud-moon-rain": {
+    "fa": "cloud-moon-rain",
+    "confidence": "high"
+  },
+  "cloud-moon": {
+    "fa": "cloud-moon",
+    "confidence": "high"
+  },
+  "cloud-off": {
+    "fa": "cloud-slash",
+    "confidence": "high"
+  },
+  "cloud-rain-wind": {
+    "fa": "cloud-showers-water",
+    "confidence": "medium"
+  },
+  "cloud-rain": {
+    "fa": "cloud-rain",
+    "confidence": "high"
+  },
+  "cloud-snow": {
+    "fa": "cloud-snow",
+    "confidence": "high"
+  },
+  "cloud-sun-rain": {
+    "fa": "cloud-sun-rain",
+    "confidence": "high"
+  },
+  "cloud-sun": {
+    "fa": "cloud-sun",
+    "confidence": "high"
+  },
+  "cloud-upload": {
+    "fa": "cloud-arrow-up",
+    "confidence": "high"
+  },
+  "cloud": {
+    "fa": "cloud",
+    "confidence": "high"
+  },
+  "cloudy": {
+    "fa": "clouds",
+    "confidence": "high"
+  },
+  "clover": {
+    "fa": "clover",
+    "confidence": "high"
+  },
+  "club": {
+    "fa": "club",
+    "confidence": "high"
+  },
+  "code-xml": {
+    "fa": "code",
+    "confidence": "medium"
+  },
+  "code": {
+    "fa": "code",
+    "confidence": "high"
+  },
+  "codepen": {
+    "fa": "codepen",
+    "confidence": "high"
+  },
+  "codesandbox": {
+    "fa": "cube",
+    "confidence": "low"
+  },
+  "coffee": {
+    "fa": "mug-hot",
+    "confidence": "high"
+  },
+  "cog": {
+    "fa": "gear",
+    "confidence": "high"
+  },
+  "coins": {
+    "fa": "coins",
+    "confidence": "high"
+  },
+  "columns-2": {
+    "fa": "columns",
+    "confidence": "high"
+  },
+  "columns-3": {
+    "fa": "columns-3",
+    "confidence": "high"
+  },
+  "columns-4": {
+    "fa": "columns-3",
+    "confidence": "medium"
+  },
+  "combine": {
+    "fa": "object-union",
+    "confidence": "low"
+  },
+  "command": {
+    "fa": "command",
+    "confidence": "high"
+  },
+  "compass": {
+    "fa": "compass",
+    "confidence": "high"
+  },
+  "component": {
+    "fa": "puzzle-piece",
+    "confidence": "medium"
+  },
+  "computer": {
+    "fa": "desktop",
+    "confidence": "medium"
+  },
+  "concierge-bell": {
+    "fa": "bell-concierge",
+    "confidence": "high"
+  },
+  "cone": {
+    "fa": "cone",
+    "confidence": "high"
+  },
+  "construction": {
+    "fa": "helmet-safety",
+    "confidence": "medium"
+  },
+  "contact-round": {
+    "fa": "address-card",
+    "confidence": "high"
+  },
+  "contact": {
+    "fa": "address-book",
+    "confidence": "high"
+  },
+  "container": {
+    "fa": "container-storage",
+    "confidence": "high"
+  },
+  "contrast": {
+    "fa": "circle-half-stroke",
+    "confidence": "high"
+  },
+  "cookie": {
+    "fa": "cookie",
+    "confidence": "high"
+  },
+  "cooking-pot": {
+    "fa": "pot-food",
+    "confidence": "medium"
+  },
+  "copy-check": {
+    "fa": "copy",
+    "confidence": "medium"
+  },
+  "copy-minus": {
+    "fa": "copy",
+    "confidence": "medium"
+  },
+  "copy-plus": {
+    "fa": "copy",
+    "confidence": "medium"
+  },
+  "copy-slash": {
+    "fa": "copy",
+    "confidence": "medium"
+  },
+  "copy-x": {
+    "fa": "copy",
+    "confidence": "medium"
+  },
+  "copy": {
+    "fa": "copy",
+    "confidence": "high"
+  },
+  "copyleft": {
+    "fa": "copyleft",
+    "confidence": "high"
+  },
+  "copyright": {
+    "fa": "copyright",
+    "confidence": "high"
+  },
+  "corner-down-left": {
+    "fa": "turn-down-left",
+    "confidence": "medium"
+  },
+  "corner-down-right": {
+    "fa": "turn-down-right",
+    "confidence": "medium"
+  },
+  "corner-left-down": {
+    "fa": "turn-down-left",
+    "confidence": "medium"
+  },
+  "corner-left-up": {
+    "fa": "turn-up",
+    "confidence": "medium"
+  },
+  "corner-right-down": {
+    "fa": "turn-down-right",
+    "confidence": "medium"
+  },
+  "corner-right-up": {
+    "fa": "turn-up",
+    "confidence": "medium"
+  },
+  "corner-up-left": {
+    "fa": "turn-up",
+    "confidence": "medium"
+  },
+  "corner-up-right": {
+    "fa": "turn-up",
+    "confidence": "medium"
+  },
+  "cpu": {
+    "fa": "microchip",
+    "confidence": "medium"
+  },
+  "creative-commons": {
+    "fa": "creative-commons",
+    "confidence": "high"
+  },
+  "credit-card": {
+    "fa": "credit-card",
+    "confidence": "high"
+  },
+  "croissant": {
+    "fa": "croissant",
+    "confidence": "high"
+  },
+  "crop": {
+    "fa": "crop",
+    "confidence": "high"
+  },
+  "cross": {
+    "fa": "plus",
+    "confidence": "medium"
+  },
+  "crosshair": {
+    "fa": "crosshairs",
+    "confidence": "high"
+  },
+  "crown": {
+    "fa": "crown",
+    "confidence": "high"
+  },
+  "cuboid": {
+    "fa": "cube",
+    "confidence": "medium"
+  },
+  "cup-soda": {
+    "fa": "cup-straw",
+    "confidence": "medium"
+  },
+  "currency": {
+    "fa": "money-bill-transfer",
+    "confidence": "medium"
+  },
+  "cylinder": {
+    "fa": "database",
+    "confidence": "low"
+  },
+  "dam": {
+    "fa": "water",
+    "confidence": "low"
+  },
+  "database-backup": {
+    "fa": "database",
+    "confidence": "medium"
+  },
+  "database-zap": {
+    "fa": "database",
+    "confidence": "medium"
+  },
+  "database": {
+    "fa": "database",
+    "confidence": "high"
+  },
+  "delete": {
+    "fa": "delete-left",
+    "confidence": "high"
+  },
+  "dessert": {
+    "fa": "ice-cream",
+    "confidence": "medium"
+  },
+  "diameter": {
+    "fa": "circle",
+    "confidence": "low"
+  },
+  "diamond-minus": {
+    "fa": "diamond",
+    "confidence": "medium"
+  },
+  "diamond-percent": {
+    "fa": "diamond",
+    "confidence": "medium"
+  },
+  "diamond-plus": {
+    "fa": "diamond",
+    "confidence": "medium"
+  },
+  "diamond": {
+    "fa": "diamond",
+    "confidence": "high"
+  },
+  "dice-1": {
+    "fa": "dice-one",
+    "confidence": "high"
+  },
+  "dice-2": {
+    "fa": "dice-two",
+    "confidence": "high"
+  },
+  "dice-3": {
+    "fa": "dice-three",
+    "confidence": "high"
+  },
+  "dice-4": {
+    "fa": "dice-four",
+    "confidence": "high"
+  },
+  "dice-5": {
+    "fa": "dice-five",
+    "confidence": "high"
+  },
+  "dice-6": {
+    "fa": "dice-six",
+    "confidence": "high"
+  },
+  "dices": {
+    "fa": "dice",
+    "confidence": "high"
+  },
+  "diff": {
+    "fa": "code-compare",
+    "confidence": "medium"
+  },
+  "disc-2": {
+    "fa": "compact-disc",
+    "confidence": "medium"
+  },
+  "disc-3": {
+    "fa": "compact-disc",
+    "confidence": "medium"
+  },
+  "disc-album": {
+    "fa": "compact-disc",
+    "confidence": "medium"
+  },
+  "disc": {
+    "fa": "compact-disc",
+    "confidence": "high"
+  },
+  "divide": {
+    "fa": "divide",
+    "confidence": "high"
+  },
+  "dna-off": {
+    "fa": "dna",
+    "confidence": "medium"
+  },
+  "dna": {
+    "fa": "dna",
+    "confidence": "high"
+  },
+  "dock": {
+    "fa": "window-minimize",
+    "confidence": "low"
+  },
+  "dog": {
+    "fa": "dog",
+    "confidence": "high"
+  },
+  "dollar-sign": {
+    "fa": "dollar-sign",
+    "confidence": "high"
+  },
+  "donut": {
+    "fa": "donut",
+    "confidence": "high"
+  },
+  "door-closed": {
+    "fa": "door-closed",
+    "confidence": "high"
+  },
+  "door-open": {
+    "fa": "door-open",
+    "confidence": "high"
+  },
+  "dot": {
+    "fa": "circle",
+    "confidence": "low"
+  },
+  "download": {
+    "fa": "download",
+    "confidence": "high"
+  },
+  "drafting-compass": {
+    "fa": "compass-drafting",
+    "confidence": "high"
+  },
+  "drama": {
+    "fa": "masks-theater",
+    "confidence": "high"
+  },
+  "dribbble": {
+    "fa": "dribbble",
+    "confidence": "high"
+  },
+  "drill": {
+    "fa": "screwdriver-wrench",
+    "confidence": "medium"
+  },
+  "droplet": {
+    "fa": "droplet",
+    "confidence": "high"
+  },
+  "droplets": {
+    "fa": "droplet",
+    "confidence": "medium"
+  },
+  "drum": {
+    "fa": "drum",
+    "confidence": "high"
+  },
+  "drumstick": {
+    "fa": "drumstick-bite",
+    "confidence": "medium"
+  },
+  "dumbbell": {
+    "fa": "dumbbell",
+    "confidence": "high"
+  },
+  "ear-off": {
+    "fa": "ear-deaf",
+    "confidence": "high"
+  },
+  "ear": {
+    "fa": "ear",
+    "confidence": "high"
+  },
+  "earth-lock": {
+    "fa": "earth-americas",
+    "confidence": "medium"
+  },
+  "earth": {
+    "fa": "earth-americas",
+    "confidence": "high"
+  },
+  "eclipse": {
+    "fa": "moon",
+    "confidence": "medium"
+  },
+  "egg-fried": {
+    "fa": "egg-fried",
+    "confidence": "high"
+  },
+  "egg-off": {
+    "fa": "egg",
+    "confidence": "medium"
+  },
+  "egg": {
+    "fa": "egg",
+    "confidence": "high"
+  },
+  "ellipsis-vertical": {
+    "fa": "ellipsis-vertical",
+    "confidence": "high"
+  },
+  "ellipsis": {
+    "fa": "ellipsis",
+    "confidence": "high"
+  },
+  "equal-not": {
+    "fa": "not-equal",
+    "confidence": "high"
+  },
+  "equal": {
+    "fa": "equals",
+    "confidence": "high"
+  },
+  "eraser": {
+    "fa": "eraser",
+    "confidence": "high"
+  },
+  "euro": {
+    "fa": "euro-sign",
+    "confidence": "high"
+  },
+  "expand": {
+    "fa": "expand",
+    "confidence": "high"
+  },
+  "external-link": {
+    "fa": "arrow-up-right-from-square",
+    "confidence": "high"
+  },
+  "eye-off": {
+    "fa": "eye-slash",
+    "confidence": "high"
+  },
+  "eye": {
+    "fa": "eye",
+    "confidence": "high"
+  },
+  "facebook": {
+    "fa": "facebook",
+    "confidence": "high"
+  },
+  "factory": {
+    "fa": "industry",
+    "confidence": "high"
+  },
+  "fan": {
+    "fa": "fan",
+    "confidence": "high"
+  },
+  "fast-forward": {
+    "fa": "forward-fast",
+    "confidence": "high"
+  },
+  "feather": {
+    "fa": "feather",
+    "confidence": "high"
+  },
+  "fence": {
+    "fa": "fence",
+    "confidence": "high"
+  },
+  "ferris-wheel": {
+    "fa": "ferris-wheel",
+    "confidence": "high"
+  },
+  "figma": {
+    "fa": "figma",
+    "confidence": "high"
+  },
+  "file-archive": {
+    "fa": "file-zipper",
+    "confidence": "high"
+  },
+  "file-audio-2": {
+    "fa": "file-audio",
+    "confidence": "medium"
+  },
+  "file-audio": {
+    "fa": "file-audio",
+    "confidence": "high"
+  },
+  "file-axis-3d": {
+    "fa": "file",
+    "confidence": "medium"
+  },
+  "file-badge-2": {
+    "fa": "file-certificate",
+    "confidence": "medium"
+  },
+  "file-badge": {
+    "fa": "file-certificate",
+    "confidence": "medium"
+  },
+  "file-box": {
+    "fa": "file",
+    "confidence": "medium"
+  },
+  "file-chart-column-increasing": {
+    "fa": "file-chart-column",
+    "confidence": "medium"
+  },
+  "file-chart-column": {
+    "fa": "file-chart-column",
+    "confidence": "high"
+  },
+  "file-chart-line": {
+    "fa": "file-chart-line",
+    "confidence": "high"
+  },
+  "file-chart-pie": {
+    "fa": "file-chart-pie",
+    "confidence": "high"
+  },
+  "file-check-2": {
+    "fa": "file-check",
+    "confidence": "medium"
+  },
+  "file-check": {
+    "fa": "file-check",
+    "confidence": "high"
+  },
+  "file-clock": {
+    "fa": "file-clock",
+    "confidence": "high"
+  },
+  "file-code-2": {
+    "fa": "file-code",
+    "confidence": "medium"
+  },
+  "file-code": {
+    "fa": "file-code",
+    "confidence": "high"
+  },
+  "file-cog": {
+    "fa": "file-gear",
+    "confidence": "high"
+  },
+  "file-diff": {
+    "fa": "file-code",
+    "confidence": "medium"
+  },
+  "file-digit": {
+    "fa": "file",
+    "confidence": "medium"
+  },
+  "file-down": {
+    "fa": "file-arrow-down",
+    "confidence": "high"
+  },
+  "file-heart": {
+    "fa": "file-heart",
+    "confidence": "high"
+  },
+  "file-image": {
+    "fa": "file-image",
+    "confidence": "high"
+  },
+  "file-input": {
+    "fa": "file-import",
+    "confidence": "high"
+  },
+  "file-json-2": {
+    "fa": "file-code",
+    "confidence": "medium"
+  },
+  "file-json": {
+    "fa": "file-code",
+    "confidence": "medium"
+  },
+  "file-key-2": {
+    "fa": "file-shield",
+    "confidence": "medium"
+  },
+  "file-key": {
+    "fa": "file-shield",
+    "confidence": "medium"
+  },
+  "file-lock-2": {
+    "fa": "file-lock",
+    "confidence": "medium"
+  },
+  "file-lock": {
+    "fa": "file-lock",
+    "confidence": "high"
+  },
+  "file-minus-2": {
+    "fa": "file-minus",
+    "confidence": "medium"
+  },
+  "file-minus": {
+    "fa": "file-minus",
+    "confidence": "high"
+  },
+  "file-music": {
+    "fa": "file-audio",
+    "confidence": "medium"
+  },
+  "file-output": {
+    "fa": "file-export",
+    "confidence": "high"
+  },
+  "file-pen-line": {
+    "fa": "file-pen",
+    "confidence": "medium"
+  },
+  "file-pen": {
+    "fa": "file-pen",
+    "confidence": "high"
+  },
+  "file-plus-2": {
+    "fa": "file-circle-plus",
+    "confidence": "medium"
+  },
+  "file-plus": {
+    "fa": "file-circle-plus",
+    "confidence": "high"
+  },
+  "file-question": {
+    "fa": "file-circle-question",
+    "confidence": "high"
+  },
+  "file-scan": {
+    "fa": "file-magnifying-glass",
+    "confidence": "high"
+  },
+  "file-search-2": {
+    "fa": "file-magnifying-glass",
+    "confidence": "medium"
+  },
+  "file-search": {
+    "fa": "file-magnifying-glass",
+    "confidence": "high"
+  },
+  "file-sliders": {
+    "fa": "file-gear",
+    "confidence": "medium"
+  },
+  "file-spreadsheet": {
+    "fa": "file-spreadsheet",
+    "confidence": "high"
+  },
+  "file-stack": {
+    "fa": "files",
+    "confidence": "medium"
+  },
+  "file-symlink": {
+    "fa": "file-arrow-up",
+    "confidence": "medium"
+  },
+  "file-terminal": {
+    "fa": "file-code",
+    "confidence": "medium"
+  },
+  "file-text": {
+    "fa": "file-lines",
+    "confidence": "high"
+  },
+  "file-type-2": {
+    "fa": "file",
+    "confidence": "medium"
+  },
+  "file-type": {
+    "fa": "file",
+    "confidence": "medium"
+  },
+  "file-up": {
+    "fa": "file-arrow-up",
+    "confidence": "high"
+  },
+  "file-video-2": {
+    "fa": "file-video",
+    "confidence": "medium"
+  },
+  "file-video": {
+    "fa": "file-video",
+    "confidence": "high"
+  },
+  "file-volume-2": {
+    "fa": "file-audio",
+    "confidence": "medium"
+  },
+  "file-volume": {
+    "fa": "file-audio",
+    "confidence": "medium"
+  },
+  "file-warning": {
+    "fa": "file-exclamation",
+    "confidence": "high"
+  },
+  "file-x-2": {
+    "fa": "file-xmark",
+    "confidence": "medium"
+  },
+  "file-x": {
+    "fa": "file-xmark",
+    "confidence": "high"
+  },
+  "file": {
+    "fa": "file",
+    "confidence": "high"
+  },
+  "files": {
+    "fa": "files",
+    "confidence": "high"
+  },
+  "film": {
+    "fa": "film",
+    "confidence": "high"
+  },
+  "filter-x": {
+    "fa": "filter-circle-xmark",
+    "confidence": "high"
+  },
+  "filter": {
+    "fa": "filter",
+    "confidence": "high"
+  },
+  "fingerprint": {
+    "fa": "fingerprint",
+    "confidence": "high"
+  },
+  "fire-extinguisher": {
+    "fa": "fire-extinguisher",
+    "confidence": "high"
+  },
+  "fish-off": {
+    "fa": "fish",
+    "confidence": "medium"
+  },
+  "fish-symbol": {
+    "fa": "fish-fins",
+    "confidence": "high"
+  },
+  "fish": {
+    "fa": "fish",
+    "confidence": "high"
+  },
+  "flag-off": {
+    "fa": "flag",
+    "confidence": "medium"
+  },
+  "flag-triangle-left": {
+    "fa": "flag-pennant",
+    "confidence": "medium"
+  },
+  "flag-triangle-right": {
+    "fa": "flag-pennant",
+    "confidence": "medium"
+  },
+  "flag": {
+    "fa": "flag",
+    "confidence": "high"
+  },
+  "flame-kindling": {
+    "fa": "fire-flame-simple",
+    "confidence": "medium"
+  },
+  "flame": {
+    "fa": "fire-flame-curved",
+    "confidence": "high"
+  },
+  "flashlight-off": {
+    "fa": "flashlight",
+    "confidence": "medium"
+  },
+  "flashlight": {
+    "fa": "flashlight",
+    "confidence": "high"
+  },
+  "flask-conical-off": {
+    "fa": "flask",
+    "confidence": "medium"
+  },
+  "flask-conical": {
+    "fa": "flask",
+    "confidence": "high"
+  },
+  "flask-round": {
+    "fa": "flask-round",
+    "confidence": "high"
+  },
+  "flip-horizontal-2": {
+    "fa": "reflect-horizontal",
+    "confidence": "medium"
+  },
+  "flip-horizontal": {
+    "fa": "reflect-horizontal",
+    "confidence": "medium"
+  },
+  "flip-vertical-2": {
+    "fa": "reflect-vertical",
+    "confidence": "medium"
+  },
+  "flip-vertical": {
+    "fa": "reflect-vertical",
+    "confidence": "medium"
+  },
+  "flower-2": {
+    "fa": "flower",
+    "confidence": "medium"
+  },
+  "flower": {
+    "fa": "flower",
+    "confidence": "high"
+  },
+  "focus": {
+    "fa": "crosshairs",
+    "confidence": "medium"
+  },
+  "fold-horizontal": {
+    "fa": "compress",
+    "confidence": "medium"
+  },
+  "fold-vertical": {
+    "fa": "compress",
+    "confidence": "medium"
+  },
+  "folder-archive": {
+    "fa": "folder-zipper",
+    "confidence": "high"
+  },
+  "folder-check": {
+    "fa": "folder-check",
+    "confidence": "high"
+  },
+  "folder-clock": {
+    "fa": "folder-clock",
+    "confidence": "high"
+  },
+  "folder-closed": {
+    "fa": "folder-closed",
+    "confidence": "high"
+  },
+  "folder-code": {
+    "fa": "folder-code",
+    "confidence": "high"
+  },
+  "folder-cog": {
+    "fa": "folder-gear",
+    "confidence": "high"
+  },
+  "folder-dot": {
+    "fa": "folder",
+    "confidence": "medium"
+  },
+  "folder-down": {
+    "fa": "folder-arrow-down",
+    "confidence": "high"
+  },
+  "folder-git-2": {
+    "fa": "folder",
+    "confidence": "medium"
+  },
+  "folder-git": {
+    "fa": "folder",
+    "confidence": "medium"
+  },
+  "folder-heart": {
+    "fa": "folder-heart",
+    "confidence": "high"
+  },
+  "folder-input": {
+    "fa": "folder-arrow-down",
+    "confidence": "medium"
+  },
+  "folder-kanban": {
+    "fa": "folder",
+    "confidence": "medium"
+  },
+  "folder-key": {
+    "fa": "folder",
+    "confidence": "medium"
+  },
+  "folder-lock": {
+    "fa": "folder-lock",
+    "confidence": "high"
+  },
+  "folder-minus": {
+    "fa": "folder-minus",
+    "confidence": "high"
+  },
+  "folder-open-dot": {
+    "fa": "folder-open",
+    "confidence": "medium"
+  },
+  "folder-open": {
+    "fa": "folder-open",
+    "confidence": "high"
+  },
+  "folder-output": {
+    "fa": "folder-arrow-up",
+    "confidence": "medium"
+  },
+  "folder-pen": {
+    "fa": "folder-pen",
+    "confidence": "high"
+  },
+  "folder-plus": {
+    "fa": "folder-plus",
+    "confidence": "high"
+  },
+  "folder-root": {
+    "fa": "folder-tree",
+    "confidence": "medium"
+  },
+  "folder-search-2": {
+    "fa": "folder-magnifying-glass",
+    "confidence": "medium"
+  },
+  "folder-search": {
+    "fa": "folder-magnifying-glass",
+    "confidence": "high"
+  },
+  "folder-symlink": {
+    "fa": "folder-arrow-up",
+    "confidence": "medium"
+  },
+  "folder-sync": {
+    "fa": "folder",
+    "confidence": "medium"
+  },
+  "folder-tree": {
+    "fa": "folder-tree",
+    "confidence": "high"
+  },
+  "folder-up": {
+    "fa": "folder-arrow-up",
+    "confidence": "high"
+  },
+  "folder-x": {
+    "fa": "folder-xmark",
+    "confidence": "high"
+  },
+  "folder": {
+    "fa": "folder",
+    "confidence": "high"
+  },
+  "folders": {
+    "fa": "folders",
+    "confidence": "high"
+  },
+  "footprints": {
+    "fa": "shoe-prints",
+    "confidence": "high"
+  },
+  "forklift": {
+    "fa": "forklift",
+    "confidence": "high"
+  },
+  "forward": {
+    "fa": "share",
+    "confidence": "medium"
+  },
+  "frame": {
+    "fa": "border-all",
+    "confidence": "medium"
+  },
+  "framer": {
+    "fa": "f",
+    "confidence": "low"
+  },
+  "frown": {
+    "fa": "face-frown",
+    "confidence": "high"
+  },
+  "fuel": {
+    "fa": "gas-pump",
+    "confidence": "high"
+  },
+  "fullscreen": {
+    "fa": "expand",
+    "confidence": "medium"
+  },
+  "gallery-horizontal-end": {
+    "fa": "images",
+    "confidence": "low"
+  },
+  "gallery-horizontal": {
+    "fa": "images",
+    "confidence": "low"
+  },
+  "gallery-thumbnails": {
+    "fa": "images",
+    "confidence": "low"
+  },
+  "gallery-vertical-end": {
+    "fa": "images",
+    "confidence": "low"
+  },
+  "gallery-vertical": {
+    "fa": "images",
+    "confidence": "low"
+  },
+  "gamepad-2": {
+    "fa": "gamepad",
+    "confidence": "medium"
+  },
+  "gamepad": {
+    "fa": "gamepad",
+    "confidence": "high"
+  },
+  "gauge": {
+    "fa": "gauge-high",
+    "confidence": "high"
+  },
+  "gavel": {
+    "fa": "gavel",
+    "confidence": "high"
+  },
+  "gem": {
+    "fa": "gem",
+    "confidence": "high"
+  },
+  "ghost": {
+    "fa": "ghost",
+    "confidence": "high"
+  },
+  "gift": {
+    "fa": "gift",
+    "confidence": "high"
+  },
+  "git-branch-plus": {
+    "fa": "code-branch",
+    "confidence": "medium"
+  },
+  "git-branch": {
+    "fa": "code-branch",
+    "confidence": "high"
+  },
+  "git-commit-horizontal": {
+    "fa": "code-commit",
+    "confidence": "high"
+  },
+  "git-commit-vertical": {
+    "fa": "code-commit",
+    "confidence": "medium"
+  },
+  "git-compare-arrows": {
+    "fa": "code-compare",
+    "confidence": "high"
+  },
+  "git-compare": {
+    "fa": "code-compare",
+    "confidence": "high"
+  },
+  "git-fork": {
+    "fa": "code-fork",
+    "confidence": "high"
+  },
+  "git-graph": {
+    "fa": "diagram-project",
+    "confidence": "medium"
+  },
+  "git-merge": {
+    "fa": "code-merge",
+    "confidence": "high"
+  },
+  "git-pull-request-arrow": {
+    "fa": "code-pull-request",
+    "confidence": "medium"
+  },
+  "git-pull-request-closed": {
+    "fa": "code-pull-request",
+    "confidence": "medium"
+  },
+  "git-pull-request-create-arrow": {
+    "fa": "code-pull-request",
+    "confidence": "medium"
+  },
+  "git-pull-request-create": {
+    "fa": "code-pull-request",
+    "confidence": "medium"
+  },
+  "git-pull-request-draft": {
+    "fa": "code-pull-request-draft",
+    "confidence": "high"
+  },
+  "git-pull-request": {
+    "fa": "code-pull-request",
+    "confidence": "high"
+  },
+  "github": {
+    "fa": "github",
+    "confidence": "high"
+  },
+  "gitlab": {
+    "fa": "gitlab",
+    "confidence": "high"
+  },
+  "glass-water": {
+    "fa": "glass-water",
+    "confidence": "high"
+  },
+  "glasses": {
+    "fa": "glasses",
+    "confidence": "high"
+  },
+  "globe-lock": {
+    "fa": "globe",
+    "confidence": "medium"
+  },
+  "globe": {
+    "fa": "globe",
+    "confidence": "high"
+  },
+  "goal": {
+    "fa": "bullseye",
+    "confidence": "medium"
+  },
+  "grab": {
+    "fa": "hand",
+    "confidence": "medium"
+  },
+  "graduation-cap": {
+    "fa": "graduation-cap",
+    "confidence": "high"
+  },
+  "grape": {
+    "fa": "wine-glass",
+    "confidence": "low"
+  },
+  "grid-2x2-check": {
+    "fa": "grid-2",
+    "confidence": "medium"
+  },
+  "grid-2x2-x": {
+    "fa": "grid-2",
+    "confidence": "medium"
+  },
+  "grid-2x2": {
+    "fa": "grid-2",
+    "confidence": "high"
+  },
+  "grid-3x3": {
+    "fa": "grid",
+    "confidence": "high"
+  },
+  "grip-horizontal": {
+    "fa": "grip",
+    "confidence": "medium"
+  },
+  "grip-vertical": {
+    "fa": "grip-vertical",
+    "confidence": "high"
+  },
+  "grip": {
+    "fa": "grip",
+    "confidence": "high"
+  },
+  "group": {
+    "fa": "object-group",
+    "confidence": "high"
+  },
+  "guitar": {
+    "fa": "guitar",
+    "confidence": "high"
+  },
+  "ham": {
+    "fa": "meat",
+    "confidence": "low"
+  },
+  "hammer": {
+    "fa": "hammer",
+    "confidence": "high"
+  },
+  "hand-coins": {
+    "fa": "hand-holding-dollar",
+    "confidence": "medium"
+  },
+  "hand-heart": {
+    "fa": "hand-holding-heart",
+    "confidence": "high"
+  },
+  "hand-helping": {
+    "fa": "hands-holding",
+    "confidence": "medium"
+  },
+  "hand-metal": {
+    "fa": "hand-horns",
+    "confidence": "high"
+  },
+  "hand-platter": {
+    "fa": "hand-holding",
+    "confidence": "medium"
+  },
+  "hand": {
+    "fa": "hand",
+    "confidence": "high"
+  },
+  "handshake": {
+    "fa": "handshake",
+    "confidence": "high"
+  },
+  "hard-drive-download": {
+    "fa": "hard-drive",
+    "confidence": "medium"
+  },
+  "hard-drive-upload": {
+    "fa": "hard-drive",
+    "confidence": "medium"
+  },
+  "hard-drive": {
+    "fa": "hard-drive",
+    "confidence": "high"
+  },
+  "hard-hat": {
+    "fa": "helmet-safety",
+    "confidence": "high"
+  },
+  "hash": {
+    "fa": "hashtag",
+    "confidence": "high"
+  },
+  "haze": {
+    "fa": "smog",
+    "confidence": "medium"
+  },
+  "hdmi-port": {
+    "fa": "plug",
+    "confidence": "low"
+  },
+  "heading-1": {
+    "fa": "heading",
+    "confidence": "medium"
+  },
+  "heading-2": {
+    "fa": "heading",
+    "confidence": "medium"
+  },
+  "heading-3": {
+    "fa": "heading",
+    "confidence": "medium"
+  },
+  "heading-4": {
+    "fa": "heading",
+    "confidence": "medium"
+  },
+  "heading-5": {
+    "fa": "heading",
+    "confidence": "medium"
+  },
+  "heading-6": {
+    "fa": "heading",
+    "confidence": "medium"
+  },
+  "heading": {
+    "fa": "heading",
+    "confidence": "high"
+  },
+  "headphones": {
+    "fa": "headphones",
+    "confidence": "high"
+  },
+  "headset": {
+    "fa": "headset",
+    "confidence": "high"
+  },
+  "heart-crack": {
+    "fa": "heart-crack",
+    "confidence": "high"
+  },
+  "heart-handshake": {
+    "fa": "handshake",
+    "confidence": "medium"
+  },
+  "heart-off": {
+    "fa": "heart",
+    "confidence": "medium"
+  },
+  "heart-pulse": {
+    "fa": "heart-pulse",
+    "confidence": "high"
+  },
+  "heart": {
+    "fa": "heart",
+    "confidence": "high"
+  },
+  "heater": {
+    "fa": "temperature-arrow-up",
+    "confidence": "medium"
+  },
+  "hexagon": {
+    "fa": "hexagon",
+    "confidence": "high"
+  },
+  "highlighter": {
+    "fa": "highlighter",
+    "confidence": "high"
+  },
+  "history": {
+    "fa": "clock-rotate-left",
+    "confidence": "high"
+  },
+  "hop-off": {
+    "fa": "frog",
+    "confidence": "low"
+  },
+  "hop": {
+    "fa": "frog",
+    "confidence": "low"
+  },
+  "hospital": {
+    "fa": "hospital",
+    "confidence": "high"
+  },
+  "hotel": {
+    "fa": "hotel",
+    "confidence": "high"
+  },
+  "hourglass": {
+    "fa": "hourglass",
+    "confidence": "high"
+  },
+  "house-plug": {
+    "fa": "house",
+    "confidence": "medium"
+  },
+  "house-plus": {
+    "fa": "house-medical",
+    "confidence": "high"
+  },
+  "house": {
+    "fa": "house",
+    "confidence": "high"
+  },
+  "ice-cream-bowl": {
+    "fa": "ice-cream",
+    "confidence": "medium"
+  },
+  "ice-cream-cone": {
+    "fa": "ice-cream",
+    "confidence": "medium"
+  },
+  "id-card": {
+    "fa": "id-card",
+    "confidence": "high"
+  },
+  "image-down": {
+    "fa": "image",
+    "confidence": "medium"
+  },
+  "image-minus": {
+    "fa": "image",
+    "confidence": "medium"
+  },
+  "image-off": {
+    "fa": "image-slash",
+    "confidence": "high"
+  },
+  "image-play": {
+    "fa": "image",
+    "confidence": "medium"
+  },
+  "image-plus": {
+    "fa": "image",
+    "confidence": "medium"
+  },
+  "image-up": {
+    "fa": "image",
+    "confidence": "medium"
+  },
+  "image": {
+    "fa": "image",
+    "confidence": "high"
+  },
+  "images": {
+    "fa": "images",
+    "confidence": "high"
+  },
+  "import": {
+    "fa": "file-import",
+    "confidence": "medium"
+  },
+  "inbox": {
+    "fa": "inbox",
+    "confidence": "high"
+  },
+  "indent-decrease": {
+    "fa": "outdent",
+    "confidence": "high"
+  },
+  "indent-increase": {
+    "fa": "indent",
+    "confidence": "high"
+  },
+  "indian-rupee": {
+    "fa": "indian-rupee-sign",
+    "confidence": "high"
+  },
+  "infinity": {
+    "fa": "infinity",
+    "confidence": "high"
+  },
+  "info": {
+    "fa": "circle-info",
+    "confidence": "high"
+  },
+  "inspection-panel": {
+    "fa": "table-cells",
+    "confidence": "low"
+  },
+  "instagram": {
+    "fa": "instagram",
+    "confidence": "high"
+  },
+  "italic": {
+    "fa": "italic",
+    "confidence": "high"
+  },
+  "iteration-ccw": {
+    "fa": "rotate-left",
+    "confidence": "medium"
+  },
+  "iteration-cw": {
+    "fa": "rotate-right",
+    "confidence": "medium"
+  },
+  "japanese-yen": {
+    "fa": "yen-sign",
+    "confidence": "high"
+  },
+  "joystick": {
+    "fa": "joystick",
+    "confidence": "high"
+  },
+  "kanban": {
+    "fa": "columns-3",
+    "confidence": "low"
+  },
+  "key-round": {
+    "fa": "key",
+    "confidence": "medium"
+  },
+  "key-square": {
+    "fa": "key",
+    "confidence": "medium"
+  },
+  "key": {
+    "fa": "key",
+    "confidence": "high"
+  },
+  "keyboard-music": {
+    "fa": "keyboard",
+    "confidence": "medium"
+  },
+  "keyboard-off": {
+    "fa": "keyboard",
+    "confidence": "medium"
+  },
+  "keyboard": {
+    "fa": "keyboard",
+    "confidence": "high"
+  },
+  "lamp-ceiling": {
+    "fa": "lightbulb",
+    "confidence": "low"
+  },
+  "lamp-desk": {
+    "fa": "lamp-desk",
+    "confidence": "high"
+  },
+  "lamp-floor": {
+    "fa": "lamp-floor",
+    "confidence": "high"
+  },
+  "lamp-wall-down": {
+    "fa": "lightbulb",
+    "confidence": "low"
+  },
+  "lamp-wall-up": {
+    "fa": "lightbulb",
+    "confidence": "low"
+  },
+  "lamp": {
+    "fa": "lamp",
+    "confidence": "high"
+  },
+  "land-plot": {
+    "fa": "chart-area",
+    "confidence": "medium"
+  },
+  "landmark": {
+    "fa": "landmark",
+    "confidence": "high"
+  },
+  "languages": {
+    "fa": "language",
+    "confidence": "high"
+  },
+  "laptop-minimal": {
+    "fa": "laptop",
+    "confidence": "medium"
+  },
+  "laptop": {
+    "fa": "laptop",
+    "confidence": "high"
+  },
+  "lasso-select": {
+    "fa": "lasso",
+    "confidence": "medium"
+  },
+  "lasso": {
+    "fa": "lasso",
+    "confidence": "high"
+  },
+  "laugh": {
+    "fa": "face-laugh",
+    "confidence": "high"
+  },
+  "layers-2": {
+    "fa": "layer-group",
+    "confidence": "medium"
+  },
+  "layers-3": {
+    "fa": "layer-group",
+    "confidence": "medium"
+  },
+  "layers": {
+    "fa": "layer-group",
+    "confidence": "high"
+  },
+  "layout-dashboard": {
+    "fa": "table-columns",
+    "confidence": "medium"
+  },
+  "layout-grid": {
+    "fa": "grid-2",
+    "confidence": "medium"
+  },
+  "layout-list": {
+    "fa": "list",
+    "confidence": "medium"
+  },
+  "layout-panel-left": {
+    "fa": "table-columns",
+    "confidence": "medium"
+  },
+  "layout-panel-top": {
+    "fa": "table-columns",
+    "confidence": "medium"
+  },
+  "layout-template": {
+    "fa": "table-columns",
+    "confidence": "medium"
+  },
+  "leaf": {
+    "fa": "leaf",
+    "confidence": "high"
+  },
+  "leafy-green": {
+    "fa": "leaf",
+    "confidence": "medium"
+  },
+  "lectern": {
+    "fa": "podium",
+    "confidence": "low"
+  },
+  "letter-text": {
+    "fa": "envelope-open-text",
+    "confidence": "low"
+  },
+  "library-big": {
+    "fa": "book",
+    "confidence": "medium"
+  },
+  "library": {
+    "fa": "book",
+    "confidence": "medium"
+  },
+  "life-buoy": {
+    "fa": "life-ring",
+    "confidence": "high"
+  },
+  "ligature": {
+    "fa": "font",
+    "confidence": "low"
+  },
+  "lightbulb-off": {
+    "fa": "lightbulb",
+    "confidence": "medium"
+  },
+  "lightbulb": {
+    "fa": "lightbulb",
+    "confidence": "high"
+  },
+  "link-2-off": {
+    "fa": "link-slash",
+    "confidence": "medium"
+  },
+  "link-2": {
+    "fa": "link",
+    "confidence": "medium"
+  },
+  "link": {
+    "fa": "link",
+    "confidence": "high"
+  },
+  "linkedin": {
+    "fa": "linkedin",
+    "confidence": "high"
+  },
+  "list-check": {
+    "fa": "list-check",
+    "confidence": "high"
+  },
+  "list-checks": {
+    "fa": "list-check",
+    "confidence": "medium"
+  },
+  "list-collapse": {
+    "fa": "list",
+    "confidence": "medium"
+  },
+  "list-end": {
+    "fa": "list",
+    "confidence": "medium"
+  },
+  "list-filter": {
+    "fa": "filter-list",
+    "confidence": "medium"
+  },
+  "list-minus": {
+    "fa": "list",
+    "confidence": "medium"
+  },
+  "list-music": {
+    "fa": "list",
+    "confidence": "medium"
+  },
+  "list-ordered": {
+    "fa": "list-ol",
+    "confidence": "high"
+  },
+  "list-plus": {
+    "fa": "list",
+    "confidence": "medium"
+  },
+  "list-restart": {
+    "fa": "list",
+    "confidence": "medium"
+  },
+  "list-start": {
+    "fa": "list",
+    "confidence": "medium"
+  },
+  "list-todo": {
+    "fa": "list-check",
+    "confidence": "medium"
+  },
+  "list-tree": {
+    "fa": "list-tree",
+    "confidence": "high"
+  },
+  "list-video": {
+    "fa": "list",
+    "confidence": "medium"
+  },
+  "list-x": {
+    "fa": "list",
+    "confidence": "medium"
+  },
+  "list": {
+    "fa": "list",
+    "confidence": "high"
+  },
+  "loader-circle": {
+    "fa": "spinner",
+    "confidence": "high"
+  },
+  "loader-pinwheel": {
+    "fa": "spinner",
+    "confidence": "medium"
+  },
+  "loader": {
+    "fa": "spinner",
+    "confidence": "high"
+  },
+  "locate-fixed": {
+    "fa": "location-crosshairs",
+    "confidence": "high"
+  },
+  "locate-off": {
+    "fa": "location-crosshairs-slash",
+    "confidence": "high"
+  },
+  "locate": {
+    "fa": "location-crosshairs",
+    "confidence": "high"
+  },
+  "lock-keyhole-open": {
+    "fa": "lock-open",
+    "confidence": "medium"
+  },
+  "lock-keyhole": {
+    "fa": "lock-keyhole",
+    "confidence": "high"
+  },
+  "lock-open": {
+    "fa": "lock-open",
+    "confidence": "high"
+  },
+  "lock": {
+    "fa": "lock",
+    "confidence": "high"
+  },
+  "log-in": {
+    "fa": "right-to-bracket",
+    "confidence": "high"
+  },
+  "log-out": {
+    "fa": "right-from-bracket",
+    "confidence": "high"
+  },
+  "logs": {
+    "fa": "file-lines",
+    "confidence": "medium"
+  },
+  "lollipop": {
+    "fa": "lollipop",
+    "confidence": "high"
+  },
+  "luggage": {
+    "fa": "suitcase",
+    "confidence": "high"
+  },
+  "magnet": {
+    "fa": "magnet",
+    "confidence": "high"
+  },
+  "mail-check": {
+    "fa": "envelope",
+    "confidence": "medium"
+  },
+  "mail-minus": {
+    "fa": "envelope",
+    "confidence": "medium"
+  },
+  "mail-open": {
+    "fa": "envelope-open",
+    "confidence": "high"
+  },
+  "mail-plus": {
+    "fa": "envelope",
+    "confidence": "medium"
+  },
+  "mail-question": {
+    "fa": "envelope",
+    "confidence": "medium"
+  },
+  "mail-search": {
+    "fa": "envelope",
+    "confidence": "medium"
+  },
+  "mail-warning": {
+    "fa": "envelope",
+    "confidence": "medium"
+  },
+  "mail-x": {
+    "fa": "envelope",
+    "confidence": "medium"
+  },
+  "mail": {
+    "fa": "envelope",
+    "confidence": "high"
+  },
+  "mailbox": {
+    "fa": "mailbox",
+    "confidence": "high"
+  },
+  "mails": {
+    "fa": "envelopes",
+    "confidence": "high"
+  },
+  "map-pin-check-inside": {
+    "fa": "map-pin",
+    "confidence": "medium"
+  },
+  "map-pin-check": {
+    "fa": "map-pin",
+    "confidence": "medium"
+  },
+  "map-pin-minus-inside": {
+    "fa": "map-pin",
+    "confidence": "medium"
+  },
+  "map-pin-minus": {
+    "fa": "map-pin",
+    "confidence": "medium"
+  },
+  "map-pin-off": {
+    "fa": "map-pin-slash",
+    "confidence": "high"
+  },
+  "map-pin-plus-inside": {
+    "fa": "map-pin",
+    "confidence": "medium"
+  },
+  "map-pin-plus": {
+    "fa": "map-pin",
+    "confidence": "medium"
+  },
+  "map-pin-x-inside": {
+    "fa": "map-pin",
+    "confidence": "medium"
+  },
+  "map-pin-x": {
+    "fa": "map-pin",
+    "confidence": "medium"
+  },
+  "map-pin": {
+    "fa": "map-pin",
+    "confidence": "high"
+  },
+  "map-pinned": {
+    "fa": "map-location-dot",
+    "confidence": "high"
+  },
+  "map": {
+    "fa": "map",
+    "confidence": "high"
+  },
+  "martini": {
+    "fa": "martini-glass",
+    "confidence": "high"
+  },
+  "maximize-2": {
+    "fa": "expand",
+    "confidence": "medium"
+  },
+  "maximize": {
+    "fa": "maximize",
+    "confidence": "high"
+  },
+  "medal": {
+    "fa": "medal",
+    "confidence": "high"
+  },
+  "megaphone-off": {
+    "fa": "megaphone",
+    "confidence": "medium"
+  },
+  "megaphone": {
+    "fa": "megaphone",
+    "confidence": "high"
+  },
+  "meh": {
+    "fa": "face-meh",
+    "confidence": "high"
+  },
+  "memory-stick": {
+    "fa": "memory",
+    "confidence": "medium"
+  },
+  "menu": {
+    "fa": "bars",
+    "confidence": "high"
+  },
+  "merge": {
+    "fa": "code-merge",
+    "confidence": "high"
+  },
+  "message-circle-code": {
+    "fa": "comment",
+    "confidence": "medium"
+  },
+  "message-circle-dashed": {
+    "fa": "comment-dots",
+    "confidence": "medium"
+  },
+  "message-circle-heart": {
+    "fa": "comment-heart",
+    "confidence": "high"
+  },
+  "message-circle-more": {
+    "fa": "comment-dots",
+    "confidence": "high"
+  },
+  "message-circle-off": {
+    "fa": "comment-slash",
+    "confidence": "high"
+  },
+  "message-circle-plus": {
+    "fa": "comment-plus",
+    "confidence": "high"
+  },
+  "message-circle-question": {
+    "fa": "comment-question",
+    "confidence": "high"
+  },
+  "message-circle-reply": {
+    "fa": "reply",
+    "confidence": "medium"
+  },
+  "message-circle-warning": {
+    "fa": "comment-exclamation",
+    "confidence": "high"
+  },
+  "message-circle-x": {
+    "fa": "comment-xmark",
+    "confidence": "high"
+  },
+  "message-circle": {
+    "fa": "comment",
+    "confidence": "high"
+  },
+  "message-square-code": {
+    "fa": "message-code",
+    "confidence": "medium"
+  },
+  "message-square-dashed": {
+    "fa": "message",
+    "confidence": "medium"
+  },
+  "message-square-diff": {
+    "fa": "message",
+    "confidence": "medium"
+  },
+  "message-square-dot": {
+    "fa": "message-dots",
+    "confidence": "high"
+  },
+  "message-square-heart": {
+    "fa": "message-heart",
+    "confidence": "high"
+  },
+  "message-square-more": {
+    "fa": "message-dots",
+    "confidence": "high"
+  },
+  "message-square-off": {
+    "fa": "message-slash",
+    "confidence": "high"
+  },
+  "message-square-plus": {
+    "fa": "message-plus",
+    "confidence": "high"
+  },
+  "message-square-quote": {
+    "fa": "message-quote",
+    "confidence": "high"
+  },
+  "message-square-reply": {
+    "fa": "reply",
+    "confidence": "medium"
+  },
+  "message-square-share": {
+    "fa": "share",
+    "confidence": "medium"
+  },
+  "message-square-text": {
+    "fa": "message-lines",
+    "confidence": "high"
+  },
+  "message-square-warning": {
+    "fa": "message-exclamation",
+    "confidence": "high"
+  },
+  "message-square-x": {
+    "fa": "message-xmark",
+    "confidence": "high"
+  },
+  "message-square": {
+    "fa": "message",
+    "confidence": "high"
+  },
+  "messages-square": {
+    "fa": "messages",
+    "confidence": "high"
+  },
+  "mic-off": {
+    "fa": "microphone-slash",
+    "confidence": "high"
+  },
+  "mic-vocal": {
+    "fa": "microphone-lines",
+    "confidence": "high"
+  },
+  "mic": {
+    "fa": "microphone",
+    "confidence": "high"
+  },
+  "microscope": {
+    "fa": "microscope",
+    "confidence": "high"
+  },
+  "microwave": {
+    "fa": "microwave",
+    "confidence": "high"
+  },
+  "milestone": {
+    "fa": "diamond-turn-right",
+    "confidence": "medium"
+  },
+  "milk-off": {
+    "fa": "glass",
+    "confidence": "low"
+  },
+  "milk": {
+    "fa": "glass",
+    "confidence": "low"
+  },
+  "minimize-2": {
+    "fa": "compress",
+    "confidence": "medium"
+  },
+  "minimize": {
+    "fa": "minimize",
+    "confidence": "high"
+  },
+  "minus": {
+    "fa": "minus",
+    "confidence": "high"
+  },
+  "monitor-check": {
+    "fa": "desktop",
+    "confidence": "medium"
+  },
+  "monitor-cog": {
+    "fa": "desktop",
+    "confidence": "medium"
+  },
+  "monitor-dot": {
+    "fa": "desktop",
+    "confidence": "medium"
+  },
+  "monitor-down": {
+    "fa": "desktop",
+    "confidence": "medium"
+  },
+  "monitor-off": {
+    "fa": "desktop",
+    "confidence": "medium"
+  },
+  "monitor-pause": {
+    "fa": "desktop",
+    "confidence": "medium"
+  },
+  "monitor-play": {
+    "fa": "desktop",
+    "confidence": "medium"
+  },
+  "monitor-smartphone": {
+    "fa": "mobile-screen",
+    "confidence": "medium"
+  },
+  "monitor-speaker": {
+    "fa": "desktop",
+    "confidence": "medium"
+  },
+  "monitor-stop": {
+    "fa": "desktop",
+    "confidence": "medium"
+  },
+  "monitor-up": {
+    "fa": "desktop",
+    "confidence": "medium"
+  },
+  "monitor-x": {
+    "fa": "desktop",
+    "confidence": "medium"
+  },
+  "monitor": {
+    "fa": "desktop",
+    "confidence": "high"
+  },
+  "moon-star": {
+    "fa": "moon-stars",
+    "confidence": "high"
+  },
+  "moon": {
+    "fa": "moon",
+    "confidence": "high"
+  },
+  "mountain-snow": {
+    "fa": "mountain-sun",
+    "confidence": "medium"
+  },
+  "mountain": {
+    "fa": "mountain",
+    "confidence": "high"
+  },
+  "mouse-off": {
+    "fa": "computer-mouse",
+    "confidence": "medium"
+  },
+  "mouse-pointer-2": {
+    "fa": "arrow-pointer",
+    "confidence": "medium"
+  },
+  "mouse-pointer-ban": {
+    "fa": "arrow-pointer",
+    "confidence": "medium"
+  },
+  "mouse-pointer-click": {
+    "fa": "arrow-pointer",
+    "confidence": "medium"
+  },
+  "mouse-pointer": {
+    "fa": "arrow-pointer",
+    "confidence": "high"
+  },
+  "mouse": {
+    "fa": "computer-mouse",
+    "confidence": "high"
+  },
+  "move-3d": {
+    "fa": "up-down-left-right",
+    "confidence": "medium"
+  },
+  "move-diagonal-2": {
+    "fa": "up-down-left-right",
+    "confidence": "medium"
+  },
+  "move-diagonal": {
+    "fa": "up-down-left-right",
+    "confidence": "medium"
+  },
+  "move-down-left": {
+    "fa": "arrow-down-left",
+    "confidence": "medium"
+  },
+  "move-down-right": {
+    "fa": "arrow-down-right",
+    "confidence": "medium"
+  },
+  "move-down": {
+    "fa": "arrow-down",
+    "confidence": "medium"
+  },
+  "move-horizontal": {
+    "fa": "arrows-left-right",
+    "confidence": "medium"
+  },
+  "move-left": {
+    "fa": "arrow-left",
+    "confidence": "medium"
+  },
+  "move-right": {
+    "fa": "arrow-right",
+    "confidence": "medium"
+  },
+  "move-up-left": {
+    "fa": "arrow-up-left",
+    "confidence": "medium"
+  },
+  "move-up-right": {
+    "fa": "arrow-up-right",
+    "confidence": "medium"
+  },
+  "move-up": {
+    "fa": "arrow-up",
+    "confidence": "medium"
+  },
+  "move-vertical": {
+    "fa": "arrows-up-down",
+    "confidence": "medium"
+  },
+  "move": {
+    "fa": "up-down-left-right",
+    "confidence": "high"
+  },
+  "music-2": {
+    "fa": "music",
+    "confidence": "medium"
+  },
+  "music-3": {
+    "fa": "music",
+    "confidence": "medium"
+  },
+  "music-4": {
+    "fa": "music",
+    "confidence": "medium"
+  },
+  "music": {
+    "fa": "music",
+    "confidence": "high"
+  },
+  "navigation-2-off": {
+    "fa": "location-arrow",
+    "confidence": "medium"
+  },
+  "navigation-2": {
+    "fa": "location-arrow",
+    "confidence": "medium"
+  },
+  "navigation-off": {
+    "fa": "location-arrow",
+    "confidence": "medium"
+  },
+  "navigation": {
+    "fa": "location-arrow",
+    "confidence": "high"
+  },
+  "network": {
+    "fa": "network-wired",
+    "confidence": "high"
+  },
+  "newspaper": {
+    "fa": "newspaper",
+    "confidence": "high"
+  },
+  "nfc": {
+    "fa": "nfc",
+    "confidence": "high"
+  },
+  "notebook-pen": {
+    "fa": "notebook",
+    "confidence": "medium"
+  },
+  "notebook-tabs": {
+    "fa": "notebook",
+    "confidence": "medium"
+  },
+  "notebook-text": {
+    "fa": "notebook",
+    "confidence": "medium"
+  },
+  "notebook": {
+    "fa": "notebook",
+    "confidence": "high"
+  },
+  "notepad-text-dashed": {
+    "fa": "note-sticky",
+    "confidence": "medium"
+  },
+  "notepad-text": {
+    "fa": "note-sticky",
+    "confidence": "medium"
+  },
+  "nut-off": {
+    "fa": "nut",
+    "confidence": "medium"
+  },
+  "nut": {
+    "fa": "nut",
+    "confidence": "high"
+  },
+  "octagon-alert": {
+    "fa": "octagon-exclamation",
+    "confidence": "high"
+  },
+  "octagon-pause": {
+    "fa": "octagon",
+    "confidence": "medium"
+  },
+  "octagon-x": {
+    "fa": "octagon-xmark",
+    "confidence": "high"
+  },
+  "octagon": {
+    "fa": "octagon",
+    "confidence": "high"
+  },
+  "option": {
+    "fa": "option",
+    "confidence": "high"
+  },
+  "orbit": {
+    "fa": "orbit",
+    "confidence": "high"
+  },
+  "origami": {
+    "fa": "paper-plane",
+    "confidence": "low"
+  },
+  "package-2": {
+    "fa": "box",
+    "confidence": "medium"
+  },
+  "package-check": {
+    "fa": "box-check",
+    "confidence": "high"
+  },
+  "package-minus": {
+    "fa": "box",
+    "confidence": "medium"
+  },
+  "package-open": {
+    "fa": "box-open",
+    "confidence": "high"
+  },
+  "package-plus": {
+    "fa": "box",
+    "confidence": "medium"
+  },
+  "package-search": {
+    "fa": "box",
+    "confidence": "medium"
+  },
+  "package-x": {
+    "fa": "box",
+    "confidence": "medium"
+  },
+  "package": {
+    "fa": "box",
+    "confidence": "high"
+  },
+  "paint-bucket": {
+    "fa": "fill",
+    "confidence": "high"
+  },
+  "paint-roller": {
+    "fa": "paint-roller",
+    "confidence": "high"
+  },
+  "paintbrush-vertical": {
+    "fa": "paintbrush",
+    "confidence": "medium"
+  },
+  "paintbrush": {
+    "fa": "paintbrush",
+    "confidence": "high"
+  },
+  "palette": {
+    "fa": "palette",
+    "confidence": "high"
+  },
+  "panel-bottom-close": {
+    "fa": "window-minimize",
+    "confidence": "medium"
+  },
+  "panel-bottom-dashed": {
+    "fa": "window",
+    "confidence": "medium"
+  },
+  "panel-bottom-open": {
+    "fa": "window",
+    "confidence": "medium"
+  },
+  "panel-bottom": {
+    "fa": "window",
+    "confidence": "medium"
+  },
+  "panel-left-close": {
+    "fa": "sidebar",
+    "confidence": "medium"
+  },
+  "panel-left-dashed": {
+    "fa": "sidebar",
+    "confidence": "medium"
+  },
+  "panel-left-open": {
+    "fa": "sidebar",
+    "confidence": "medium"
+  },
+  "panel-left": {
+    "fa": "sidebar",
+    "confidence": "medium"
+  },
+  "panel-right-close": {
+    "fa": "sidebar-flip",
+    "confidence": "medium"
+  },
+  "panel-right-dashed": {
+    "fa": "sidebar-flip",
+    "confidence": "medium"
+  },
+  "panel-right-open": {
+    "fa": "sidebar-flip",
+    "confidence": "medium"
+  },
+  "panel-right": {
+    "fa": "sidebar-flip",
+    "confidence": "medium"
+  },
+  "panel-top-close": {
+    "fa": "window",
+    "confidence": "medium"
+  },
+  "panel-top-dashed": {
+    "fa": "window",
+    "confidence": "medium"
+  },
+  "panel-top-open": {
+    "fa": "window",
+    "confidence": "medium"
+  },
+  "panel-top": {
+    "fa": "window",
+    "confidence": "medium"
+  },
+  "panels-left-bottom": {
+    "fa": "table-columns",
+    "confidence": "medium"
+  },
+  "panels-right-bottom": {
+    "fa": "table-columns",
+    "confidence": "medium"
+  },
+  "panels-top-left": {
+    "fa": "table-columns",
+    "confidence": "medium"
+  },
+  "paperclip": {
+    "fa": "paperclip",
+    "confidence": "high"
+  },
+  "parentheses": {
+    "fa": "brackets-round",
+    "confidence": "high"
+  },
+  "parking-meter": {
+    "fa": "meter",
+    "confidence": "low"
+  },
+  "party-popper": {
+    "fa": "party-horn",
+    "confidence": "medium"
+  },
+  "pause": {
+    "fa": "pause",
+    "confidence": "high"
+  },
+  "paw-print": {
+    "fa": "paw",
+    "confidence": "high"
+  },
+  "pc-case": {
+    "fa": "server",
+    "confidence": "low"
+  },
+  "pen-line": {
+    "fa": "pen-line",
+    "confidence": "high"
+  },
+  "pen-off": {
+    "fa": "pen-slash",
+    "confidence": "high"
+  },
+  "pen-tool": {
+    "fa": "pen-nib",
+    "confidence": "high"
+  },
+  "pen": {
+    "fa": "pen",
+    "confidence": "high"
+  },
+  "pencil-line": {
+    "fa": "pencil",
+    "confidence": "medium"
+  },
+  "pencil-off": {
+    "fa": "pencil-slash",
+    "confidence": "high"
+  },
+  "pencil-ruler": {
+    "fa": "pencil-ruler",
+    "confidence": "high"
+  },
+  "pencil": {
+    "fa": "pencil",
+    "confidence": "high"
+  },
+  "pentagon": {
+    "fa": "pentagon",
+    "confidence": "high"
+  },
+  "percent": {
+    "fa": "percent",
+    "confidence": "high"
+  },
+  "person-standing": {
+    "fa": "person",
+    "confidence": "high"
+  },
+  "philippine-peso": {
+    "fa": "peso-sign",
+    "confidence": "high"
+  },
+  "phone-call": {
+    "fa": "phone-volume",
+    "confidence": "high"
+  },
+  "phone-forwarded": {
+    "fa": "phone-arrow-right",
+    "confidence": "high"
+  },
+  "phone-incoming": {
+    "fa": "phone-arrow-down-left",
+    "confidence": "high"
+  },
+  "phone-missed": {
+    "fa": "phone-missed",
+    "confidence": "medium"
+  },
+  "phone-off": {
+    "fa": "phone-slash",
+    "confidence": "high"
+  },
+  "phone-outgoing": {
+    "fa": "phone-arrow-up-right",
+    "confidence": "high"
+  },
+  "phone": {
+    "fa": "phone",
+    "confidence": "high"
+  },
+  "pi": {
+    "fa": "pi",
+    "confidence": "high"
+  },
+  "piano": {
+    "fa": "piano-keyboard",
+    "confidence": "high"
+  },
+  "pickaxe": {
+    "fa": "pickaxe",
+    "confidence": "high"
+  },
+  "picture-in-picture-2": {
+    "fa": "window-restore",
+    "confidence": "medium"
+  },
+  "picture-in-picture": {
+    "fa": "window-restore",
+    "confidence": "medium"
+  },
+  "piggy-bank": {
+    "fa": "piggy-bank",
+    "confidence": "high"
+  },
+  "pilcrow-left": {
+    "fa": "paragraph-left",
+    "confidence": "medium"
+  },
+  "pilcrow-right": {
+    "fa": "paragraph",
+    "confidence": "medium"
+  },
+  "pilcrow": {
+    "fa": "paragraph",
+    "confidence": "high"
+  },
+  "pill-bottle": {
+    "fa": "prescription-bottle",
+    "confidence": "high"
+  },
+  "pill": {
+    "fa": "capsules",
+    "confidence": "medium"
+  },
+  "pin-off": {
+    "fa": "thumbtack",
+    "confidence": "medium"
+  },
+  "pin": {
+    "fa": "thumbtack",
+    "confidence": "high"
+  },
+  "pipette": {
+    "fa": "eye-dropper",
+    "confidence": "high"
+  },
+  "pizza": {
+    "fa": "pizza-slice",
+    "confidence": "high"
+  },
+  "plane-landing": {
+    "fa": "plane-arrival",
+    "confidence": "high"
+  },
+  "plane-takeoff": {
+    "fa": "plane-departure",
+    "confidence": "high"
+  },
+  "plane": {
+    "fa": "plane",
+    "confidence": "high"
+  },
+  "play": {
+    "fa": "play",
+    "confidence": "high"
+  },
+  "plug-2": {
+    "fa": "plug",
+    "confidence": "medium"
+  },
+  "plug-zap": {
+    "fa": "plug-circle-bolt",
+    "confidence": "high"
+  },
+  "plug": {
+    "fa": "plug",
+    "confidence": "high"
+  },
+  "plus": {
+    "fa": "plus",
+    "confidence": "high"
+  },
+  "pocket-knife": {
+    "fa": "knife",
+    "confidence": "medium"
+  },
+  "pocket": {
+    "fa": "pocket",
+    "confidence": "high"
+  },
+  "podcast": {
+    "fa": "podcast",
+    "confidence": "high"
+  },
+  "pointer-off": {
+    "fa": "arrow-pointer",
+    "confidence": "low"
+  },
+  "pointer": {
+    "fa": "arrow-pointer",
+    "confidence": "low"
+  },
+  "popcorn": {
+    "fa": "popcorn",
+    "confidence": "high"
+  },
+  "popsicle": {
+    "fa": "ice-cream",
+    "confidence": "low"
+  },
+  "pound-sterling": {
+    "fa": "sterling-sign",
+    "confidence": "high"
+  },
+  "power-off": {
+    "fa": "power-off",
+    "confidence": "high"
+  },
+  "power": {
+    "fa": "power-off",
+    "confidence": "medium"
+  },
+  "presentation": {
+    "fa": "presentation-screen",
+    "confidence": "high"
+  },
+  "printer-check": {
+    "fa": "print",
+    "confidence": "medium"
+  },
+  "printer": {
+    "fa": "print",
+    "confidence": "high"
+  },
+  "projector": {
+    "fa": "projector",
+    "confidence": "high"
+  },
+  "proportions": {
+    "fa": "expand",
+    "confidence": "medium"
+  },
+  "puzzle": {
+    "fa": "puzzle-piece",
+    "confidence": "high"
+  },
+  "pyramid": {
+    "fa": "triangle",
+    "confidence": "medium"
+  },
+  "qr-code": {
+    "fa": "qrcode",
+    "confidence": "high"
+  },
+  "quote": {
+    "fa": "quote-left",
+    "confidence": "high"
+  },
+  "rabbit": {
+    "fa": "rabbit",
+    "confidence": "high"
+  },
+  "radar": {
+    "fa": "radar",
+    "confidence": "high"
+  },
+  "radiation": {
+    "fa": "radiation",
+    "confidence": "high"
+  },
+  "radical": {
+    "fa": "square-root-variable",
+    "confidence": "high"
+  },
+  "radio-receiver": {
+    "fa": "radio",
+    "confidence": "medium"
+  },
+  "radio-tower": {
+    "fa": "tower-broadcast",
+    "confidence": "high"
+  },
+  "radio": {
+    "fa": "radio",
+    "confidence": "high"
+  },
+  "radius": {
+    "fa": "circle",
+    "confidence": "low"
+  },
+  "rail-symbol": {
+    "fa": "train-subway",
+    "confidence": "medium"
+  },
+  "rainbow": {
+    "fa": "rainbow",
+    "confidence": "high"
+  },
+  "rat": {
+    "fa": "rat",
+    "confidence": "high"
+  },
+  "ratio": {
+    "fa": "rectangle-wide",
+    "confidence": "low"
+  },
+  "receipt-cent": {
+    "fa": "receipt",
+    "confidence": "medium"
+  },
+  "receipt-euro": {
+    "fa": "receipt",
+    "confidence": "medium"
+  },
+  "receipt-indian-rupee": {
+    "fa": "receipt",
+    "confidence": "medium"
+  },
+  "receipt-japanese-yen": {
+    "fa": "receipt",
+    "confidence": "medium"
+  },
+  "receipt-pound-sterling": {
+    "fa": "receipt",
+    "confidence": "medium"
+  },
+  "receipt-russian-ruble": {
+    "fa": "receipt",
+    "confidence": "medium"
+  },
+  "receipt-swiss-franc": {
+    "fa": "receipt",
+    "confidence": "medium"
+  },
+  "receipt-text": {
+    "fa": "receipt",
+    "confidence": "medium"
+  },
+  "receipt": {
+    "fa": "receipt",
+    "confidence": "high"
+  },
+  "rectangle-ellipsis": {
+    "fa": "rectangle-wide",
+    "confidence": "low"
+  },
+  "rectangle-horizontal": {
+    "fa": "rectangle-wide",
+    "confidence": "high"
+  },
+  "rectangle-vertical": {
+    "fa": "rectangle-barcode",
+    "confidence": "low"
+  },
+  "recycle": {
+    "fa": "recycle",
+    "confidence": "high"
+  },
+  "redo-2": {
+    "fa": "rotate-right",
+    "confidence": "medium"
+  },
+  "redo-dot": {
+    "fa": "rotate-right",
+    "confidence": "medium"
+  },
+  "redo": {
+    "fa": "redo",
+    "confidence": "high"
+  },
+  "refresh-ccw-dot": {
+    "fa": "arrows-rotate",
+    "confidence": "medium"
+  },
+  "refresh-ccw": {
+    "fa": "arrows-rotate",
+    "confidence": "high"
+  },
+  "refresh-cw-off": {
+    "fa": "arrows-rotate",
+    "confidence": "medium"
+  },
+  "refresh-cw": {
+    "fa": "arrows-rotate",
+    "confidence": "high"
+  },
+  "refrigerator": {
+    "fa": "refrigerator",
+    "confidence": "high"
+  },
+  "regex": {
+    "fa": "code",
+    "confidence": "low"
+  },
+  "remove-formatting": {
+    "fa": "text-slash",
+    "confidence": "medium"
+  },
+  "repeat-1": {
+    "fa": "repeat-1",
+    "confidence": "high"
+  },
+  "repeat-2": {
+    "fa": "repeat",
+    "confidence": "medium"
+  },
+  "repeat": {
+    "fa": "repeat",
+    "confidence": "high"
+  },
+  "replace-all": {
+    "fa": "arrow-right-arrow-left",
+    "confidence": "medium"
+  },
+  "replace": {
+    "fa": "arrow-right-arrow-left",
+    "confidence": "medium"
+  },
+  "reply-all": {
+    "fa": "reply-all",
+    "confidence": "high"
+  },
+  "reply": {
+    "fa": "reply",
+    "confidence": "high"
+  },
+  "rewind": {
+    "fa": "backward-fast",
+    "confidence": "high"
+  },
+  "ribbon": {
+    "fa": "ribbon",
+    "confidence": "high"
+  },
+  "rocket": {
+    "fa": "rocket",
+    "confidence": "high"
+  },
+  "rocking-chair": {
+    "fa": "chair",
+    "confidence": "medium"
+  },
+  "roller-coaster": {
+    "fa": "roller-coaster",
+    "confidence": "high"
+  },
+  "rotate-3d": {
+    "fa": "rotate",
+    "confidence": "medium"
+  },
+  "rotate-ccw-square": {
+    "fa": "rotate-left",
+    "confidence": "medium"
+  },
+  "rotate-ccw": {
+    "fa": "rotate-left",
+    "confidence": "high"
+  },
+  "rotate-cw-square": {
+    "fa": "rotate-right",
+    "confidence": "medium"
+  },
+  "rotate-cw": {
+    "fa": "rotate-right",
+    "confidence": "high"
+  },
+  "route-off": {
+    "fa": "route",
+    "confidence": "medium"
+  },
+  "route": {
+    "fa": "route",
+    "confidence": "high"
+  },
+  "router": {
+    "fa": "router",
+    "confidence": "high"
+  },
+  "rows-2": {
+    "fa": "table-rows",
+    "confidence": "medium"
+  },
+  "rows-3": {
+    "fa": "table-rows",
+    "confidence": "medium"
+  },
+  "rows-4": {
+    "fa": "table-rows",
+    "confidence": "medium"
+  },
+  "rss": {
+    "fa": "rss",
+    "confidence": "high"
+  },
+  "ruler": {
+    "fa": "ruler",
+    "confidence": "high"
+  },
+  "russian-ruble": {
+    "fa": "ruble-sign",
+    "confidence": "high"
+  },
+  "sailboat": {
+    "fa": "sailboat",
+    "confidence": "high"
+  },
+  "salad": {
+    "fa": "salad",
+    "confidence": "high"
+  },
+  "sandwich": {
+    "fa": "burger",
+    "confidence": "medium"
+  },
+  "satellite-dish": {
+    "fa": "satellite-dish",
+    "confidence": "high"
+  },
+  "satellite": {
+    "fa": "satellite",
+    "confidence": "high"
+  },
+  "save-all": {
+    "fa": "floppy-disks",
+    "confidence": "high"
+  },
+  "save-off": {
+    "fa": "floppy-disk",
+    "confidence": "medium"
+  },
+  "save": {
+    "fa": "floppy-disk",
+    "confidence": "high"
+  },
+  "scale-3d": {
+    "fa": "scale-balanced",
+    "confidence": "medium"
+  },
+  "scale": {
+    "fa": "scale-balanced",
+    "confidence": "high"
+  },
+  "scaling": {
+    "fa": "up-right-and-down-left-from-center",
+    "confidence": "medium"
+  },
+  "scan-barcode": {
+    "fa": "barcode-scan",
+    "confidence": "medium"
+  },
+  "scan-eye": {
+    "fa": "eye",
+    "confidence": "medium"
+  },
+  "scan-face": {
+    "fa": "face-viewfinder",
+    "confidence": "high"
+  },
+  "scan-line": {
+    "fa": "barcode-scan",
+    "confidence": "medium"
+  },
+  "scan-qr-code": {
+    "fa": "qrcode",
+    "confidence": "medium"
+  },
+  "scan-search": {
+    "fa": "magnifying-glass",
+    "confidence": "medium"
+  },
+  "scan-text": {
+    "fa": "scanner-image",
+    "confidence": "medium"
+  },
+  "scan": {
+    "fa": "crop-simple",
+    "confidence": "medium"
+  },
+  "school": {
+    "fa": "school",
+    "confidence": "high"
+  },
+  "scissors-line-dashed": {
+    "fa": "scissors",
+    "confidence": "medium"
+  },
+  "scissors": {
+    "fa": "scissors",
+    "confidence": "high"
+  },
+  "screen-share-off": {
+    "fa": "display-slash",
+    "confidence": "medium"
+  },
+  "screen-share": {
+    "fa": "display",
+    "confidence": "medium"
+  },
+  "scroll-text": {
+    "fa": "scroll",
+    "confidence": "medium"
+  },
+  "scroll": {
+    "fa": "scroll",
+    "confidence": "high"
+  },
+  "search-check": {
+    "fa": "magnifying-glass-check",
+    "confidence": "high"
+  },
+  "search-code": {
+    "fa": "magnifying-glass-code",
+    "confidence": "high"
+  },
+  "search-slash": {
+    "fa": "magnifying-glass",
+    "confidence": "medium"
+  },
+  "search-x": {
+    "fa": "magnifying-glass",
+    "confidence": "medium"
+  },
+  "search": {
+    "fa": "magnifying-glass",
+    "confidence": "high"
+  },
+  "section": {
+    "fa": "section",
+    "confidence": "high"
+  },
+  "send-horizontal": {
+    "fa": "paper-plane",
+    "confidence": "medium"
+  },
+  "send-to-back": {
+    "fa": "layer-group",
+    "confidence": "medium"
+  },
+  "send": {
+    "fa": "paper-plane",
+    "confidence": "high"
+  },
+  "separator-horizontal": {
+    "fa": "grip-lines",
+    "confidence": "medium"
+  },
+  "separator-vertical": {
+    "fa": "grip-lines-vertical",
+    "confidence": "medium"
+  },
+  "server-cog": {
+    "fa": "server",
+    "confidence": "medium"
+  },
+  "server-crash": {
+    "fa": "server",
+    "confidence": "medium"
+  },
+  "server-off": {
+    "fa": "server",
+    "confidence": "medium"
+  },
+  "server": {
+    "fa": "server",
+    "confidence": "high"
+  },
+  "settings-2": {
+    "fa": "sliders",
+    "confidence": "medium"
+  },
+  "settings": {
+    "fa": "gear",
+    "confidence": "high"
+  },
+  "shapes": {
+    "fa": "shapes",
+    "confidence": "high"
+  },
+  "share-2": {
+    "fa": "share-nodes",
+    "confidence": "high"
+  },
+  "share": {
+    "fa": "share",
+    "confidence": "high"
+  },
+  "shdcn/sudio": {
+    "fa": "puzzle-piece",
+    "confidence": "low"
+  },
+  "sheet": {
+    "fa": "table",
+    "confidence": "high"
+  },
+  "shell": {
+    "fa": "shrimp",
+    "confidence": "low"
+  },
+  "shield-alert": {
+    "fa": "shield-exclamation",
+    "confidence": "high"
+  },
+  "shield-ban": {
+    "fa": "shield",
+    "confidence": "medium"
+  },
+  "shield-check": {
+    "fa": "shield-check",
+    "confidence": "high"
+  },
+  "shield-ellipsis": {
+    "fa": "shield",
+    "confidence": "medium"
+  },
+  "shield-half": {
+    "fa": "shield-halved",
+    "confidence": "high"
+  },
+  "shield-minus": {
+    "fa": "shield-minus",
+    "confidence": "high"
+  },
+  "shield-off": {
+    "fa": "shield",
+    "confidence": "medium"
+  },
+  "shield-plus": {
+    "fa": "shield-plus",
+    "confidence": "high"
+  },
+  "shield-question": {
+    "fa": "shield-question",
+    "confidence": "high"
+  },
+  "shield-x": {
+    "fa": "shield-xmark",
+    "confidence": "high"
+  },
+  "shield": {
+    "fa": "shield",
+    "confidence": "high"
+  },
+  "ship-wheel": {
+    "fa": "ship",
+    "confidence": "medium"
+  },
+  "ship": {
+    "fa": "ship",
+    "confidence": "high"
+  },
+  "shirt": {
+    "fa": "shirt",
+    "confidence": "high"
+  },
+  "shopping-bag": {
+    "fa": "bag-shopping",
+    "confidence": "high"
+  },
+  "shopping-basket": {
+    "fa": "basket-shopping",
+    "confidence": "high"
+  },
+  "shopping-cart": {
+    "fa": "cart-shopping",
+    "confidence": "high"
+  },
+  "shovel": {
+    "fa": "shovel",
+    "confidence": "high"
+  },
+  "shower-head": {
+    "fa": "shower",
+    "confidence": "high"
+  },
+  "shrink": {
+    "fa": "compress",
+    "confidence": "medium"
+  },
+  "shrub": {
+    "fa": "tree",
+    "confidence": "medium"
+  },
+  "shuffle": {
+    "fa": "shuffle",
+    "confidence": "high"
+  },
+  "sigma": {
+    "fa": "sigma",
+    "confidence": "high"
+  },
+  "signal-high": {
+    "fa": "signal",
+    "confidence": "medium"
+  },
+  "signal-low": {
+    "fa": "signal-weak",
+    "confidence": "medium"
+  },
+  "signal-medium": {
+    "fa": "signal-fair",
+    "confidence": "medium"
+  },
+  "signal-zero": {
+    "fa": "signal-slash",
+    "confidence": "medium"
+  },
+  "signal": {
+    "fa": "signal",
+    "confidence": "high"
+  },
+  "signature": {
+    "fa": "signature",
+    "confidence": "high"
+  },
+  "signpost-big": {
+    "fa": "signs-post",
+    "confidence": "high"
+  },
+  "signpost": {
+    "fa": "signs-post",
+    "confidence": "high"
+  },
+  "siren": {
+    "fa": "siren",
+    "confidence": "high"
+  },
+  "skip-back": {
+    "fa": "backward-step",
+    "confidence": "high"
+  },
+  "skip-forward": {
+    "fa": "forward-step",
+    "confidence": "high"
+  },
+  "skull": {
+    "fa": "skull",
+    "confidence": "high"
+  },
+  "slack": {
+    "fa": "slack",
+    "confidence": "high"
+  },
+  "slash": {
+    "fa": "slash-forward",
+    "confidence": "high"
+  },
+  "slashes": {
+    "fa": "slashes",
+    "confidence": "high"
+  },
+  "slice": {
+    "fa": "scalpel",
+    "confidence": "low"
+  },
+  "sliders-horizontal": {
+    "fa": "sliders",
+    "confidence": "high"
+  },
+  "sliders-vertical": {
+    "fa": "sliders-up",
+    "confidence": "high"
+  },
+  "smartphone-charging": {
+    "fa": "mobile-screen",
+    "confidence": "medium"
+  },
+  "smartphone-nfc": {
+    "fa": "mobile-screen",
+    "confidence": "medium"
+  },
+  "smartphone": {
+    "fa": "mobile-screen",
+    "confidence": "high"
+  },
+  "smile-plus": {
+    "fa": "face-smile-plus",
+    "confidence": "high"
+  },
+  "smile": {
+    "fa": "face-smile",
+    "confidence": "high"
+  },
+  "snail": {
+    "fa": "snail",
+    "confidence": "high"
+  },
+  "snowflake": {
+    "fa": "snowflake",
+    "confidence": "high"
+  },
+  "sofa": {
+    "fa": "couch",
+    "confidence": "high"
+  },
+  "soup": {
+    "fa": "bowl-hot",
+    "confidence": "high"
+  },
+  "space": {
+    "fa": "space",
+    "confidence": "high"
+  },
+  "spade": {
+    "fa": "spade",
+    "confidence": "high"
+  },
+  "sparkle": {
+    "fa": "sparkle",
+    "confidence": "high"
+  },
+  "sparkles": {
+    "fa": "sparkles",
+    "confidence": "high"
+  },
+  "speaker": {
+    "fa": "speaker",
+    "confidence": "high"
+  },
+  "speech": {
+    "fa": "comment",
+    "confidence": "low"
+  },
+  "spell-check-2": {
+    "fa": "spell-check",
+    "confidence": "medium"
+  },
+  "spell-check": {
+    "fa": "spell-check",
+    "confidence": "high"
+  },
+  "spline": {
+    "fa": "bezier-curve",
+    "confidence": "medium"
+  },
+  "split": {
+    "fa": "code-fork",
+    "confidence": "medium"
+  },
+  "spray-can": {
+    "fa": "spray-can",
+    "confidence": "high"
+  },
+  "sprout": {
+    "fa": "seedling",
+    "confidence": "high"
+  },
+  "square-activity": {
+    "fa": "square",
+    "confidence": "low"
+  },
+  "square-arrow-down-left": {
+    "fa": "square-arrow-down-left",
+    "confidence": "high"
+  },
+  "square-arrow-down-right": {
+    "fa": "square-arrow-down-right",
+    "confidence": "high"
+  },
+  "square-arrow-down": {
+    "fa": "square-arrow-down",
+    "confidence": "high"
+  },
+  "square-arrow-left": {
+    "fa": "square-arrow-left",
+    "confidence": "high"
+  },
+  "square-arrow-out-down-left": {
+    "fa": "arrow-up-right-from-square",
+    "confidence": "medium"
+  },
+  "square-arrow-out-down-right": {
+    "fa": "arrow-up-right-from-square",
+    "confidence": "medium"
+  },
+  "square-arrow-out-up-left": {
+    "fa": "arrow-up-right-from-square",
+    "confidence": "medium"
+  },
+  "square-arrow-out-up-right": {
+    "fa": "square-arrow-up-right",
+    "confidence": "high"
+  },
+  "square-arrow-right": {
+    "fa": "square-arrow-right",
+    "confidence": "high"
+  },
+  "square-arrow-up-left": {
+    "fa": "square-arrow-up-left",
+    "confidence": "high"
+  },
+  "square-arrow-up-right": {
+    "fa": "square-arrow-up-right",
+    "confidence": "high"
+  },
+  "square-arrow-up": {
+    "fa": "square-arrow-up",
+    "confidence": "high"
+  },
+  "square-asterisk": {
+    "fa": "asterisk",
+    "confidence": "low"
+  },
+  "square-bottom-dashed-scissors": {
+    "fa": "scissors",
+    "confidence": "low"
+  },
+  "square-chart-gantt": {
+    "fa": "chart-gantt",
+    "confidence": "high"
+  },
+  "square-check-big": {
+    "fa": "square-check",
+    "confidence": "medium"
+  },
+  "square-check": {
+    "fa": "square-check",
+    "confidence": "high"
+  },
+  "square-chevron-down": {
+    "fa": "square-chevron-down",
+    "confidence": "high"
+  },
+  "square-chevron-left": {
+    "fa": "square-chevron-left",
+    "confidence": "high"
+  },
+  "square-chevron-right": {
+    "fa": "square-chevron-right",
+    "confidence": "high"
+  },
+  "square-chevron-up": {
+    "fa": "square-chevron-up",
+    "confidence": "high"
+  },
+  "square-code": {
+    "fa": "square-code",
+    "confidence": "high"
+  },
+  "square-dashed-bottom-code": {
+    "fa": "square-dashed",
+    "confidence": "medium"
+  },
+  "square-dashed-bottom": {
+    "fa": "square-dashed",
+    "confidence": "medium"
+  },
+  "square-dashed-kanban": {
+    "fa": "square-dashed",
+    "confidence": "medium"
+  },
+  "square-dashed-mouse-pointer": {
+    "fa": "square-dashed",
+    "confidence": "medium"
+  },
+  "square-divide": {
+    "fa": "square",
+    "confidence": "low"
+  },
+  "square-dot": {
+    "fa": "square",
+    "confidence": "low"
+  },
+  "square-equal": {
+    "fa": "square",
+    "confidence": "low"
+  },
+  "square-function": {
+    "fa": "square-root-variable",
+    "confidence": "low"
+  },
+  "square-kanban": {
+    "fa": "columns-3",
+    "confidence": "low"
+  },
+  "square-library": {
+    "fa": "book",
+    "confidence": "low"
+  },
+  "square-m": {
+    "fa": "square",
+    "confidence": "low"
+  },
+  "square-menu": {
+    "fa": "square-list",
+    "confidence": "high"
+  },
+  "square-minus": {
+    "fa": "square-minus",
+    "confidence": "high"
+  },
+  "square-mouse-pointer": {
+    "fa": "arrow-pointer",
+    "confidence": "low"
+  },
+  "square-parking-off": {
+    "fa": "square-parking",
+    "confidence": "medium"
+  },
+  "square-parking": {
+    "fa": "square-parking",
+    "confidence": "high"
+  },
+  "square-pen": {
+    "fa": "square-pen",
+    "confidence": "high"
+  },
+  "square-percent": {
+    "fa": "percent",
+    "confidence": "low"
+  },
+  "square-pi": {
+    "fa": "pi",
+    "confidence": "low"
+  },
+  "square-pilcrow": {
+    "fa": "paragraph",
+    "confidence": "low"
+  },
+  "square-play": {
+    "fa": "square-play",
+    "confidence": "high"
+  },
+  "square-plus": {
+    "fa": "square-plus",
+    "confidence": "high"
+  },
+  "square-power": {
+    "fa": "power-off",
+    "confidence": "low"
+  },
+  "square-radical": {
+    "fa": "square-root-variable",
+    "confidence": "low"
+  },
+  "square-scissors": {
+    "fa": "scissors",
+    "confidence": "low"
+  },
+  "square-sigma": {
+    "fa": "sigma",
+    "confidence": "low"
+  },
+  "square-slash": {
+    "fa": "square-slash-forward",
+    "confidence": "medium"
+  },
+  "square-split-horizontal": {
+    "fa": "table-columns",
+    "confidence": "low"
+  },
+  "square-split-vertical": {
+    "fa": "table-rows",
+    "confidence": "low"
+  },
+  "square-square": {
+    "fa": "clone",
+    "confidence": "low"
+  },
+  "square-stack": {
+    "fa": "clone",
+    "confidence": "low"
+  },
+  "square-terminal": {
+    "fa": "square-terminal",
+    "confidence": "high"
+  },
+  "square-user-round": {
+    "fa": "square-user",
+    "confidence": "medium"
+  },
+  "square-user": {
+    "fa": "square-user",
+    "confidence": "high"
+  },
+  "square-x": {
+    "fa": "square-xmark",
+    "confidence": "high"
+  },
+  "square": {
+    "fa": "square",
+    "confidence": "high"
+  },
+  "squircle": {
+    "fa": "square",
+    "confidence": "low"
+  },
+  "squirrel": {
+    "fa": "squirrel",
+    "confidence": "high"
+  },
+  "stamp": {
+    "fa": "stamp",
+    "confidence": "high"
+  },
+  "star-half": {
+    "fa": "star-half",
+    "confidence": "high"
+  },
+  "star-off": {
+    "fa": "star",
+    "confidence": "medium"
+  },
+  "star": {
+    "fa": "star",
+    "confidence": "high"
+  },
+  "step-back": {
+    "fa": "backward-step",
+    "confidence": "high"
+  },
+  "step-forward": {
+    "fa": "forward-step",
+    "confidence": "high"
+  },
+  "stethoscope": {
+    "fa": "stethoscope",
+    "confidence": "high"
+  },
+  "sticker": {
+    "fa": "note-sticky",
+    "confidence": "medium"
+  },
+  "sticky-note": {
+    "fa": "note-sticky",
+    "confidence": "high"
+  },
+  "store": {
+    "fa": "store",
+    "confidence": "high"
+  },
+  "stretch-horizontal": {
+    "fa": "arrows-left-right",
+    "confidence": "medium"
+  },
+  "stretch-vertical": {
+    "fa": "arrows-up-down",
+    "confidence": "medium"
+  },
+  "strikethrough": {
+    "fa": "strikethrough",
+    "confidence": "high"
+  },
+  "subscript": {
+    "fa": "subscript",
+    "confidence": "high"
+  },
+  "sun-dim": {
+    "fa": "sun",
+    "confidence": "medium"
+  },
+  "sun-medium": {
+    "fa": "sun",
+    "confidence": "medium"
+  },
+  "sun-moon": {
+    "fa": "sun",
+    "confidence": "medium"
+  },
+  "sun-snow": {
+    "fa": "temperature-snow",
+    "confidence": "medium"
+  },
+  "sun": {
+    "fa": "sun",
+    "confidence": "high"
+  },
+  "sunrise": {
+    "fa": "sunrise",
+    "confidence": "high"
+  },
+  "sunset": {
+    "fa": "sunset",
+    "confidence": "high"
+  },
+  "superscript": {
+    "fa": "superscript",
+    "confidence": "high"
+  },
+  "swatch-book": {
+    "fa": "swatchbook",
+    "confidence": "high"
+  },
+  "swiss-franc": {
+    "fa": "franc-sign",
+    "confidence": "high"
+  },
+  "switch-camera": {
+    "fa": "camera-rotate",
+    "confidence": "high"
+  },
+  "sword": {
+    "fa": "sword",
+    "confidence": "high"
+  },
+  "swords": {
+    "fa": "swords",
+    "confidence": "high"
+  },
+  "syringe": {
+    "fa": "syringe",
+    "confidence": "high"
+  },
+  "table-2": {
+    "fa": "table",
+    "confidence": "medium"
+  },
+  "table-cells-merge": {
+    "fa": "table-cells-merge",
+    "confidence": "high"
+  },
+  "table-cells-split": {
+    "fa": "table-cells-split",
+    "confidence": "high"
+  },
+  "table-columns-split": {
+    "fa": "table-columns",
+    "confidence": "medium"
+  },
+  "table-properties": {
+    "fa": "table-list",
+    "confidence": "high"
+  },
+  "table-rows-split": {
+    "fa": "table-rows",
+    "confidence": "medium"
+  },
+  "table": {
+    "fa": "table",
+    "confidence": "high"
+  },
+  "tablet-smartphone": {
+    "fa": "tablet",
+    "confidence": "medium"
+  },
+  "tablet": {
+    "fa": "tablet",
+    "confidence": "high"
+  },
+  "tablets": {
+    "fa": "tablets",
+    "confidence": "high"
+  },
+  "tag": {
+    "fa": "tag",
+    "confidence": "high"
+  },
+  "tags": {
+    "fa": "tags",
+    "confidence": "high"
+  },
+  "tally-1": {
+    "fa": "tally-1",
+    "confidence": "high"
+  },
+  "tally-2": {
+    "fa": "tally-2",
+    "confidence": "high"
+  },
+  "tally-3": {
+    "fa": "tally-3",
+    "confidence": "high"
+  },
+  "tally-4": {
+    "fa": "tally-4",
+    "confidence": "high"
+  },
+  "tally-5": {
+    "fa": "tally",
+    "confidence": "high"
+  },
+  "tangent": {
+    "fa": "bezier-curve",
+    "confidence": "low"
+  },
+  "target": {
+    "fa": "bullseye",
+    "confidence": "high"
+  },
+  "telescope": {
+    "fa": "telescope",
+    "confidence": "high"
+  },
+  "tent-tree": {
+    "fa": "tent",
+    "confidence": "medium"
+  },
+  "tent": {
+    "fa": "tent",
+    "confidence": "high"
+  },
+  "terminal": {
+    "fa": "terminal",
+    "confidence": "high"
+  },
+  "test-tube-diagonal": {
+    "fa": "vial",
+    "confidence": "medium"
+  },
+  "test-tube": {
+    "fa": "vial",
+    "confidence": "high"
+  },
+  "test-tubes": {
+    "fa": "vials",
+    "confidence": "high"
+  },
+  "text-cursor-input": {
+    "fa": "i-cursor",
+    "confidence": "medium"
+  },
+  "text-cursor": {
+    "fa": "i-cursor",
+    "confidence": "medium"
+  },
+  "text-quote": {
+    "fa": "quote-left",
+    "confidence": "medium"
+  },
+  "text-search": {
+    "fa": "magnifying-glass",
+    "confidence": "medium"
+  },
+  "text-select": {
+    "fa": "text",
+    "confidence": "low"
+  },
+  "text": {
+    "fa": "text",
+    "confidence": "high"
+  },
+  "theater": {
+    "fa": "masks-theater",
+    "confidence": "high"
+  },
+  "thermometer-snowflake": {
+    "fa": "temperature-low",
+    "confidence": "medium"
+  },
+  "thermometer-sun": {
+    "fa": "temperature-high",
+    "confidence": "medium"
+  },
+  "thermometer": {
+    "fa": "thermometer",
+    "confidence": "high"
+  },
+  "thumbs-down": {
+    "fa": "thumbs-down",
+    "confidence": "high"
+  },
+  "thumbs-up": {
+    "fa": "thumbs-up",
+    "confidence": "high"
+  },
+  "ticket-check": {
+    "fa": "ticket",
+    "confidence": "medium"
+  },
+  "ticket-minus": {
+    "fa": "ticket",
+    "confidence": "medium"
+  },
+  "ticket-percent": {
+    "fa": "ticket",
+    "confidence": "medium"
+  },
+  "ticket-plus": {
+    "fa": "ticket",
+    "confidence": "medium"
+  },
+  "ticket-slash": {
+    "fa": "ticket",
+    "confidence": "medium"
+  },
+  "ticket-x": {
+    "fa": "ticket",
+    "confidence": "medium"
+  },
+  "ticket": {
+    "fa": "ticket",
+    "confidence": "high"
+  },
+  "timer-off": {
+    "fa": "stopwatch",
+    "confidence": "medium"
+  },
+  "timer-reset": {
+    "fa": "stopwatch",
+    "confidence": "medium"
+  },
+  "timer": {
+    "fa": "stopwatch",
+    "confidence": "high"
+  },
+  "toggle-left": {
+    "fa": "toggle-off",
+    "confidence": "high"
+  },
+  "toggle-right": {
+    "fa": "toggle-on",
+    "confidence": "high"
+  },
+  "tornado": {
+    "fa": "tornado",
+    "confidence": "high"
+  },
+  "torus": {
+    "fa": "ring",
+    "confidence": "low"
+  },
+  "touchpad-off": {
+    "fa": "hand-pointer",
+    "confidence": "low"
+  },
+  "touchpad": {
+    "fa": "hand-pointer",
+    "confidence": "low"
+  },
+  "tower-control": {
+    "fa": "tower-control",
+    "confidence": "high"
+  },
+  "toy-brick": {
+    "fa": "cube",
+    "confidence": "low"
+  },
+  "tractor": {
+    "fa": "tractor",
+    "confidence": "high"
+  },
+  "traffic-cone": {
+    "fa": "cone-striped",
+    "confidence": "medium"
+  },
+  "train-front-tunnel": {
+    "fa": "train",
+    "confidence": "medium"
+  },
+  "train-front": {
+    "fa": "train",
+    "confidence": "high"
+  },
+  "train-track": {
+    "fa": "railroad",
+    "confidence": "medium"
+  },
+  "tram-front": {
+    "fa": "train-tram",
+    "confidence": "high"
+  },
+  "trash-2": {
+    "fa": "trash-can",
+    "confidence": "high"
+  },
+  "trash": {
+    "fa": "trash",
+    "confidence": "high"
+  },
+  "tree-deciduous": {
+    "fa": "tree",
+    "confidence": "high"
+  },
+  "tree-palm": {
+    "fa": "tree-palm",
+    "confidence": "high"
+  },
+  "tree-pine": {
+    "fa": "tree-christmas",
+    "confidence": "high"
+  },
+  "trees": {
+    "fa": "trees",
+    "confidence": "high"
+  },
+  "trello": {
+    "fa": "trello",
+    "confidence": "high"
+  },
+  "trending-down": {
+    "fa": "arrow-trend-down",
+    "confidence": "high"
+  },
+  "trending-up": {
+    "fa": "arrow-trend-up",
+    "confidence": "high"
+  },
+  "triangle-alert": {
+    "fa": "triangle-exclamation",
+    "confidence": "high"
+  },
+  "triangle-right": {
+    "fa": "caret-right",
+    "confidence": "medium"
+  },
+  "triangle": {
+    "fa": "triangle",
+    "confidence": "high"
+  },
+  "trophy": {
+    "fa": "trophy",
+    "confidence": "high"
+  },
+  "truck": {
+    "fa": "truck",
+    "confidence": "high"
+  },
+  "turtle": {
+    "fa": "turtle",
+    "confidence": "high"
+  },
+  "tv-minimal-play": {
+    "fa": "tv",
+    "confidence": "medium"
+  },
+  "tv-minimal": {
+    "fa": "tv",
+    "confidence": "medium"
+  },
+  "tv": {
+    "fa": "tv",
+    "confidence": "high"
+  },
+  "twitch": {
+    "fa": "twitch",
+    "confidence": "high"
+  },
+  "twitter": {
+    "fa": "x-twitter",
+    "confidence": "high"
+  },
+  "type-outline": {
+    "fa": "font",
+    "confidence": "medium"
+  },
+  "type": {
+    "fa": "font",
+    "confidence": "high"
+  },
+  "umbrella-off": {
+    "fa": "umbrella",
+    "confidence": "medium"
+  },
+  "umbrella": {
+    "fa": "umbrella",
+    "confidence": "high"
+  },
+  "underline": {
+    "fa": "underline",
+    "confidence": "high"
+  },
+  "undo-2": {
+    "fa": "rotate-left",
+    "confidence": "medium"
+  },
+  "undo-dot": {
+    "fa": "rotate-left",
+    "confidence": "medium"
+  },
+  "undo": {
+    "fa": "undo",
+    "confidence": "high"
+  },
+  "unfold-horizontal": {
+    "fa": "expand",
+    "confidence": "medium"
+  },
+  "unfold-vertical": {
+    "fa": "expand",
+    "confidence": "medium"
+  },
+  "ungroup": {
+    "fa": "object-ungroup",
+    "confidence": "high"
+  },
+  "university": {
+    "fa": "building-columns",
+    "confidence": "high"
+  },
+  "unlink-2": {
+    "fa": "link-slash",
+    "confidence": "medium"
+  },
+  "unlink": {
+    "fa": "link-slash",
+    "confidence": "high"
+  },
+  "unplug": {
+    "fa": "plug-circle-xmark",
+    "confidence": "high"
+  },
+  "upload": {
+    "fa": "upload",
+    "confidence": "high"
+  },
+  "usb": {
+    "fa": "usb",
+    "confidence": "high"
+  },
+  "user-check": {
+    "fa": "user-check",
+    "confidence": "high"
+  },
+  "user-cog": {
+    "fa": "user-gear",
+    "confidence": "high"
+  },
+  "user-minus": {
+    "fa": "user-minus",
+    "confidence": "high"
+  },
+  "user-pen": {
+    "fa": "user-pen",
+    "confidence": "high"
+  },
+  "user-plus": {
+    "fa": "user-plus",
+    "confidence": "high"
+  },
+  "user-round-check": {
+    "fa": "user-check",
+    "confidence": "medium"
+  },
+  "user-round-cog": {
+    "fa": "user-gear",
+    "confidence": "medium"
+  },
+  "user-round-minus": {
+    "fa": "user-minus",
+    "confidence": "medium"
+  },
+  "user-round-pen": {
+    "fa": "user-pen",
+    "confidence": "medium"
+  },
+  "user-round-plus": {
+    "fa": "user-plus",
+    "confidence": "medium"
+  },
+  "user-round-search": {
+    "fa": "user-magnifying-glass",
+    "confidence": "medium"
+  },
+  "user-round-x": {
+    "fa": "user-xmark",
+    "confidence": "medium"
+  },
+  "user-round": {
+    "fa": "user",
+    "confidence": "medium"
+  },
+  "user-search": {
+    "fa": "user-magnifying-glass",
+    "confidence": "high"
+  },
+  "user-x": {
+    "fa": "user-xmark",
+    "confidence": "high"
+  },
+  "user": {
+    "fa": "user",
+    "confidence": "high"
+  },
+  "users-round": {
+    "fa": "users",
+    "confidence": "medium"
+  },
+  "users": {
+    "fa": "users",
+    "confidence": "high"
+  },
+  "utensils-crossed": {
+    "fa": "utensils",
+    "confidence": "medium"
+  },
+  "utensils": {
+    "fa": "utensils",
+    "confidence": "high"
+  },
+  "utility-pole": {
+    "fa": "utility-pole",
+    "confidence": "high"
+  },
+  "variable": {
+    "fa": "variable",
+    "confidence": "high"
+  },
+  "vault": {
+    "fa": "vault",
+    "confidence": "high"
+  },
+  "vegan": {
+    "fa": "leaf",
+    "confidence": "medium"
+  },
+  "venetian-mask": {
+    "fa": "mask",
+    "confidence": "high"
+  },
+  "vibrate-off": {
+    "fa": "mobile",
+    "confidence": "medium"
+  },
+  "vibrate": {
+    "fa": "mobile",
+    "confidence": "medium"
+  },
+  "video-off": {
+    "fa": "video-slash",
+    "confidence": "high"
+  },
+  "video": {
+    "fa": "video",
+    "confidence": "high"
+  },
+  "videotape": {
+    "fa": "cassette-vhs",
+    "confidence": "high"
+  },
+  "view": {
+    "fa": "eye",
+    "confidence": "medium"
+  },
+  "voicemail": {
+    "fa": "voicemail",
+    "confidence": "high"
+  },
+  "volume-1": {
+    "fa": "volume-low",
+    "confidence": "high"
+  },
+  "volume-2": {
+    "fa": "volume-high",
+    "confidence": "high"
+  },
+  "volume-x": {
+    "fa": "volume-xmark",
+    "confidence": "high"
+  },
+  "volume": {
+    "fa": "volume-off",
+    "confidence": "high"
+  },
+  "vote": {
+    "fa": "check-to-slot",
+    "confidence": "medium"
+  },
+  "wallet-cards": {
+    "fa": "wallet",
+    "confidence": "medium"
+  },
+  "wallet-minimal": {
+    "fa": "wallet",
+    "confidence": "medium"
+  },
+  "wallet": {
+    "fa": "wallet",
+    "confidence": "high"
+  },
+  "wallpaper": {
+    "fa": "image",
+    "confidence": "medium"
+  },
+  "wand-sparkles": {
+    "fa": "wand-magic-sparkles",
+    "confidence": "high"
+  },
+  "wand": {
+    "fa": "wand-magic",
+    "confidence": "high"
+  },
+  "warehouse": {
+    "fa": "warehouse",
+    "confidence": "high"
+  },
+  "washing-machine": {
+    "fa": "washing-machine",
+    "confidence": "high"
+  },
+  "watch": {
+    "fa": "watch",
+    "confidence": "high"
+  },
+  "waves": {
+    "fa": "water",
+    "confidence": "medium"
+  },
+  "waypoints": {
+    "fa": "diagram-project",
+    "confidence": "medium"
+  },
+  "webcam": {
+    "fa": "webcam",
+    "confidence": "high"
+  },
+  "webhook-off": {
+    "fa": "webhook",
+    "confidence": "medium"
+  },
+  "webhook": {
+    "fa": "webhook",
+    "confidence": "high"
+  },
+  "weight": {
+    "fa": "weight-hanging",
+    "confidence": "high"
+  },
+  "wheat-off": {
+    "fa": "wheat",
+    "confidence": "medium"
+  },
+  "wheat": {
+    "fa": "wheat-awn",
+    "confidence": "high"
+  },
+  "whole-word": {
+    "fa": "text",
+    "confidence": "low"
+  },
+  "wifi-high": {
+    "fa": "wifi",
+    "confidence": "medium"
+  },
+  "wifi-low": {
+    "fa": "wifi-weak",
+    "confidence": "medium"
+  },
+  "wifi-off": {
+    "fa": "wifi-slash",
+    "confidence": "high"
+  },
+  "wifi-zero": {
+    "fa": "wifi-slash",
+    "confidence": "medium"
+  },
+  "wifi": {
+    "fa": "wifi",
+    "confidence": "high"
+  },
+  "wind": {
+    "fa": "wind",
+    "confidence": "high"
+  },
+  "wine-off": {
+    "fa": "wine-glass",
+    "confidence": "medium"
+  },
+  "wine": {
+    "fa": "wine-glass",
+    "confidence": "high"
+  },
+  "workflow": {
+    "fa": "diagram-project",
+    "confidence": "medium"
+  },
+  "worm": {
+    "fa": "worm",
+    "confidence": "high"
+  },
+  "wrap-text": {
+    "fa": "text-wrap",
+    "confidence": "medium"
+  },
+  "wrench": {
+    "fa": "wrench",
+    "confidence": "high"
+  },
+  "x": {
+    "fa": "xmark",
+    "confidence": "high"
+  },
+  "youtube": {
+    "fa": "youtube",
+    "confidence": "high"
+  },
+  "zap-off": {
+    "fa": "bolt",
+    "confidence": "medium"
+  },
+  "zap": {
+    "fa": "bolt",
+    "confidence": "high"
+  },
+  "zoom-in": {
+    "fa": "magnifying-glass-plus",
+    "confidence": "high"
+  },
+  "zoom-out": {
+    "fa": "magnifying-glass-minus",
+    "confidence": "high"
+  }
+}

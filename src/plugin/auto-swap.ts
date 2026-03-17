@@ -206,36 +206,28 @@ export async function autoSwapAll(onProgress: ProgressCallback): Promise<SwapRes
   return result;
 }
 
-export function removeLucideReferences(): { removed: number } {
-  var removed = 0;
+export async function removeLucideReferences(
+  onProgress: (info: { page: string; pageNum: number; totalPages: number; cleaned: number }) => void
+): Promise<{ cleaned: number }> {
+  var cleaned = 0;
+  var totalPages = figma.root.children.length;
+  var wasPattern = / \(was: [^)]+\)$/;
 
-  for (var p = 0; p < figma.root.children.length; p++) {
+  for (var p = 0; p < totalPages; p++) {
     var page = figma.root.children[p];
-    var toRemove: SceneNode[] = [];
+    onProgress({ page: page.name, pageNum: p + 1, totalPages: totalPages, cleaned: cleaned });
 
-    function walkForRemoval(node: BaseNode) {
-      if (node.type === "FRAME" || node.type === "GROUP") {
-        var name = node.name;
-        if (name === "Lucide Icon" || name === "Lucide Icons" || name.indexOf("Lucide Icons") === 0) {
-          toRemove.push(node as SceneNode);
-          return;
-        }
-      }
-      if ("children" in node) {
-        var children = (node as ChildrenMixin).children;
-        for (var i = 0; i < children.length; i++) {
-          walkForRemoval(children[i]);
-        }
+    var components = page.findAllWithCriteria({ types: ["COMPONENT"] });
+    for (var j = 0; j < components.length; j++) {
+      var comp = components[j];
+      if (wasPattern.test(comp.name)) {
+        comp.name = comp.name.replace(wasPattern, "");
+        cleaned++;
       }
     }
 
-    walkForRemoval(page);
-
-    for (var r = 0; r < toRemove.length; r++) {
-      toRemove[r].remove();
-      removed++;
-    }
+    await yieldToFigma();
   }
 
-  return { removed: removed };
+  return { cleaned: cleaned };
 }

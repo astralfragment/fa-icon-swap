@@ -116,8 +116,9 @@ btnSwap.addEventListener("click", function () {
 });
 
 btnRemoveLucide.addEventListener("click", function () {
+  showProgress("Cleaning up names...");
   btnRemoveLucide.disabled = true;
-  btnRemoveLucide.textContent = "Removing...";
+  btnRemoveLucide.innerHTML = '<span class="spinner"></span>Cleaning...';
   parent.postMessage({ pluginMessage: { type: "remove-lucide" } }, "*");
 });
 
@@ -262,8 +263,18 @@ window.onmessage = function (event) {
       break;
     }
 
+    case "remove-progress": {
+      var removePct = msg.totalPages > 0 ? Math.round((msg.pageNum / msg.totalPages) * 100) : 0;
+      progressPct.textContent = removePct + "%";
+      progressFill.style.width = removePct + "%";
+      progressPhase.textContent = "Page " + msg.pageNum + "/" + msg.totalPages + ": " + msg.page + " (" + msg.cleaned + " cleaned)";
+      break;
+    }
+
     case "remove-lucide-complete":
-      btnRemoveLucide.textContent = "Removed " + msg.removed + " reference(s)";
+      finishProgress("Complete");
+      progressPhase.textContent = msg.cleaned + " component name(s) cleaned";
+      btnRemoveLucide.textContent = "Cleaned " + msg.cleaned + " name(s)";
       break;
 
     case "selection-changed":

@@ -104,10 +104,18 @@ figma.ui.onmessage = async function (msg: { type: string; payload?: any }) {
     }
 
     case "remove-lucide": {
-      var removeResult = removeLucideReferences();
-      cachedCounts = null;
-      figma.ui.postMessage({ type: "remove-lucide-complete", removed: removeResult.removed });
-      figma.notify("Removed " + removeResult.removed + " Lucide reference(s)");
+      figma.ui.postMessage({ type: "progress", phase: "Cleaning up component names..." });
+      var removeResult = await removeLucideReferences(function (info) {
+        figma.ui.postMessage({
+          type: "remove-progress",
+          page: info.page,
+          pageNum: info.pageNum,
+          totalPages: info.totalPages,
+          cleaned: info.cleaned,
+        });
+      });
+      figma.ui.postMessage({ type: "remove-lucide-complete", cleaned: removeResult.cleaned });
+      figma.notify("Cleaned " + removeResult.cleaned + " component name(s)");
       break;
     }
 

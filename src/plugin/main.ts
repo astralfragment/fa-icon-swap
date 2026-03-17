@@ -2,9 +2,16 @@ import { generateFAComponents, generateAllFAComponents, getExistingComponentCoun
 import { autoSwapAll, removeLucideReferences, scanComponentCounts } from "./auto-swap";
 import { handleSelectionSwap } from "./manual-swap";
 
+figma.skipInvisibleInstanceChildren = true;
 figma.showUI(__html__, { width: 380, height: 600 });
 
 var cachedCounts: { lucide: number; fa6: number } | null = null;
+
+function computeScanHash(): string {
+  return figma.root.children.map(function (p) {
+    return p.name + ":" + p.children.length;
+  }).join(",");
+}
 
 function runScan() {
   figma.ui.postMessage({ type: "init" });
@@ -19,11 +26,31 @@ function runScan() {
     });
   }).then(function (counts) {
     cachedCounts = counts;
+    var hash = computeScanHash();
+    figma.root.setPluginData("scanHash", hash);
+    figma.clientStorage.setAsync("scanResults", counts);
     figma.ui.postMessage({ type: "scan-complete", lucide: counts.lucide, fa6: counts.fa6 });
   });
 }
 
-runScan();
+function initScan() {
+  var storedHash = figma.root.getPluginData("scanHash");
+  var currentHash = computeScanHash();
+  if (storedHash === currentHash) {
+    figma.clientStorage.getAsync("scanResults").then(function (stored) {
+      if (stored && typeof stored.lucide === "number" && typeof stored.fa6 === "number") {
+        cachedCounts = stored;
+        figma.ui.postMessage({ type: "scan-complete", lucide: stored.lucide, fa6: stored.fa6 });
+      } else {
+        runScan();
+      }
+    });
+  } else {
+    runScan();
+  }
+}
+
+initScan();
 
 function sendProgress(progress: { current: number; total: number; phase: string; replaced?: number; flagged?: number; skipped?: number; lastSwap?: { from: string; to: string; confidence: string } }) {
   figma.ui.postMessage({
@@ -104,10 +131,18 @@ figma.ui.onmessage = async function (msg: { type: string; payload?: any }) {
     }
 
     case "remove-lucide": {
-      var removeResult = removeLucideReferences();
-      cachedCounts = null;
-      figma.ui.postMessage({ type: "remove-lucide-complete", removed: removeResult.removed });
-      figma.notify("Removed " + removeResult.removed + " Lucide reference(s)");
+      figma.ui.postMessage({ type: "progress", phase: "Cleaning up component names..." });
+      var removeResult = await removeLucideReferences(function (info) {
+        figma.ui.postMessage({
+          type: "remove-progress",
+          page: info.page,
+          pageNum: info.pageNum,
+          totalPages: info.totalPages,
+          cleaned: info.cleaned,
+        });
+      });
+      figma.ui.postMessage({ type: "remove-lucide-complete", cleaned: removeResult.cleaned });
+      figma.notify("Cleaned " + removeResult.cleaned + " component name(s)");
       break;
     }
 

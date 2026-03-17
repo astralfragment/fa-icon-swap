@@ -60,7 +60,7 @@ export async function handleSelectionSwap(
       var instance = faComponent.createInstance();
       instance.x = origX;
       instance.y = origY;
-      instance.resize(origW, origH);
+      instance.resizeWithoutConstraints(origW, origH);
 
       parentNode.insertChild(childIndex, instance);
       (node as SceneNode).remove();
@@ -84,7 +84,7 @@ export async function handleSelectionSwap(
 
       var frame = figma.createFrame();
       frame.name = "FA6 / " + faName;
-      frame.resize(w2, h2);
+      frame.resizeWithoutConstraints(w2, h2);
       frame.x = x2;
       frame.y = y2;
       frame.layoutMode = "HORIZONTAL";

@@ -4,6 +4,97 @@ import { isBrandIcon, FONT_PRO, FONT_BRANDS } from "./component-gen";
 
 type IconMapEntry = { fa: string; confidence: string };
 type UnicodeMap = Record<string, string>;
+
+var fa6NameList: string[] = Object.keys(fa6Unicode as UnicodeMap);
+var fa6NameSet: Set<string> = new Set(fa6NameList);
+var fuzzyCache: Record<string, { fa: string; confidence: string } | null> = {};
+
+var fa6WordIndex: Record<string, string[]> = {};
+for (var _i = 0; _i < fa6NameList.length; _i++) {
+  var _words = fa6NameList[_i].split("-");
+  for (var _w = 0; _w < _words.length; _w++) {
+    if (!fa6WordIndex[_words[_w]]) fa6WordIndex[_words[_w]] = [];
+    fa6WordIndex[_words[_w]].push(fa6NameList[_i]);
+  }
+}
+
+function wordOverlapScore(a: string[], b: string[]): number {
+  var matches = 0;
+  for (var i = 0; i < a.length; i++) {
+    for (var j = 0; j < b.length; j++) {
+      if (a[i] === b[j]) { matches++; break; }
+    }
+  }
+  if (a.length === 0 && b.length === 0) return 0;
+  return matches / Math.max(a.length, b.length);
+}
+
+function editDistance(a: string, b: string): number {
+  var m = a.length;
+  var n = b.length;
+  if (Math.abs(m - n) > Math.max(m, n) * 0.4) return Math.max(m, n);
+  var prev = new Array(n + 1);
+  var curr = new Array(n + 1);
+  for (var j = 0; j <= n; j++) prev[j] = j;
+  for (var i = 1; i <= m; i++) {
+    curr[0] = i;
+    for (var j2 = 1; j2 <= n; j2++) {
+      var cost = a[i - 1] === b[j2 - 1] ? 0 : 1;
+      curr[j2] = Math.min(prev[j2] + 1, curr[j2 - 1] + 1, prev[j2 - 1] + cost);
+    }
+    var tmp = prev; prev = curr; curr = tmp;
+  }
+  return prev[n];
+}
+
+function findBestMatch(lucideName: string): { fa: string; confidence: string } | null {
+  if (fuzzyCache[lucideName] !== undefined) return fuzzyCache[lucideName];
+
+  if (fa6NameSet.has(lucideName)) {
+    fuzzyCache[lucideName] = { fa: lucideName, confidence: "high" };
+    return fuzzyCache[lucideName];
+  }
+
+  var lucideWords = lucideName.split("-").filter(function (w) { return w.length > 0; });
+
+  var candidates: Record<string, boolean> = {};
+  for (var w = 0; w < lucideWords.length; w++) {
+    var matches = fa6WordIndex[lucideWords[w]];
+    if (matches) {
+      for (var ci = 0; ci < matches.length; ci++) candidates[matches[ci]] = true;
+    }
+  }
+
+  var candidateList = Object.keys(candidates);
+  var bestName = "";
+  var bestScore = -1;
+  for (var i = 0; i < candidateList.length; i++) {
+    var faWords = candidateList[i].split("-");
+    var overlap = wordOverlapScore(lucideWords, faWords);
+    if (overlap > bestScore) { bestScore = overlap; bestName = candidateList[i]; }
+  }
+
+  if (bestScore >= 0.5) {
+    fuzzyCache[lucideName] = { fa: bestName, confidence: "low" };
+    return fuzzyCache[lucideName];
+  }
+
+  var closestDist = Infinity;
+  var closestName = "";
+  for (var i2 = 0; i2 < fa6NameList.length; i2++) {
+    var dist = editDistance(lucideName, fa6NameList[i2]);
+    if (dist < closestDist) { closestDist = dist; closestName = fa6NameList[i2]; }
+  }
+
+  var maxLen = Math.max(lucideName.length, closestName.length);
+  if (maxLen > 0 && closestDist / maxLen <= 0.4) {
+    fuzzyCache[lucideName] = { fa: closestName, confidence: "low" };
+  } else {
+    fuzzyCache[lucideName] = null;
+  }
+  return fuzzyCache[lucideName];
+}
+
 type ProgressCallback = (progress: {
   current: number;
   total: number;
@@ -30,15 +121,19 @@ function yieldToFigma(): Promise<void> {
   });
 }
 
-function findLucideMainComponents(): ComponentNode[] {
+async function findLucideMainComponents(onProgress?: ProgressCallback): Promise<ComponentNode[]> {
   var results: ComponentNode[] = [];
   for (var i = 0; i < figma.root.children.length; i++) {
+    if (onProgress) {
+      onProgress({ current: i, total: figma.root.children.length, phase: "Scanning page " + (i + 1) + "/" + figma.root.children.length + "..." });
+    }
     var components = figma.root.children[i].findAllWithCriteria({ types: ["COMPONENT"] });
     for (var j = 0; j < components.length; j++) {
       if (components[j].name.indexOf("Lucide Icons / ") === 0) {
         results.push(components[j] as ComponentNode);
       }
     }
+    await yieldToFigma();
   }
   return results;
 }
@@ -90,7 +185,7 @@ function replaceComponentInternals(
 
   var inner = figma.createFrame();
   inner.name = styleName;
-  inner.resize(component.width, component.height);
+  inner.resizeWithoutConstraints(component.width, component.height);
   inner.layoutMode = "HORIZONTAL";
   inner.primaryAxisAlignItems = "CENTER";
   inner.counterAxisAlignItems = "CENTER";
@@ -106,7 +201,7 @@ function replaceComponentInternals(
   text.fills = [{ type: "SOLID", color: color }];
   text.textAlignHorizontal = "CENTER";
   text.textAlignVertical = "CENTER";
-  text.resize(glyphSize, glyphSize);
+  text.resizeWithoutConstraints(glyphSize, glyphSize);
   text.textAutoResize = "NONE";
 
   inner.appendChild(text);
@@ -116,30 +211,31 @@ function replaceComponentInternals(
 type ScanCallback = (info: { page: string; pageNum: number; totalPages: number; lucide: number; fa6: number }) => void;
 
 export async function scanComponentCounts(onProgress?: ScanCallback): Promise<{ lucide: number; fa6: number }> {
-  var lucide = 0;
-  var fa6 = 0;
+  var lucideNames = new Set<string>();
+  var fa6Names = new Set<string>();
   var totalPages = figma.root.children.length;
 
   for (var i = 0; i < totalPages; i++) {
     var page = figma.root.children[i];
     if (onProgress) {
-      onProgress({ page: page.name, pageNum: i + 1, totalPages: totalPages, lucide: lucide, fa6: fa6 });
+      onProgress({ page: page.name, pageNum: i + 1, totalPages: totalPages, lucide: lucideNames.size, fa6: fa6Names.size });
     }
 
     var components = page.findAllWithCriteria({ types: ["COMPONENT"] });
     for (var j = 0; j < components.length; j++) {
       var name = components[j].name;
       if (name.indexOf("Lucide Icons / ") === 0) {
-        lucide++;
+        lucideNames.add(name.replace("Lucide Icons / ", ""));
       } else if (name.indexOf("FA6 Icons / ") === 0) {
-        fa6++;
+        var baseName = name.replace("FA6 Icons / ", "").replace(/ \/ (Light|Thin|Regular|Solid)$/, "").replace(/ \(was: [^)]+\)$/, "");
+        fa6Names.add(baseName);
       }
     }
 
     await yieldToFigma();
   }
 
-  return { lucide: lucide, fa6: fa6 };
+  return { lucide: lucideNames.size, fa6: fa6Names.size };
 }
 
 export async function autoSwapAll(onProgress: ProgressCallback): Promise<SwapResult> {
@@ -148,47 +244,54 @@ export async function autoSwapAll(onProgress: ProgressCallback): Promise<SwapRes
   var result: SwapResult = { replaced: 0, flagged: 0, skipped: 0, flaggedNodeIds: [], skippedItems: [] };
 
   onProgress({ current: 0, total: 0, phase: "Loading fonts..." });
-  await figma.loadFontAsync(FONT_PRO);
-  await figma.loadFontAsync(FONT_BRANDS);
+  await Promise.all([figma.loadFontAsync(FONT_PRO), figma.loadFontAsync(FONT_BRANDS)]);
 
-  onProgress({ current: 0, total: 0, phase: "Finding Lucide components..." });
-  var lucideComponents = findLucideMainComponents();
+  var lucideComponents = await findLucideMainComponents(onProgress);
   var total = lucideComponents.length;
 
   onProgress({ current: 0, total: total, phase: "Found " + total + " Lucide main components" });
 
   for (var i = 0; i < lucideComponents.length; i++) {
-    var component = lucideComponents[i];
-    var lucideName = component.name.replace("Lucide Icons / ", "");
-    var mapping = map[lucideName];
+    try {
+      var component = lucideComponents[i];
+      var lucideName = component.name.replace("Lucide Icons / ", "");
+      var mapping: IconMapEntry | null = map[lucideName] || null;
 
-    if (!mapping) {
-      result.skipped++;
-      result.skippedItems.push({ name: lucideName, reason: "no mapping" });
-      if ((i + 1) % 10 === 0) {
-        onProgress({
-          current: i + 1, total: total,
-          phase: (i + 1) + "/" + total,
-          replaced: result.replaced, flagged: result.flagged, skipped: result.skipped,
-        });
-        await yieldToFigma();
+      if (!mapping) {
+        mapping = findBestMatch(lucideName);
       }
-      continue;
-    }
 
-    var unicode = unicodes[mapping.fa];
-    if (!unicode) {
+      if (!mapping) {
+        result.skipped++;
+        result.skippedItems.push({ name: lucideName, reason: "no match found" });
+        if ((i + 1) % 10 === 0) {
+          onProgress({
+            current: i + 1, total: total,
+            phase: (i + 1) + "/" + total,
+            replaced: result.replaced, flagged: result.flagged, skipped: result.skipped,
+          });
+          await yieldToFigma();
+        }
+        continue;
+      }
+
+      var unicode = unicodes[mapping.fa];
+      if (!unicode) {
+        result.skipped++;
+        result.skippedItems.push({ name: lucideName, reason: "no unicode for " + mapping.fa });
+        continue;
+      }
+
+      replaceComponentInternals(component, mapping.fa, unicode);
+      result.replaced++;
+
+      if (mapping.confidence === "low") {
+        result.flagged++;
+        result.flaggedNodeIds.push(component.id);
+      }
+    } catch (e) {
       result.skipped++;
-      result.skippedItems.push({ name: lucideName, reason: "no unicode for " + mapping.fa });
-      continue;
-    }
-
-    replaceComponentInternals(component, mapping.fa, unicode);
-    result.replaced++;
-
-    if (mapping.confidence === "low") {
-      result.flagged++;
-      result.flaggedNodeIds.push(component.id);
+      result.skippedItems.push({ name: "node-" + i, reason: "error: " + String(e) });
     }
 
     if ((i + 1) % 5 === 0 || i === lucideComponents.length - 1) {
@@ -196,7 +299,6 @@ export async function autoSwapAll(onProgress: ProgressCallback): Promise<SwapRes
         current: i + 1, total: total,
         phase: (i + 1) + "/" + total,
         replaced: result.replaced, flagged: result.flagged, skipped: result.skipped,
-        lastSwap: { from: lucideName, to: mapping.fa, confidence: mapping.confidence },
       });
       await yieldToFigma();
     }
@@ -206,36 +308,28 @@ export async function autoSwapAll(onProgress: ProgressCallback): Promise<SwapRes
   return result;
 }
 
-export function removeLucideReferences(): { removed: number } {
-  var removed = 0;
+export async function removeLucideReferences(
+  onProgress: (info: { page: string; pageNum: number; totalPages: number; cleaned: number }) => void
+): Promise<{ cleaned: number }> {
+  var cleaned = 0;
+  var totalPages = figma.root.children.length;
+  var wasPattern = / \(was: [^)]+\)$/;
 
-  for (var p = 0; p < figma.root.children.length; p++) {
+  for (var p = 0; p < totalPages; p++) {
     var page = figma.root.children[p];
-    var toRemove: SceneNode[] = [];
+    onProgress({ page: page.name, pageNum: p + 1, totalPages: totalPages, cleaned: cleaned });
 
-    function walkForRemoval(node: BaseNode) {
-      if (node.type === "FRAME" || node.type === "GROUP") {
-        var name = node.name;
-        if (name === "Lucide Icon" || name === "Lucide Icons" || name.indexOf("Lucide Icons") === 0) {
-          toRemove.push(node as SceneNode);
-          return;
-        }
-      }
-      if ("children" in node) {
-        var children = (node as ChildrenMixin).children;
-        for (var i = 0; i < children.length; i++) {
-          walkForRemoval(children[i]);
-        }
+    var components = page.findAllWithCriteria({ types: ["COMPONENT"] });
+    for (var j = 0; j < components.length; j++) {
+      var comp = components[j];
+      if (wasPattern.test(comp.name)) {
+        comp.name = comp.name.replace(wasPattern, "");
+        cleaned++;
       }
     }
 
-    walkForRemoval(page);
-
-    for (var r = 0; r < toRemove.length; r++) {
-      toRemove[r].remove();
-      removed++;
-    }
+    await yieldToFigma();
   }
 
-  return { removed: removed };
+  return { cleaned: cleaned };
 }

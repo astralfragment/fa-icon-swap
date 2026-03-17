@@ -116,30 +116,31 @@ function replaceComponentInternals(
 type ScanCallback = (info: { page: string; pageNum: number; totalPages: number; lucide: number; fa6: number }) => void;
 
 export async function scanComponentCounts(onProgress?: ScanCallback): Promise<{ lucide: number; fa6: number }> {
-  var lucide = 0;
-  var fa6 = 0;
+  var lucideNames = new Set<string>();
+  var fa6Names = new Set<string>();
   var totalPages = figma.root.children.length;
 
   for (var i = 0; i < totalPages; i++) {
     var page = figma.root.children[i];
     if (onProgress) {
-      onProgress({ page: page.name, pageNum: i + 1, totalPages: totalPages, lucide: lucide, fa6: fa6 });
+      onProgress({ page: page.name, pageNum: i + 1, totalPages: totalPages, lucide: lucideNames.size, fa6: fa6Names.size });
     }
 
     var components = page.findAllWithCriteria({ types: ["COMPONENT"] });
     for (var j = 0; j < components.length; j++) {
       var name = components[j].name;
       if (name.indexOf("Lucide Icons / ") === 0) {
-        lucide++;
+        lucideNames.add(name.replace("Lucide Icons / ", ""));
       } else if (name.indexOf("FA6 Icons / ") === 0) {
-        fa6++;
+        var baseName = name.replace("FA6 Icons / ", "").replace(/ \/ (Light|Thin|Regular|Solid)$/, "").replace(/ \(was: [^)]+\)$/, "");
+        fa6Names.add(baseName);
       }
     }
 
     await yieldToFigma();
   }
 
-  return { lucide: lucide, fa6: fa6 };
+  return { lucide: lucideNames.size, fa6: fa6Names.size };
 }
 
 export async function autoSwapAll(onProgress: ProgressCallback): Promise<SwapResult> {

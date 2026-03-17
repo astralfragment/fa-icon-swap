@@ -4,6 +4,80 @@ import { isBrandIcon, FONT_PRO, FONT_BRANDS } from "./component-gen";
 
 type IconMapEntry = { fa: string; confidence: string };
 type UnicodeMap = Record<string, string>;
+
+var fa6Names: string[] = Object.keys(fa6Unicode as UnicodeMap);
+
+function splitWords(name: string): string[] {
+  return name.split("-").filter(function (w) { return w.length > 0; });
+}
+
+function wordOverlapScore(a: string[], b: string[]): number {
+  var matches = 0;
+  for (var i = 0; i < a.length; i++) {
+    for (var j = 0; j < b.length; j++) {
+      if (a[i] === b[j]) { matches++; break; }
+    }
+  }
+  if (a.length === 0 && b.length === 0) return 0;
+  return matches / Math.max(a.length, b.length);
+}
+
+function editDistance(a: string, b: string): number {
+  var m = a.length;
+  var n = b.length;
+  var prev = new Array(n + 1);
+  var curr = new Array(n + 1);
+  for (var j = 0; j <= n; j++) prev[j] = j;
+  for (var i = 1; i <= m; i++) {
+    curr[0] = i;
+    for (var j2 = 1; j2 <= n; j2++) {
+      var cost = a[i - 1] === b[j2 - 1] ? 0 : 1;
+      curr[j2] = Math.min(prev[j2] + 1, curr[j2 - 1] + 1, prev[j2 - 1] + cost);
+    }
+    var tmp = prev; prev = curr; curr = tmp;
+  }
+  return prev[n];
+}
+
+function findBestMatch(lucideName: string): { fa: string; confidence: string } | null {
+  var lucideWords = splitWords(lucideName);
+  var bestName = "";
+  var bestScore = -1;
+
+  for (var i = 0; i < fa6Names.length; i++) {
+    var faName = fa6Names[i];
+    if (faName === lucideName) return { fa: faName, confidence: "high" };
+
+    var faWords = splitWords(faName);
+    var overlap = wordOverlapScore(lucideWords, faWords);
+    if (overlap > bestScore) {
+      bestScore = overlap;
+      bestName = faName;
+    }
+  }
+
+  if (bestScore >= 0.5) {
+    return { fa: bestName, confidence: "low" };
+  }
+
+  var closestDist = Infinity;
+  var closestName = "";
+  for (var i2 = 0; i2 < fa6Names.length; i2++) {
+    var dist = editDistance(lucideName, fa6Names[i2]);
+    if (dist < closestDist) {
+      closestDist = dist;
+      closestName = fa6Names[i2];
+    }
+  }
+
+  var maxLen = Math.max(lucideName.length, closestName.length);
+  if (maxLen > 0 && closestDist / maxLen <= 0.4) {
+    return { fa: closestName, confidence: "low" };
+  }
+
+  return null;
+}
+
 type ProgressCallback = (progress: {
   current: number;
   total: number;
@@ -90,7 +164,7 @@ function replaceComponentInternals(
 
   var inner = figma.createFrame();
   inner.name = styleName;
-  inner.resize(component.width, component.height);
+  inner.resizeWithoutConstraints(component.width, component.height);
   inner.layoutMode = "HORIZONTAL";
   inner.primaryAxisAlignItems = "CENTER";
   inner.counterAxisAlignItems = "CENTER";
@@ -106,7 +180,7 @@ function replaceComponentInternals(
   text.fills = [{ type: "SOLID", color: color }];
   text.textAlignHorizontal = "CENTER";
   text.textAlignVertical = "CENTER";
-  text.resize(glyphSize, glyphSize);
+  text.resizeWithoutConstraints(glyphSize, glyphSize);
   text.textAutoResize = "NONE";
 
   inner.appendChild(text);
@@ -149,8 +223,7 @@ export async function autoSwapAll(onProgress: ProgressCallback): Promise<SwapRes
   var result: SwapResult = { replaced: 0, flagged: 0, skipped: 0, flaggedNodeIds: [], skippedItems: [] };
 
   onProgress({ current: 0, total: 0, phase: "Loading fonts..." });
-  await figma.loadFontAsync(FONT_PRO);
-  await figma.loadFontAsync(FONT_BRANDS);
+  await Promise.all([figma.loadFontAsync(FONT_PRO), figma.loadFontAsync(FONT_BRANDS)]);
 
   onProgress({ current: 0, total: 0, phase: "Finding Lucide components..." });
   var lucideComponents = findLucideMainComponents();
@@ -161,11 +234,15 @@ export async function autoSwapAll(onProgress: ProgressCallback): Promise<SwapRes
   for (var i = 0; i < lucideComponents.length; i++) {
     var component = lucideComponents[i];
     var lucideName = component.name.replace("Lucide Icons / ", "");
-    var mapping = map[lucideName];
+    var mapping: IconMapEntry | null = map[lucideName] || null;
+
+    if (!mapping) {
+      mapping = findBestMatch(lucideName);
+    }
 
     if (!mapping) {
       result.skipped++;
-      result.skippedItems.push({ name: lucideName, reason: "no mapping" });
+      result.skippedItems.push({ name: lucideName, reason: "no match found" });
       if ((i + 1) % 10 === 0) {
         onProgress({
           current: i + 1, total: total,

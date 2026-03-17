@@ -61,7 +61,7 @@ function createIconComponent(
 
   var component = figma.createComponent();
   component.name = componentName;
-  component.resize(ICON_SIZE, ICON_SIZE);
+  component.resizeWithoutConstraints(ICON_SIZE, ICON_SIZE);
   component.layoutMode = "HORIZONTAL";
   component.primaryAxisAlignItems = "CENTER";
   component.counterAxisAlignItems = "CENTER";
@@ -73,7 +73,7 @@ function createIconComponent(
 
   var inner = figma.createFrame();
   inner.name = innerLabel;
-  inner.resize(ICON_SIZE, ICON_SIZE);
+  inner.resizeWithoutConstraints(ICON_SIZE, ICON_SIZE);
   inner.layoutMode = "HORIZONTAL";
   inner.primaryAxisAlignItems = "CENTER";
   inner.counterAxisAlignItems = "CENTER";
@@ -88,7 +88,7 @@ function createIconComponent(
   text.fills = [{ type: "SOLID", color: ICON_COLOR }];
   text.textAlignHorizontal = "CENTER";
   text.textAlignVertical = "CENTER";
-  text.resize(GLYPH_SIZE, GLYPH_SIZE - 1);
+  text.resizeWithoutConstraints(GLYPH_SIZE, GLYPH_SIZE - 1);
   text.textAutoResize = "NONE";
 
   inner.appendChild(text);

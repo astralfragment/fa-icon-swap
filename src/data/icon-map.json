@@ -600,8 +600,8 @@
     "confidence": "medium"
   },
   "bell-minus": {
-    "fa": "bell-minus",
-    "confidence": "high"
+    "fa": "bell",
+    "confidence": "low"
   },
   "bell-off": {
     "fa": "bell-slash",
@@ -724,8 +724,8 @@
     "confidence": "medium"
   },
   "book-down": {
-    "fa": "book-arrow-down",
-    "confidence": "high"
+    "fa": "book",
+    "confidence": "low"
   },
   "book-headphones": {
     "fa": "book",
@@ -744,8 +744,8 @@
     "confidence": "medium"
   },
   "book-lock": {
-    "fa": "book-lock",
-    "confidence": "high"
+    "fa": "book",
+    "confidence": "low"
   },
   "book-marked": {
     "fa": "book-bookmark",
@@ -1360,8 +1360,8 @@
     "confidence": "high"
   },
   "circle-equal": {
-    "fa": "circle-equal",
-    "confidence": "high"
+    "fa": "equals",
+    "confidence": "low"
   },
   "circle-fading-plus": {
     "fa": "circle-plus",
@@ -1396,8 +1396,8 @@
     "confidence": "high"
   },
   "circle-percent": {
-    "fa": "circle-percent",
-    "confidence": "high"
+    "fa": "percent",
+    "confidence": "low"
   },
   "circle-play": {
     "fa": "circle-play",
@@ -1472,12 +1472,12 @@
     "confidence": "high"
   },
   "clipboard-pen-line": {
-    "fa": "clipboard-pen",
-    "confidence": "high"
+    "fa": "clipboard",
+    "confidence": "low"
   },
   "clipboard-pen": {
-    "fa": "clipboard-pen",
-    "confidence": "high"
+    "fa": "clipboard",
+    "confidence": "low"
   },
   "clipboard-plus": {
     "fa": "clipboard",
@@ -1544,20 +1544,20 @@
     "confidence": "medium"
   },
   "clock-arrow-down": {
-    "fa": "clock-arrow-down",
-    "confidence": "high"
+    "fa": "clock",
+    "confidence": "low"
   },
   "clock-arrow-up": {
-    "fa": "clock-arrow-up",
-    "confidence": "high"
+    "fa": "clock",
+    "confidence": "low"
   },
   "clock": {
     "fa": "clock",
     "confidence": "high"
   },
   "cloud-cog": {
-    "fa": "cloud-gear",
-    "confidence": "medium"
+    "fa": "cloud",
+    "confidence": "low"
   },
   "cloud-download": {
     "fa": "cloud-arrow-down",
@@ -1660,7 +1660,7 @@
     "confidence": "high"
   },
   "columns-2": {
-    "fa": "columns",
+    "fa": "table-columns",
     "confidence": "high"
   },
   "columns-3": {
@@ -1696,8 +1696,8 @@
     "confidence": "high"
   },
   "cone": {
-    "fa": "cone",
-    "confidence": "high"
+    "fa": "traffic-cone",
+    "confidence": "low"
   },
   "construction": {
     "fa": "helmet-safety",
@@ -1752,8 +1752,8 @@
     "confidence": "high"
   },
   "copyleft": {
-    "fa": "copyleft",
-    "confidence": "high"
+    "fa": "copyright",
+    "confidence": "low"
   },
   "copyright": {
     "fa": "copyright",
@@ -2152,7 +2152,7 @@
     "confidence": "high"
   },
   "file-chart-line": {
-    "fa": "file-chart-line",
+    "fa": "file-chart-column",
     "confidence": "high"
   },
   "file-chart-pie": {
@@ -2168,8 +2168,8 @@
     "confidence": "high"
   },
   "file-clock": {
-    "fa": "file-clock",
-    "confidence": "high"
+    "fa": "file",
+    "confidence": "low"
   },
   "file-code-2": {
     "fa": "file-code",
@@ -2180,8 +2180,8 @@
     "confidence": "high"
   },
   "file-cog": {
-    "fa": "file-gear",
-    "confidence": "high"
+    "fa": "file",
+    "confidence": "low"
   },
   "file-diff": {
     "fa": "file-code",
@@ -2280,8 +2280,8 @@
     "confidence": "high"
   },
   "file-sliders": {
-    "fa": "file-gear",
-    "confidence": "medium"
+    "fa": "file",
+    "confidence": "low"
   },
   "file-spreadsheet": {
     "fa": "file-spreadsheet",
@@ -2424,8 +2424,8 @@
     "confidence": "high"
   },
   "flask-round": {
-    "fa": "flask-round",
-    "confidence": "high"
+    "fa": "flask",
+    "confidence": "low"
   },
   "flip-horizontal-2": {
     "fa": "reflect-horizontal",
@@ -2464,24 +2464,24 @@
     "confidence": "medium"
   },
   "folder-archive": {
-    "fa": "folder-zipper",
-    "confidence": "high"
+    "fa": "file-zipper",
+    "confidence": "low"
   },
   "folder-check": {
     "fa": "folder-check",
     "confidence": "high"
   },
   "folder-clock": {
-    "fa": "folder-clock",
-    "confidence": "high"
+    "fa": "folder",
+    "confidence": "low"
   },
   "folder-closed": {
     "fa": "folder-closed",
     "confidence": "high"
   },
   "folder-code": {
-    "fa": "folder-code",
-    "confidence": "high"
+    "fa": "folder",
+    "confidence": "low"
   },
   "folder-cog": {
     "fa": "folder-gear",
@@ -2520,8 +2520,8 @@
     "confidence": "medium"
   },
   "folder-lock": {
-    "fa": "folder-lock",
-    "confidence": "high"
+    "fa": "folder",
+    "confidence": "low"
   },
   "folder-minus": {
     "fa": "folder-minus",
@@ -2540,8 +2540,8 @@
     "confidence": "medium"
   },
   "folder-pen": {
-    "fa": "folder-pen",
-    "confidence": "high"
+    "fa": "folder",
+    "confidence": "low"
   },
   "folder-plus": {
     "fa": "folder-plus",
@@ -3436,8 +3436,8 @@
     "confidence": "medium"
   },
   "map-pin-off": {
-    "fa": "map-pin-slash",
-    "confidence": "high"
+    "fa": "location-pin-slash",
+    "confidence": "low"
   },
   "map-pin-plus-inside": {
     "fa": "map-pin",
@@ -3876,12 +3876,12 @@
     "confidence": "medium"
   },
   "nut-off": {
-    "fa": "nut",
-    "confidence": "medium"
+    "fa": "gear",
+    "confidence": "low"
   },
   "nut": {
-    "fa": "nut",
-    "confidence": "high"
+    "fa": "gear",
+    "confidence": "low"
   },
   "octagon-alert": {
     "fa": "octagon-exclamation",
@@ -3904,8 +3904,8 @@
     "confidence": "high"
   },
   "orbit": {
-    "fa": "orbit",
-    "confidence": "high"
+    "fa": "rotate",
+    "confidence": "low"
   },
   "origami": {
     "fa": "paper-plane",
@@ -4092,7 +4092,7 @@
     "confidence": "high"
   },
   "pencil-ruler": {
-    "fa": "pencil-ruler",
+    "fa": "pen-ruler",
     "confidence": "high"
   },
   "pencil": {
@@ -4100,8 +4100,8 @@
     "confidence": "high"
   },
   "pentagon": {
-    "fa": "pentagon",
-    "confidence": "high"
+    "fa": "draw-polygon",
+    "confidence": "low"
   },
   "percent": {
     "fa": "percent",
@@ -4240,8 +4240,8 @@
     "confidence": "medium"
   },
   "pocket": {
-    "fa": "pocket",
-    "confidence": "high"
+    "fa": "get-pocket",
+    "confidence": "low"
   },
   "podcast": {
     "fa": "podcast",
@@ -4352,8 +4352,8 @@
     "confidence": "high"
   },
   "rat": {
-    "fa": "rat",
-    "confidence": "high"
+    "fa": "otter",
+    "confidence": "low"
   },
   "ratio": {
     "fa": "rectangle-wide",
@@ -4420,7 +4420,7 @@
     "confidence": "medium"
   },
   "redo": {
-    "fa": "redo",
+    "fa": "arrow-rotate-right",
     "confidence": "high"
   },
   "refresh-ccw-dot": {
@@ -4660,12 +4660,12 @@
     "confidence": "high"
   },
   "search-check": {
-    "fa": "magnifying-glass-check",
-    "confidence": "high"
+    "fa": "magnifying-glass",
+    "confidence": "low"
   },
   "search-code": {
-    "fa": "magnifying-glass-code",
-    "confidence": "high"
+    "fa": "magnifying-glass",
+    "confidence": "low"
   },
   "search-slash": {
     "fa": "magnifying-glass",
@@ -4784,8 +4784,8 @@
     "confidence": "high"
   },
   "shield-question": {
-    "fa": "shield-question",
-    "confidence": "high"
+    "fa": "shield",
+    "confidence": "low"
   },
   "shield-x": {
     "fa": "shield-xmark",
@@ -4900,8 +4900,8 @@
     "confidence": "high"
   },
   "slashes": {
-    "fa": "slashes",
-    "confidence": "high"
+    "fa": "slash",
+    "confidence": "low"
   },
   "slice": {
     "fa": "scalpel",
@@ -4936,8 +4936,8 @@
     "confidence": "high"
   },
   "snail": {
-    "fa": "snail",
-    "confidence": "high"
+    "fa": "bug",
+    "confidence": "low"
   },
   "snowflake": {
     "fa": "snowflake",
@@ -4952,8 +4952,8 @@
     "confidence": "high"
   },
   "space": {
-    "fa": "space",
-    "confidence": "high"
+    "fa": "arrows-left-right",
+    "confidence": "low"
   },
   "spade": {
     "fa": "spade",
@@ -5172,8 +5172,8 @@
     "confidence": "low"
   },
   "square-play": {
-    "fa": "square-play",
-    "confidence": "high"
+    "fa": "circle-play",
+    "confidence": "low"
   },
   "square-plus": {
     "fa": "square-plus",
@@ -5196,8 +5196,8 @@
     "confidence": "low"
   },
   "square-slash": {
-    "fa": "square-slash-forward",
-    "confidence": "medium"
+    "fa": "square",
+    "confidence": "low"
   },
   "square-split-horizontal": {
     "fa": "table-columns",
@@ -5360,12 +5360,12 @@
     "confidence": "medium"
   },
   "table-cells-merge": {
-    "fa": "table-cells-merge",
-    "confidence": "high"
+    "fa": "table",
+    "confidence": "low"
   },
   "table-cells-split": {
-    "fa": "table-cells-split",
-    "confidence": "high"
+    "fa": "table",
+    "confidence": "low"
   },
   "table-columns-split": {
     "fa": "table-columns",
@@ -5584,8 +5584,8 @@
     "confidence": "high"
   },
   "traffic-cone": {
-    "fa": "cone-striped",
-    "confidence": "medium"
+    "fa": "traffic-cone",
+    "confidence": "low"
   },
   "train-front-tunnel": {
     "fa": "train",
@@ -5596,8 +5596,8 @@
     "confidence": "high"
   },
   "train-track": {
-    "fa": "railroad",
-    "confidence": "medium"
+    "fa": "train",
+    "confidence": "low"
   },
   "tram-front": {
     "fa": "train-tram",
@@ -5712,7 +5712,7 @@
     "confidence": "medium"
   },
   "undo": {
-    "fa": "undo",
+    "fa": "arrow-rotate-left",
     "confidence": "high"
   },
   "unfold-horizontal": {
@@ -5836,8 +5836,8 @@
     "confidence": "high"
   },
   "variable": {
-    "fa": "variable",
-    "confidence": "high"
+    "fa": "square-root-variable",
+    "confidence": "low"
   },
   "vault": {
     "fa": "vault",
@@ -5944,7 +5944,7 @@
     "confidence": "medium"
   },
   "webcam": {
-    "fa": "webcam",
+    "fa": "camera-web",
     "confidence": "high"
   },
   "webhook-off": {
@@ -6012,8 +6012,8 @@
     "confidence": "high"
   },
   "wrap-text": {
-    "fa": "text-wrap",
-    "confidence": "medium"
+    "fa": "align-left",
+    "confidence": "low"
   },
   "wrench": {
     "fa": "wrench",

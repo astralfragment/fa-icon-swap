@@ -296,7 +296,7 @@ window.onmessage = function (event) {
       btnGenerate.disabled = false;
       btnGenerate.textContent = "Generate Mapped Components";
       btnGenerateAll.disabled = false;
-      btnGenerateAll.textContent = "Generate All 1,895 Components";
+      btnGenerateAll.textContent = "Generate All 3,814 Components";
       btnSwap.disabled = !componentsGenerated;
       btnSwap.textContent = "Replace All Lucide Components";
       break;

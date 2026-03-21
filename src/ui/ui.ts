@@ -23,6 +23,8 @@ var btnGenerate = document.getElementById("btn-generate") as HTMLButtonElement;
 var btnGenerateAll = document.getElementById("btn-generate-all") as HTMLButtonElement;
 var btnSwap = document.getElementById("btn-swap") as HTMLButtonElement;
 var btnRemoveLucide = document.getElementById("btn-remove-lucide") as HTMLButtonElement;
+var btnUpgradeFa6 = document.getElementById("btn-upgrade-fa6") as HTMLButtonElement;
+var btnSvgSwap = document.getElementById("btn-svg-swap") as HTMLButtonElement;
 var progressCard = document.getElementById("progress-card") as HTMLDivElement;
 var progressLabel = document.getElementById("progress-label") as HTMLSpanElement;
 var progressPct = document.getElementById("progress-pct") as HTMLSpanElement;
@@ -40,6 +42,7 @@ var existingBanner = document.getElementById("existing-banner") as HTMLDivElemen
 var existingCountText = document.getElementById("existing-count-text") as HTMLSpanElement;
 var swapLog = document.getElementById("swap-log") as HTMLDivElement;
 var btnRescan = document.getElementById("btn-rescan") as HTMLButtonElement;
+var upgradeResults = document.getElementById("upgrade-results") as HTMLDivElement;
 
 function getSelectedStyles(): string[] {
   var styles = ["Light"];
@@ -67,6 +70,7 @@ function showProgress(label: string, showCounts?: boolean) {
   swapLog.style.display = "none";
   swapLog.innerHTML = "";
   resultsCard.classList.remove("active");
+  upgradeResults.classList.remove("active");
 }
 
 function updateProgress(current: number, total: number, phase: string) {
@@ -122,6 +126,20 @@ btnRemoveLucide.addEventListener("click", function () {
   parent.postMessage({ pluginMessage: { type: "remove-lucide" } }, "*");
 });
 
+btnUpgradeFa6.addEventListener("click", function () {
+  showProgress("Upgrading FA6 to FA7...", true);
+  btnUpgradeFa6.disabled = true;
+  btnUpgradeFa6.innerHTML = '<span class="spinner"></span>Upgrading...';
+  parent.postMessage({ pluginMessage: { type: "upgrade-fa6" } }, "*");
+});
+
+btnSvgSwap.addEventListener("click", function () {
+  showProgress("Replacing SVG icons...", true);
+  btnSvgSwap.disabled = true;
+  btnSvgSwap.innerHTML = '<span class="spinner"></span>Replacing...';
+  parent.postMessage({ pluginMessage: { type: "svg-swap" } }, "*");
+});
+
 btnSelectFlagged.addEventListener("click", function () {
   parent.postMessage({ pluginMessage: { type: "select-flagged", payload: { nodeIds: flaggedNodeIds } } }, "*");
 });
@@ -137,6 +155,20 @@ btnRescan.addEventListener("click", function () {
   parent.postMessage({ pluginMessage: { type: "rescan" } }, "*");
 });
 
+function showUpgradeResults(processed: number, skipped: number, skippedItems: any[]) {
+  upgradeResults.classList.add("active");
+  (document.getElementById("upgrade-stat-processed") as HTMLElement).textContent = String(processed);
+  (document.getElementById("upgrade-stat-skipped") as HTMLElement).textContent = String(skipped);
+  var list = document.getElementById("upgrade-skipped-list") as HTMLDivElement;
+  if (skippedItems.length > 0) {
+    list.innerHTML = skippedItems.map(function (s: { name: string; reason: string }) {
+      return '<div class="skipped-entry"><span class="skip-name">' + esc(s.name) + '</span><span class="skip-reason">' + esc(s.reason) + '</span></div>';
+    }).join("");
+  } else {
+    list.innerHTML = "";
+  }
+}
+
 window.onmessage = function (event) {
   var msg = event.data.pluginMessage;
   if (!msg) return;
@@ -150,12 +182,11 @@ window.onmessage = function (event) {
     case "scan-progress": {
       var scanParts: string[] = [];
       scanParts.push("Page " + msg.pageNum + "/" + msg.totalPages + ": " + msg.page);
-      if (msg.lucide > 0 || msg.fa6 > 0) {
-        var found: string[] = [];
-        if (msg.lucide > 0) found.push(msg.lucide + " Lucide");
-        if (msg.fa6 > 0) found.push(msg.fa6 + " FA6");
-        scanParts.push(found.join(", "));
-      }
+      var found: string[] = [];
+      if (msg.lucide > 0) found.push(msg.lucide + " Lucide");
+      if (msg.fa6 > 0) found.push(msg.fa6 + " FA6");
+      if (msg.fa7 > 0) found.push(msg.fa7 + " FA7");
+      if (found.length > 0) scanParts.push(found.join(", "));
       existingCountText.textContent = scanParts.join(" / ");
       break;
     }
@@ -164,15 +195,19 @@ window.onmessage = function (event) {
       var parts: string[] = [];
       if (msg.lucide > 0) parts.push(msg.lucide + " Lucide");
       if (msg.fa6 > 0) parts.push(msg.fa6 + " FA6");
+      if (msg.fa7 > 0) parts.push(msg.fa7 + " FA7");
       if (parts.length > 0) {
         existingBanner.style.display = "block";
         existingCountText.textContent = parts.join(" / ") + " components found";
       } else {
         existingBanner.style.display = "none";
       }
-      if (msg.fa6 > 0) {
+      if (msg.fa7 > 0) {
         componentsGenerated = true;
         btnSwap.disabled = false;
+      }
+      if (msg.fa6 > 0) {
+        btnUpgradeFa6.disabled = false;
       }
       break;
     }
@@ -208,7 +243,7 @@ window.onmessage = function (event) {
       btnGenerateAll.disabled = false;
       if (msg.totalExisting > 0) {
         existingBanner.style.display = "block";
-        existingCountText.textContent = msg.totalExisting + " FA6 components exist";
+        existingCountText.textContent = msg.totalExisting + " FA7 components exist";
       }
       if (msg.errors > 0 && msg.created === 0) {
         updateProgress(0, 0, "ERROR: " + (msg.errorDetails[0] || "Unknown"));
@@ -226,7 +261,7 @@ window.onmessage = function (event) {
       btnGenerate.disabled = true;
       if (msg.totalExisting > 0) {
         existingBanner.style.display = "block";
-        existingCountText.textContent = msg.totalExisting + " FA6 components exist";
+        existingCountText.textContent = msg.totalExisting + " FA7 components exist";
       }
       if (msg.errors > 0 && msg.created === 0) {
         updateProgress(0, 0, "ERROR: " + (msg.errorDetails[0] || "Unknown"));
@@ -263,6 +298,30 @@ window.onmessage = function (event) {
       break;
     }
 
+    case "upgrade-complete": {
+      btnUpgradeFa6.textContent = msg.upgraded + " upgraded";
+      btnUpgradeFa6.disabled = true;
+      finishProgress("Complete");
+      progressPhase.textContent = msg.upgraded + " FA6 components upgraded to FA7" + (msg.renamed > 0 ? " (" + msg.renamed + " renamed)" : "");
+      liveCounts.style.display = "flex";
+      liveReplaced.textContent = String(msg.upgraded);
+      liveSkipped.textContent = String(msg.skipped);
+      showUpgradeResults(msg.upgraded, msg.skipped, msg.skippedItems || []);
+      break;
+    }
+
+    case "svg-swap-complete": {
+      btnSvgSwap.textContent = msg.replaced + " replaced";
+      btnSvgSwap.disabled = true;
+      finishProgress("Complete");
+      progressPhase.textContent = msg.replaced + " SVG icons replaced with FA7 glyphs";
+      liveCounts.style.display = "flex";
+      liveReplaced.textContent = String(msg.replaced);
+      liveSkipped.textContent = String(msg.skipped);
+      showUpgradeResults(msg.replaced, msg.skipped, msg.skippedItems || []);
+      break;
+    }
+
     case "remove-progress": {
       var removePct = msg.totalPages > 0 ? Math.round((msg.pageNum / msg.totalPages) * 100) : 0;
       progressPct.textContent = removePct + "%";
@@ -296,9 +355,13 @@ window.onmessage = function (event) {
       btnGenerate.disabled = false;
       btnGenerate.textContent = "Generate Mapped Components";
       btnGenerateAll.disabled = false;
-      btnGenerateAll.textContent = "Generate All 3,814 Components";
+      btnGenerateAll.textContent = "Generate All 4,318 Components";
       btnSwap.disabled = !componentsGenerated;
       btnSwap.textContent = "Replace All Lucide Components";
+      btnUpgradeFa6.disabled = false;
+      btnUpgradeFa6.textContent = "Upgrade FA6 to FA7";
+      btnSvgSwap.disabled = false;
+      btnSvgSwap.textContent = "Replace SVG Icons";
       break;
   }
 };

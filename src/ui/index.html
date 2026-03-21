@@ -268,12 +268,13 @@
   <div class="header">
     <div>
       <h1>FA Icon Swap</h1>
-      <span>Lucide to Font Awesome 6 Pro</span>
+      <span>Font Awesome 7 Pro</span>
     </div>
   </div>
 
   <div class="tabs">
     <div class="tab active" data-tab="auto">Auto Swap</div>
+    <div class="tab" data-tab="upgrade">Upgrade</div>
     <div class="tab" data-tab="manual">Manual Swap</div>
   </div>
 
@@ -282,8 +283,8 @@
     <div class="prereqs">
       <h3>Prerequisites</h3>
       <ul>
-        <li><strong>Font Awesome 6 Pro</strong> installed on this machine</li>
-        <li><strong>Font Awesome 6 Brands</strong> installed for brand icons</li>
+        <li><strong>Font Awesome 7 Pro</strong> installed on this machine</li>
+        <li><strong>Font Awesome 7 Brands</strong> installed for brand icons</li>
         <li>Lucide icons must be <strong>component instances</strong></li>
         <li>Back up your file first</li>
       </ul>
@@ -304,17 +305,17 @@
         <label class="style-check"><input type="checkbox" value="Solid" id="chk-solid" /><span>Solid</span></label>
       </div>
       <h3>Mapped Icons</h3>
-      <p>FA6 components for ~800 icons mapped from Lucide.</p>
+      <p>FA7 components for ~800 icons mapped from Lucide.</p>
       <button id="btn-generate" class="btn-primary">Generate Mapped Components</button>
       <div style="height:3px"></div>
       <h3>Full Library</h3>
-      <p>All 3,814 Font Awesome 6 Pro + Brands components.</p>
-      <button id="btn-generate-all" class="btn-soft">Generate All 3,814 Components</button>
+      <p>All 4,318 Font Awesome 7 Pro + Brands components.</p>
+      <button id="btn-generate-all" class="btn-soft">Generate All 4,318 Components</button>
     </div>
 
     <div class="card">
       <div class="card-label">Step 2 - Replace</div>
-      <p>Replaces Lucide main components with FA6 glyphs. Instances update automatically.</p>
+      <p>Replaces Lucide main components with FA7 glyphs. Instances update automatically.</p>
       <button id="btn-swap" class="btn-primary" disabled>Replace All Lucide Components</button>
     </div>
 
@@ -345,6 +346,30 @@
       <div class="card-label">Cleanup</div>
       <p>Strip "(was: ...)" suffixes from swapped component names.</p>
       <button id="btn-remove-lucide" class="btn-soft">Clean Up Names</button>
+    </div>
+
+  </div>
+
+  <div id="upgrade-panel" class="panel">
+
+    <div class="card">
+      <div class="card-label">FA6 to FA7 Upgrade</div>
+      <h3>Upgrade FA6 Components</h3>
+      <p>Upgrade existing FA6 font-glyph components to FA7. Handles renamed icons and font family changes.</p>
+      <button id="btn-upgrade-fa6" class="btn-primary" disabled>Upgrade FA6 to FA7</button>
+    </div>
+
+    <div class="card">
+      <div class="card-label">SVG Icon Replacement</div>
+      <h3>Replace SVG FA Icons</h3>
+      <p>Find SVG-based Font Awesome icons (vector paths) and replace with FA7 font glyphs.</p>
+      <button id="btn-svg-swap" class="btn-primary">Replace SVG Icons</button>
+    </div>
+
+    <div id="upgrade-results" class="results-card">
+      <div class="stat"><span>Processed</span><span id="upgrade-stat-processed">0</span></div>
+      <div class="stat"><span>Skipped</span><span id="upgrade-stat-skipped">0</span></div>
+      <div id="upgrade-skipped-list" class="skipped-list"></div>
     </div>
 
   </div>

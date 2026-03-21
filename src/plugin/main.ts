@@ -1,11 +1,13 @@
 import { generateFAComponents, generateAllFAComponents, getExistingComponentCount } from "./component-gen";
 import { autoSwapAll, removeLucideReferences, scanComponentCounts } from "./auto-swap";
 import { handleSelectionSwap } from "./manual-swap";
+import { upgradeFa6ToFa7 } from "./upgrade-fa6";
+import { replaceSvgIcons } from "./svg-swap";
 
 figma.skipInvisibleInstanceChildren = true;
-figma.showUI(__html__, { width: 380, height: 600 });
+figma.showUI(__html__, { width: 380, height: 640 });
 
-var cachedCounts: { lucide: number; fa6: number } | null = null;
+var cachedCounts: { lucide: number; fa6: number; fa7: number } | null = null;
 
 function computeScanHash(): string {
   return figma.root.children.map(function (p) {
@@ -23,13 +25,14 @@ function runScan() {
       totalPages: info.totalPages,
       lucide: info.lucide,
       fa6: info.fa6,
+      fa7: info.fa7,
     });
   }).then(function (counts) {
     cachedCounts = counts;
     var hash = computeScanHash();
     figma.root.setPluginData("scanHash", hash);
     figma.clientStorage.setAsync("scanResults", counts);
-    figma.ui.postMessage({ type: "scan-complete", lucide: counts.lucide, fa6: counts.fa6 });
+    figma.ui.postMessage({ type: "scan-complete", lucide: counts.lucide, fa6: counts.fa6, fa7: counts.fa7 });
   });
 }
 
@@ -38,9 +41,9 @@ function initScan() {
   var currentHash = computeScanHash();
   if (storedHash === currentHash) {
     figma.clientStorage.getAsync("scanResults").then(function (stored) {
-      if (stored && typeof stored.lucide === "number" && typeof stored.fa6 === "number") {
+      if (stored && typeof stored.lucide === "number" && typeof stored.fa7 === "number") {
         cachedCounts = stored;
-        figma.ui.postMessage({ type: "scan-complete", lucide: stored.lucide, fa6: stored.fa6 });
+        figma.ui.postMessage({ type: "scan-complete", lucide: stored.lucide, fa6: stored.fa6 || 0, fa7: stored.fa7 });
       } else {
         runScan();
       }
@@ -72,7 +75,7 @@ figma.ui.onmessage = async function (msg: { type: string; payload?: any }) {
       figma.ui.postMessage({ type: "progress", phase: "Starting..." });
       var genResult = await generateFAComponents(sendProgress, styles);
       var totalExisting = getExistingComponentCount();
-      if (cachedCounts) cachedCounts.fa6 = totalExisting;
+      if (cachedCounts) cachedCounts.fa7 = totalExisting;
       figma.ui.postMessage({
         type: "generate-complete",
         created: genResult.created,
@@ -82,7 +85,7 @@ figma.ui.onmessage = async function (msg: { type: string; payload?: any }) {
         totalExisting: totalExisting,
       });
       if (genResult.created > 0) {
-        figma.notify("Created " + genResult.created + " FA6 components");
+        figma.notify("Created " + genResult.created + " FA7 components");
       } else if (genResult.skipped > 0 && genResult.errors === 0) {
         figma.notify("All components already exist");
       }
@@ -94,7 +97,7 @@ figma.ui.onmessage = async function (msg: { type: string; payload?: any }) {
       figma.ui.postMessage({ type: "progress", phase: "Starting..." });
       var allResult = await generateAllFAComponents(sendProgress, allStyles);
       var totalExistingAll = getExistingComponentCount();
-      if (cachedCounts) cachedCounts.fa6 = totalExistingAll;
+      if (cachedCounts) cachedCounts.fa7 = totalExistingAll;
       figma.ui.postMessage({
         type: "generate-all-complete",
         created: allResult.created,
@@ -104,7 +107,7 @@ figma.ui.onmessage = async function (msg: { type: string; payload?: any }) {
         totalExisting: totalExistingAll,
       });
       if (allResult.created > 0) {
-        figma.notify("Created " + allResult.created + " FA6 components");
+        figma.notify("Created " + allResult.created + " FA7 components");
       } else if (allResult.skipped > 0 && allResult.errors === 0) {
         figma.notify("All components already exist");
       }
@@ -116,7 +119,7 @@ figma.ui.onmessage = async function (msg: { type: string; payload?: any }) {
       var swapResult = await autoSwapAll(sendProgress);
       if (cachedCounts) {
         cachedCounts.lucide = cachedCounts.lucide - swapResult.replaced;
-        cachedCounts.fa6 = cachedCounts.fa6 + swapResult.replaced;
+        cachedCounts.fa7 = cachedCounts.fa7 + swapResult.replaced;
       }
       figma.ui.postMessage({
         type: "swap-complete",
@@ -143,6 +146,55 @@ figma.ui.onmessage = async function (msg: { type: string; payload?: any }) {
       });
       figma.ui.postMessage({ type: "remove-lucide-complete", cleaned: removeResult.cleaned });
       figma.notify("Cleaned " + removeResult.cleaned + " component name(s)");
+      break;
+    }
+
+    case "upgrade-fa6": {
+      figma.ui.postMessage({ type: "progress", phase: "Upgrading FA6 to FA7..." });
+      var upgradeResult = await upgradeFa6ToFa7(function (progress) {
+        figma.ui.postMessage({
+          type: "progress-update",
+          current: progress.current,
+          total: progress.total,
+          phase: progress.phase,
+          replaced: progress.upgraded,
+          skipped: progress.skipped,
+        });
+      });
+      if (cachedCounts) {
+        cachedCounts.fa6 = (cachedCounts.fa6 || 0) - upgradeResult.upgraded;
+        cachedCounts.fa7 = cachedCounts.fa7 + upgradeResult.upgraded;
+      }
+      figma.ui.postMessage({
+        type: "upgrade-complete",
+        upgraded: upgradeResult.upgraded,
+        skipped: upgradeResult.skipped,
+        renamed: upgradeResult.renamed,
+        skippedItems: upgradeResult.skippedItems,
+      });
+      figma.notify(upgradeResult.upgraded + " FA6 components upgraded to FA7" + (upgradeResult.renamed > 0 ? " (" + upgradeResult.renamed + " renamed)" : ""));
+      break;
+    }
+
+    case "svg-swap": {
+      figma.ui.postMessage({ type: "progress", phase: "Replacing SVG icons..." });
+      var svgResult = await replaceSvgIcons(function (progress) {
+        figma.ui.postMessage({
+          type: "progress-update",
+          current: progress.current,
+          total: progress.total,
+          phase: progress.phase,
+          replaced: progress.replaced,
+          skipped: progress.skipped,
+        });
+      });
+      figma.ui.postMessage({
+        type: "svg-swap-complete",
+        replaced: svgResult.replaced,
+        skipped: svgResult.skipped,
+        skippedItems: svgResult.skippedItems,
+      });
+      figma.notify(svgResult.replaced + " SVG icons replaced with FA7 glyphs");
       break;
     }
 

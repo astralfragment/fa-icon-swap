@@ -1,5 +1,5 @@
 import iconMap from "../data/icon-map.json";
-import fa6Unicode from "../data/fa6-unicode.json";
+import fa7Unicode from "../data/fa7-unicode.json";
 import { findFAComponent, isBrandIcon, FONT_PRO, FONT_BRANDS } from "./component-gen";
 import { extractFillColor } from "./auto-swap";
 
@@ -15,7 +15,7 @@ export async function handleSelectionSwap(
   overrides?: Record<string, string>
 ): Promise<ManualSwapResult> {
   var map = iconMap as Record<string, IconMapEntry>;
-  var unicodes = fa6Unicode as UnicodeMap;
+  var unicodes = fa7Unicode as UnicodeMap;
   var selection = figma.currentPage.selection;
   var result: ManualSwapResult = { replaced: 0, skipped: 0 };
 
@@ -83,7 +83,7 @@ export async function handleSelectionSwap(
       var font = isBrandIcon(faName) ? FONT_BRANDS : FONT_PRO;
 
       var frame = figma.createFrame();
-      frame.name = "FA6 / " + faName;
+      frame.name = "FA7 / " + faName;
       frame.resizeWithoutConstraints(w2, h2);
       frame.x = x2;
       frame.y = y2;

@@ -1,20 +1,20 @@
 import iconMap from "../data/icon-map.json";
-import fa6Unicode from "../data/fa6-unicode.json";
+import fa7Unicode from "../data/fa7-unicode.json";
 import { isBrandIcon, FONT_PRO, FONT_BRANDS } from "./component-gen";
 
 type IconMapEntry = { fa: string; confidence: string };
 type UnicodeMap = Record<string, string>;
 
-var fa6NameList: string[] = Object.keys(fa6Unicode as UnicodeMap);
-var fa6NameSet: Set<string> = new Set(fa6NameList);
+var faNameList: string[] = Object.keys(fa7Unicode as UnicodeMap);
+var faNameSet: Set<string> = new Set(faNameList);
 var fuzzyCache: Record<string, { fa: string; confidence: string } | null> = {};
 
-var fa6WordIndex: Record<string, string[]> = {};
-for (var _i = 0; _i < fa6NameList.length; _i++) {
-  var _words = fa6NameList[_i].split("-");
+var faWordIndex: Record<string, string[]> = {};
+for (var _i = 0; _i < faNameList.length; _i++) {
+  var _words = faNameList[_i].split("-");
   for (var _w = 0; _w < _words.length; _w++) {
-    if (!fa6WordIndex[_words[_w]]) fa6WordIndex[_words[_w]] = [];
-    fa6WordIndex[_words[_w]].push(fa6NameList[_i]);
+    if (!faWordIndex[_words[_w]]) faWordIndex[_words[_w]] = [];
+    faWordIndex[_words[_w]].push(faNameList[_i]);
   }
 }
 
@@ -50,7 +50,7 @@ function editDistance(a: string, b: string): number {
 function findBestMatch(lucideName: string): { fa: string; confidence: string } | null {
   if (fuzzyCache[lucideName] !== undefined) return fuzzyCache[lucideName];
 
-  if (fa6NameSet.has(lucideName)) {
+  if (faNameSet.has(lucideName)) {
     fuzzyCache[lucideName] = { fa: lucideName, confidence: "high" };
     return fuzzyCache[lucideName];
   }
@@ -59,7 +59,7 @@ function findBestMatch(lucideName: string): { fa: string; confidence: string } |
 
   var candidates: Record<string, boolean> = {};
   for (var w = 0; w < lucideWords.length; w++) {
-    var matches = fa6WordIndex[lucideWords[w]];
+    var matches = faWordIndex[lucideWords[w]];
     if (matches) {
       for (var ci = 0; ci < matches.length; ci++) candidates[matches[ci]] = true;
     }
@@ -81,9 +81,9 @@ function findBestMatch(lucideName: string): { fa: string; confidence: string } |
 
   var closestDist = Infinity;
   var closestName = "";
-  for (var i2 = 0; i2 < fa6NameList.length; i2++) {
-    var dist = editDistance(lucideName, fa6NameList[i2]);
-    if (dist < closestDist) { closestDist = dist; closestName = fa6NameList[i2]; }
+  for (var i2 = 0; i2 < faNameList.length; i2++) {
+    var dist = editDistance(lucideName, faNameList[i2]);
+    if (dist < closestDist) { closestDist = dist; closestName = faNameList[i2]; }
   }
 
   var maxLen = Math.max(lucideName.length, closestName.length);
@@ -178,7 +178,7 @@ function replaceComponentInternals(
   }
 
   var lucideName = component.name.replace("Lucide Icons / ", "");
-  component.name = "FA6 Icons / " + faName + " (was: " + lucideName + ")";
+  component.name = "FA7 Icons / " + faName + " (was: " + lucideName + ")";
   component.layoutMode = "HORIZONTAL";
   component.primaryAxisAlignItems = "CENTER";
   component.counterAxisAlignItems = "CENTER";
@@ -208,17 +208,18 @@ function replaceComponentInternals(
   component.appendChild(inner);
 }
 
-type ScanCallback = (info: { page: string; pageNum: number; totalPages: number; lucide: number; fa6: number }) => void;
+type ScanCallback = (info: { page: string; pageNum: number; totalPages: number; lucide: number; fa6: number; fa7: number }) => void;
 
-export async function scanComponentCounts(onProgress?: ScanCallback): Promise<{ lucide: number; fa6: number }> {
+export async function scanComponentCounts(onProgress?: ScanCallback): Promise<{ lucide: number; fa6: number; fa7: number }> {
   var lucideNames = new Set<string>();
   var fa6Names = new Set<string>();
+  var fa7Names = new Set<string>();
   var totalPages = figma.root.children.length;
 
   for (var i = 0; i < totalPages; i++) {
     var page = figma.root.children[i];
     if (onProgress) {
-      onProgress({ page: page.name, pageNum: i + 1, totalPages: totalPages, lucide: lucideNames.size, fa6: fa6Names.size });
+      onProgress({ page: page.name, pageNum: i + 1, totalPages: totalPages, lucide: lucideNames.size, fa6: fa6Names.size, fa7: fa7Names.size });
     }
 
     var components = page.findAllWithCriteria({ types: ["COMPONENT"] });
@@ -226,21 +227,24 @@ export async function scanComponentCounts(onProgress?: ScanCallback): Promise<{ 
       var name = components[j].name;
       if (name.indexOf("Lucide Icons / ") === 0) {
         lucideNames.add(name.replace("Lucide Icons / ", ""));
+      } else if (name.indexOf("FA7 Icons / ") === 0) {
+        var baseName7 = name.replace("FA7 Icons / ", "").replace(/ \/ (Light|Thin|Regular|Solid)$/, "").replace(/ \(was: [^)]+\)$/, "");
+        fa7Names.add(baseName7);
       } else if (name.indexOf("FA6 Icons / ") === 0) {
-        var baseName = name.replace("FA6 Icons / ", "").replace(/ \/ (Light|Thin|Regular|Solid)$/, "").replace(/ \(was: [^)]+\)$/, "");
-        fa6Names.add(baseName);
+        var baseName6 = name.replace("FA6 Icons / ", "").replace(/ \/ (Light|Thin|Regular|Solid)$/, "").replace(/ \(was: [^)]+\)$/, "");
+        fa6Names.add(baseName6);
       }
     }
 
     await yieldToFigma();
   }
 
-  return { lucide: lucideNames.size, fa6: fa6Names.size };
+  return { lucide: lucideNames.size, fa6: fa6Names.size, fa7: fa7Names.size };
 }
 
 export async function autoSwapAll(onProgress: ProgressCallback): Promise<SwapResult> {
   var map = iconMap as Record<string, IconMapEntry>;
-  var unicodes = fa6Unicode as UnicodeMap;
+  var unicodes = fa7Unicode as UnicodeMap;
   var result: SwapResult = { replaced: 0, flagged: 0, skipped: 0, flaggedNodeIds: [], skippedItems: [] };
 
   onProgress({ current: 0, total: 0, phase: "Loading fonts..." });

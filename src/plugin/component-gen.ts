@@ -1,20 +1,21 @@
 import iconMap from "../data/icon-map.json";
-import fa6Unicode from "../data/fa6-unicode.json";
-import fa6Brands from "../data/fa6-brands.json";
+import fa7Unicode from "../data/fa7-unicode.json";
+import fa7Brands from "../data/fa7-brands.json";
 
-var FA_PAGE_NAME = "\u21B3Font Awesome 6 Icons";
+var FA_PAGE_NAME = "\u21B3Font Awesome 7 Icons";
+var FA6_PAGE_NAME = "\u21B3Font Awesome 6 Icons";
 var ICON_SIZE = 25;
 var GLYPH_SIZE = 20;
 var ICON_COLOR: RGB = { r: 0, g: 0, b: 0 };
 
-var FONT_PRO = { family: "Font Awesome 6 Pro", style: "Light" };
-var FONT_BRANDS = { family: "Font Awesome 6 Brands", style: "Regular" };
+var FONT_PRO = { family: "Font Awesome 7 Pro", style: "Light" };
+var FONT_BRANDS = { family: "Font Awesome 7 Brands", style: "Regular" };
 
 var PRO_STYLES: Record<string, { family: string; style: string }> = {
-  "Light": { family: "Font Awesome 6 Pro", style: "Light" },
-  "Thin": { family: "Font Awesome 6 Pro", style: "Thin" },
-  "Regular": { family: "Font Awesome 6 Pro", style: "Regular" },
-  "Solid": { family: "Font Awesome 6 Pro", style: "Solid" },
+  "Light": { family: "Font Awesome 7 Pro", style: "Light" },
+  "Thin": { family: "Font Awesome 7 Pro", style: "Thin" },
+  "Regular": { family: "Font Awesome 7 Pro", style: "Regular" },
+  "Solid": { family: "Font Awesome 7 Pro", style: "Solid" },
 };
 
 type IconMapEntry = { fa: string; confidence: string };
@@ -22,7 +23,7 @@ type UnicodeMap = Record<string, string>;
 type ProgressCallback = (progress: { current: number; total: number; phase: string }) => void;
 type GenResult = { created: number; skipped: number; errors: number; errorDetails: string[] };
 
-var brandsSet = new Set(fa6Brands as string[]);
+var brandsSet = new Set(fa7Brands as string[]);
 
 function isBrandIcon(name: string): boolean {
   return brandsSet.has(name);
@@ -57,7 +58,7 @@ function createIconComponent(
   page: PageNode
 ): void {
   var suffix = styleName === "Light" ? "" : " / " + styleName;
-  var componentName = "FA6 Icons / " + faName + suffix;
+  var componentName = "FA7 Icons / " + faName + suffix;
 
   var component = figma.createComponent();
   component.name = componentName;
@@ -161,7 +162,7 @@ async function generateFromNames(
       if (isBrand && s > 0) { result.skipped++; continue; }
 
       var suffix = styleName === "Light" ? "" : " / " + styleName;
-      var componentName = "FA6 Icons / " + faName + suffix;
+      var componentName = "FA7 Icons / " + faName + suffix;
       if (existingNames.has(componentName)) { result.skipped++; continue; }
 
       var unicode = unicodes[faName];
@@ -190,14 +191,14 @@ async function generateFromNames(
 
 export async function generateFAComponents(onProgress: ProgressCallback, styles: string[]): Promise<GenResult> {
   var map = iconMap as Record<string, IconMapEntry>;
-  var unicodes = fa6Unicode as UnicodeMap;
+  var unicodes = fa7Unicode as UnicodeMap;
   var faNames = new Set<string>();
   for (var key in map) { faNames.add(map[key].fa); }
   return generateFromNames(Array.from(faNames), unicodes, styles, onProgress);
 }
 
 export async function generateAllFAComponents(onProgress: ProgressCallback, styles: string[]): Promise<GenResult> {
-  var unicodes = fa6Unicode as UnicodeMap;
+  var unicodes = fa7Unicode as UnicodeMap;
   return generateFromNames(Object.keys(unicodes), unicodes, styles, onProgress);
 }
 
@@ -213,9 +214,9 @@ export function findFAComponent(faName: string): ComponentNode | null {
   var page = figma.root.children.find(function (p) { return p.name === FA_PAGE_NAME; });
   if (!page) return null;
   var found = page.children.find(function (n) {
-    return n.type === "COMPONENT" && n.name === "FA6 Icons / " + faName;
+    return n.type === "COMPONENT" && n.name === "FA7 Icons / " + faName;
   });
   return (found as ComponentNode) || null;
 }
 
-export { isBrandIcon, FONT_PRO, FONT_BRANDS };
+export { isBrandIcon, FONT_PRO, FONT_BRANDS, PRO_STYLES, FA_PAGE_NAME, FA6_PAGE_NAME };
